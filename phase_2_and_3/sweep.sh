@@ -36,7 +36,7 @@ for N in $ADDRS; do
   ENTRIES=$((1 << N))
   # Deep enough to push the highest tag index (2**(N+1)-1) through write,
   # 2-flop sync and read.
-  D=$(( (1 << (N + 1)) + 12 ))
+  D=$(( (1 << (N + 2)) + 12 ))
   # Width 2 needs a longer trace for the second-lap tagged read cover.
   if [ "$D" -lt 32 ]; then
     D=32
