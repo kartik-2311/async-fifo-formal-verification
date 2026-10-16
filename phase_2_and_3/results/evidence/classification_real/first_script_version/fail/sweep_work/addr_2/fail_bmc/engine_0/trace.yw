@@ -1,0 +1,9 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [],
+  "steps": [
+    {"bits": ""}
+  ]
+}

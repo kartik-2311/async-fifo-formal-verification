@@ -1,0 +1,76 @@
+>>> ADDR_WIDTH=2 (4 entries)  depth=32  async_fifo_multiclock.sby  bmc
+    -> FAIL in 2s
+>>> ADDR_WIDTH=2 (4 entries)  depth=32  async_fifo_multiclock.sby  prove
+    -> FAIL in 3s
+>>> ADDR_WIDTH=2 (4 entries)  depth=32  async_fifo_multiclock.sby  cover
+    -> PASS in 2s
+>>> ADDR_WIDTH=2 (4 entries)  depth=32  async_fifo_integrity.sby  bmc
+    -> TIMEOUT in 1801s
+>>> ADDR_WIDTH=2 (4 entries)  depth=32  async_fifo_integrity.sby  prove
+    -> TIMEOUT in 1800s
+>>> ADDR_WIDTH=2 (4 entries)  depth=32  async_fifo_integrity.sby  cover
+    -> PASS in 13s
+>>> ADDR_WIDTH=3 (8 entries)  depth=44  async_fifo_multiclock.sby  bmc
+    -> FAIL in 3s
+>>> ADDR_WIDTH=3 (8 entries)  depth=44  async_fifo_multiclock.sby  prove
+    -> FAIL in 2s
+>>> ADDR_WIDTH=3 (8 entries)  depth=44  async_fifo_multiclock.sby  cover
+    -> PASS in 3s
+>>> ADDR_WIDTH=3 (8 entries)  depth=44  async_fifo_integrity.sby  bmc
+    -> TIMEOUT in 1800s
+>>> ADDR_WIDTH=3 (8 entries)  depth=44  async_fifo_integrity.sby  prove
+    -> TIMEOUT in 1801s
+>>> ADDR_WIDTH=3 (8 entries)  depth=44  async_fifo_integrity.sby  cover
+    -> PASS in 4s
+>>> ADDR_WIDTH=4 (16 entries)  depth=76  async_fifo_multiclock.sby  bmc
+    -> FAIL in 2s
+>>> ADDR_WIDTH=4 (16 entries)  depth=76  async_fifo_multiclock.sby  prove
+    -> FAIL in 3s
+>>> ADDR_WIDTH=4 (16 entries)  depth=76  async_fifo_multiclock.sby  cover
+    -> PASS in 2s
+>>> ADDR_WIDTH=4 (16 entries)  depth=76  async_fifo_integrity.sby  bmc
+    -> TIMEOUT in 1801s
+>>> ADDR_WIDTH=4 (16 entries)  depth=76  async_fifo_integrity.sby  prove
+    -> TIMEOUT in 1800s
+>>> ADDR_WIDTH=4 (16 entries)  depth=76  async_fifo_integrity.sby  cover
+    -> PASS in 44s
+>>> ADDR_WIDTH=5 (32 entries)  depth=140  async_fifo_multiclock.sby  bmc
+    -> FAIL in 3s
+>>> ADDR_WIDTH=5 (32 entries)  depth=140  async_fifo_multiclock.sby  prove
+    -> FAIL in 4s
+>>> ADDR_WIDTH=5 (32 entries)  depth=140  async_fifo_multiclock.sby  cover
+    -> PASS in 2s
+>>> ADDR_WIDTH=5 (32 entries)  depth=140  async_fifo_integrity.sby  bmc
+    -> TIMEOUT in 1800s
+>>> ADDR_WIDTH=5 (32 entries)  depth=140  async_fifo_integrity.sby  prove
+    -> TIMEOUT in 1801s
+>>> ADDR_WIDTH=5 (32 entries)  depth=140  async_fifo_integrity.sby  cover
+    -> PASS in 842s
+
+Results written to sweep_results.csv
+addr_width  entries  bmc_depth  sby_file                   task   status   seconds
+2           4        32         async_fifo_multiclock.sby  bmc    FAIL     2
+2           4        32         async_fifo_multiclock.sby  prove  FAIL     3
+2           4        32         async_fifo_multiclock.sby  cover  PASS     2
+2           4        32         async_fifo_integrity.sby   bmc    TIMEOUT  1801
+2           4        32         async_fifo_integrity.sby   prove  TIMEOUT  1800
+2           4        32         async_fifo_integrity.sby   cover  PASS     13
+3           8        44         async_fifo_multiclock.sby  bmc    FAIL     3
+3           8        44         async_fifo_multiclock.sby  prove  FAIL     2
+3           8        44         async_fifo_multiclock.sby  cover  PASS     3
+3           8        44         async_fifo_integrity.sby   bmc    TIMEOUT  1800
+3           8        44         async_fifo_integrity.sby   prove  TIMEOUT  1801
+3           8        44         async_fifo_integrity.sby   cover  PASS     4
+4           16       76         async_fifo_multiclock.sby  bmc    FAIL     2
+4           16       76         async_fifo_multiclock.sby  prove  FAIL     3
+4           16       76         async_fifo_multiclock.sby  cover  PASS     2
+4           16       76         async_fifo_integrity.sby   bmc    TIMEOUT  1801
+4           16       76         async_fifo_integrity.sby   prove  TIMEOUT  1800
+4           16       76         async_fifo_integrity.sby   cover  PASS     44
+5           32       140        async_fifo_multiclock.sby  bmc    FAIL     3
+5           32       140        async_fifo_multiclock.sby  prove  FAIL     4
+5           32       140        async_fifo_multiclock.sby  cover  PASS     2
+5           32       140        async_fifo_integrity.sby   bmc    TIMEOUT  1800
+5           32       140        async_fifo_integrity.sby   prove  TIMEOUT  1801
+5           32       140        async_fifo_integrity.sby   cover  PASS     842
+sweep_exit=

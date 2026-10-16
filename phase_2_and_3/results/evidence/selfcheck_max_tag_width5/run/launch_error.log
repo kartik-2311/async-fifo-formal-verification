@@ -1,0 +1,6 @@
+First launch attempt: PowerShell-to-WSL command quoting failed before SBY started.
+Observed stderr: /bin/bash: -c: line 1: unexpected EOF while looking for matching `"'
+
+Second launch executed SBY, but elaboration failed. The wrapper instance label
+"checker" was parsed as the SystemVerilog checker keyword. The detailed slang
+diagnostics are preserved in max_tag_width5_cover/model/design.log.

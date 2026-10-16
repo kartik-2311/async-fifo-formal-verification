@@ -1,0 +1,17 @@
+input 0 0 wr_en
+input 1 0 wr_data
+input 2 0 wr_clk
+input 3 0 tag_seq_in
+input 4 1 tag_seq_in
+input 5 2 tag_seq_in
+input 6 0 rd_en
+input 7 0 rd_clk
+init 46 0 dut.u_mem.mem[3]
+init 47 0 dut.u_mem.mem[2]
+init 48 0 dut.u_mem.mem[1]
+init 49 0 dut.u_mem.mem[0]
+latch 104 0 dut.u_mem.mem[3]
+latch 105 0 dut.u_mem.mem[2]
+latch 106 0 dut.u_mem.mem[1]
+latch 107 0 dut.u_mem.mem[0]
+ninitff 108

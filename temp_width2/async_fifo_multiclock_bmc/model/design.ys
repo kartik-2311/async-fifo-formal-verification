@@ -1,0 +1,9 @@
+# running in async_fifo_multiclock_bmc/src/
+plugin -i slang
+read_slang async_fifo.sv async_fifo_formal.sv -DADDR_WIDTH=2 --top async_fifo
+prep -top async_fifo -set ADDR_WIDTH=2
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

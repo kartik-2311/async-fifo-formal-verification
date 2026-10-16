@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Async FIFO Formal Verification Project",
+    "output": "async_fifo_architecture.html",
+    "quality_profile": "showcase",
+    "viewBox": [1020, 900]
+  },
+  "components": [
+    { "id": "rtl", "type": "backend", "label": "RTL Design", "sublabel": "Core async FIFO implementation", "pos": [400, 200], "size": [160, 80], "icon": "backend" },
+    { "id": "formal_props", "type": "backend", "label": "Formal Properties", "sublabel": "Phase 1: Pointer protocol verification", "pos": [400, 350], "size": [160, 80], "icon": "security" },
+    { "id": "integrity_proof", "type": "backend", "label": "Integrity Proof", "sublabel": "Phase 2: Data Integrity", "pos": [400, 550], "size": [220, 80], "icon": "security" },
+    { "id": "parameter_sweep", "type": "backend", "label": "Parameter Sweep", "sublabel": "Phase 3: Runtime vs depth analysis", "pos": [400, 650], "size": [160, 80], "icon": "database" },
+    { "id": "async_fifo_mem", "type": "database", "label": "Dual-Port RAM", "pos": [650, 150], "size": [120, 60], "icon": "database" },
+    { "id": "sync_2ff", "type": "backend", "label": "2-Flop Synchronizer", "pos": [650, 250], "size": [120, 60], "icon": "backend" },
+    { "id": "wr_ptr", "type": "backend", "label": "Write Ptr & Full", "pos": [650, 350], "size": [160, 60], "icon": "backend" },
+    { "id": "rd_ptr", "type": "backend", "label": "Read Ptr & Empty", "pos": [678, 450], "size": [120, 60], "icon": "backend" },
+    { "id": "gray_invariant", "type": "backend", "label": "Gray Code Invariant", "pos": [200, 200], "size": [120, 50], "icon": "backend" },
+    { "id": "reset_behavior", "type": "backend", "label": "Reset Behavior", "pos": [200, 300], "size": [120, 50], "icon": "backend" },
+    { "id": "full_empty_formula", "type": "backend", "label": "Full/Empty Formula", "pos": [200, 400], "size": [120, 50], "icon": "backend" },
+    { "id": "tagged_scoreboard", "type": "backend", "label": "Tagged Scoreboard", "pos": [806, 500], "size": [140, 60], "icon": "backend" },
+    { "id": "p2a_no_overflow", "type": "backend", "label": "P2a: No Overflow", "pos": [650, 610], "size": [100, 40], "icon": "backend" },
+    { "id": "p2b_no_underflow", "type": "backend", "label": "P2b: No Underflow", "pos": [810, 630], "size": [120, 40], "icon": "backend" },
+    { "id": "p2c_integrity", "type": "backend", "label": "P2c: Data Integrity", "pos": [650, 680], "size": [120, 40], "icon": "backend" },
+    { "id": "p2d_full_flag", "type": "backend", "label": "P2d: Full Flag", "pos": [650, 730], "size": [120, 40], "icon": "backend" },
+    { "id": "sweep_script", "type": "backend", "label": "Sweep Script", "pos": [850, 200], "size": [100, 50], "icon": "backend" },
+    { "id": "plot_script", "type": "backend", "label": "Plot Script", "pos": [850, 300], "size": [100, 50], "icon": "backend" }
+  ],
+  "connections": [
+    { "id": "rtl-to-formal", "from": "rtl", "to": "formal_props", "label": "verified by", "variant": "emphasis" },
+    { "id": "rtl-to-integrity", "from": "rtl", "to": "integrity_proof", "label": "checked by", "variant": "emphasis" },
+    { "id": "rtl-to-sweep", "from": "rtl", "to": "parameter_sweep", "label": "analyzed by", "variant": "emphasis" },
+    { "id": "mem-to-wr", "from": "async_fifo_mem", "to": "wr_ptr", "label": "write data to", "variant": "default" },
+    { "id": "mem-to-rd", "from": "async_fifo_mem", "to": "rd_ptr", "label": "read data from", "variant": "default" },
+    { "id": "sync-to-wr", "from": "sync_2ff", "to": "wr_ptr", "label": "synchronizes read ptr", "variant": "dashed" },
+    { "id": "sync-to-rd", "from": "sync_2ff", "to": "rd_ptr", "label": "sync write ptr", "variant": "dashed" },
+    { "id": "gray-to-sync", "from": "gray_invariant", "to": "sync_2ff", "label": "enables safe CDC", "variant": "emphasis" },
+    { "id": "scoreboard-to-p2a", "from": "tagged_scoreboard", "to": "p2a_no_overflow", "label": "checks", "variant": "security" },
+    { "id": "scoreboard-to-p2b", "from": "tagged_scoreboard", "to": "p2b_no_underflow", "label": "checks", "variant": "security" },
+    { "id": "scoreboard-to-p2c", "from": "tagged_scoreboard", "to": "p2c_integrity", "label": "checks", "variant": "security" },
+    { "id": "scoreboard-to-p2d", "from": "tagged_scoreboard", "to": "p2d_full_flag", "label": "checks", "variant": "security" },
+    { "id": "sweep-to-plot", "from": "sweep_script", "to": "plot_script", "label": "generates data for", "variant": "dashed" }
+  ]
+}

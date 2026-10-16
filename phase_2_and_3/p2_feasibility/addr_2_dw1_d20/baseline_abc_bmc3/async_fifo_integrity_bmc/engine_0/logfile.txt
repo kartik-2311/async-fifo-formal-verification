@@ -1,0 +1,29 @@
+======== ABC command line "read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 20 -v; write_cex -a engine_0/trace.aiw"
+Warning: The network has no constraints.
+Running "bmc3". PI/PO/Reg = 50/16/109. And =    613. Lev =    19. ObjNums =   496.
+Params: FramesMax = 20. Start = 0. ConfLimit = 0. TimeOut = 0. SolveAll = 0.
+0 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.03 sec
+1 + : Var =      66. Cla =       96. Conf =      0. Learn =      0.    0 MB   4 MB     0.03 sec
+2 + : Var =     164. Cla =      388. Conf =      6. Learn =      3.    0 MB   4 MB     0.03 sec
+3 + : Var =     269. Cla =      708. Conf =     23. Learn =     14.    0 MB   4 MB     0.03 sec
+4 + : Var =     391. Cla =     1087. Conf =     60. Learn =     42.    0 MB   4 MB     0.03 sec
+5 + : Var =     531. Cla =     1520. Conf =    119. Learn =     92.    0 MB   4 MB     0.04 sec
+6 + : Var =     690. Cla =     2017. Conf =    201. Learn =    165.    0 MB   4 MB     0.04 sec
+7 + : Var =     863. Cla =     2542. Conf =    357. Learn =    310.    0 MB   4 MB     0.04 sec
+8 + : Var =    1055. Cla =     3107. Conf =    537. Learn =    479.    0 MB   4 MB     0.05 sec
+9 + : Var =    1260. Cla =     3731. Conf =    771. Learn =    700.    0 MB   4 MB     0.06 sec
+10 + : Var =    1471. Cla =     4389. Conf =   1044. Learn =    958.    0 MB   4 MB     0.07 sec
+11 + : Var =    1686. Cla =     5067. Conf =   1478. Learn =   1379.    0 MB   4 MB     0.09 sec
+12 + : Var =    1905. Cla =     5764. Conf =   2072. Learn =   1957.    0 MB   4 MB     0.11 sec
+13 + : Var =    2124. Cla =     6473. Conf =   2754. Learn =   2625.    0 MB   4 MB     0.15 sec
+14 + : Var =    2343. Cla =     7185. Conf =   3939. Learn =   3796.    0 MB   4 MB     0.22 sec
+15 + : Var =    2562. Cla =     7897. Conf =   5091. Learn =   4932.    0 MB   4 MB     0.29 sec
+16 + : Var =    2781. Cla =     8609. Conf =   6531. Learn =   6358.    0 MB   4 MB     0.37 sec
+17 + : Var =    3000. Cla =     9321. Conf =   8291. Learn =   8100.    0 MB   5 MB     0.50 sec
+18 + : Var =    3219. Cla =    10033. Conf =  10390. Learn =   8200.    0 MB   5 MB     0.70 sec
+19 + : Var =    3438. Cla =    10745. Conf =  12743. Learn =  10537.    0 MB   6 MB     0.89 sec
+Runtime:  CNF = 0.0 sec (1.1 %)  UNSAT = 0.8 sec (94.6 %)  SAT = 0.0 sec (0.0 %)  UNDEC = 0.0 sec (0.0 %)
+LStart(P) = 10000  LDelta(Q) = 2000  LRatio(R) = 80  ReduceDB = 1  Vars = 3438  Used = 3313 (96.36 %)
+Buffs = 643. Dups = 0.   Hash hits = 59.  Hash misses = 2611.  UniProps = 0.
+No output asserted in 20 frames. Resource limit reached (conf limit 0). Time =     0.89 sec
+Counter-example is not available.

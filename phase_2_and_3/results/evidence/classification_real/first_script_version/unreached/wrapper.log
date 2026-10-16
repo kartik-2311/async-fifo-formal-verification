@@ -1,0 +1,6 @@
+>>> ADDR_WIDTH=2 (4 entries)  depth=32  unreached.sby  cover
+    -> UNREACHED_COVER in 2s
+
+Results written to sweep_results.csv
+addr_width  entries  bmc_depth  sby_file       task   status           seconds
+2           4        32         unreached.sby  cover  UNREACHED_COVER  2

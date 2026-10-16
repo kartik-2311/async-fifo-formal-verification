@@ -1,0 +1,59 @@
+SBY 15:23:29 [async_fifo_integrity_cover] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_2/async_fifo_integrity_cover'.
+SBY 15:23:29 [async_fifo_integrity_cover] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_2/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_2/async_fifo_integrity_cover/src/async_fifo.sv'.
+SBY 15:23:29 [async_fifo_integrity_cover] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_2/async_fifo_integrity_top.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_2/async_fifo_integrity_cover/src/async_fifo_integrity_top.sv'.
+SBY 15:23:29 [async_fifo_integrity_cover] engine_0: smtbmc z3
+SBY 15:23:29 [async_fifo_integrity_cover] base: starting process "cd async_fifo_integrity_cover/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 15:23:30 [async_fifo_integrity_cover] base: finished (returncode=0)
+SBY 15:23:30 [async_fifo_integrity_cover] prep: starting process "cd async_fifo_integrity_cover/model; yosys -ql design_prep.log design_prep.ys"
+SBY 15:23:30 [async_fifo_integrity_cover] prep: finished (returncode=0)
+SBY 15:23:30 [async_fifo_integrity_cover] smt2: starting process "cd async_fifo_integrity_cover/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 15:23:30 [async_fifo_integrity_cover] smt2: finished (returncode=0)
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: starting process "cd async_fifo_integrity_cover; yosys-smtbmc -s z3 --presat -c --noprogress -t 20  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Solver: z3
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Reached cover statement in step 10 at async_fifo_integrity_top: async_fifo_integrity_top.sv:213.11-213.31 (_witness_.check_189)
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 12..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 13..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 14..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 15..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 16..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 17..
+SBY 15:23:30 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 18..
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Reached cover statement in step 18 at async_fifo_integrity_top: async_fifo_integrity_top.sv:201.7-201.56 (_witness_.check_175)
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 18..
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Checking cover reachability in step 19..
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Unreached cover statement at async_fifo_integrity_top: async_fifo_integrity_top.sv:214.11-214.54 (_witness_.check_191)
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: ##   0:00:00  Status: failed
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: finished (returncode=1)
+SBY 15:23:31 [async_fifo_integrity_cover] engine_0: Status returned by engine: FAIL
+SBY 15:23:31 [async_fifo_integrity_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 15:23:31 [async_fifo_integrity_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 15:23:31 [async_fifo_integrity_cover] summary: engine_0 (smtbmc z3) returned FAIL
+SBY 15:23:31 [async_fifo_integrity_cover] summary: cover trace: async_fifo_integrity_cover/engine_0/trace0.vcd
+SBY 15:23:31 [async_fifo_integrity_cover] summary:   reached cover statement async_fifo_integrity_top._witness_.check_189 at async_fifo_integrity_top.sv:213.11-213.31 step 10
+SBY 15:23:31 [async_fifo_integrity_cover] summary: cover trace: async_fifo_integrity_cover/engine_0/trace1.vcd
+SBY 15:23:31 [async_fifo_integrity_cover] summary:   reached cover statement async_fifo_integrity_top._witness_.check_175 at async_fifo_integrity_top.sv:201.7-201.56 step 18
+SBY 15:23:31 [async_fifo_integrity_cover] summary: unreached cover statements:
+SBY 15:23:31 [async_fifo_integrity_cover] summary:   async_fifo_integrity_top._witness_.check_191 at async_fifo_integrity_top.sv:214.11-214.54
+SBY 15:23:31 [async_fifo_integrity_cover] DONE (FAIL, rc=2)
+SBY 15:23:31 The following tasks failed: ['cover']

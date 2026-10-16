@@ -1,0 +1,6 @@
+# date: 2026-10-11T05:15:54Z
+# yosys: Yosys 0.69+20 (git sha1 3a8289484, GNU /usr/bin/c++ 15.2.0)
+# z3: Z3 version 4.13.3 - 64 bit
+# data_width: 8  timeout_s: 30
+addr_width,entries,bmc_depth,sby_file,task,status,seconds
+2,4,32,pass.sby,bmc,PASS,2

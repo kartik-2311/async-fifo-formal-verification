@@ -1,0 +1,29 @@
+# date: 2026-10-10T15:19:12Z
+# yosys: Yosys 0.69+20 (git sha1 3a8289484, GNU /usr/bin/c++ 15.2.0)
+# z3: Z3 version 4.13.3 - 64 bit
+# data_width: 8  timeout_s: 1800
+addr_width,entries,bmc_depth,sby_file,task,status,seconds
+2,4,20,async_fifo_multiclock.sby,bmc,FAIL,2
+2,4,20,async_fifo_multiclock.sby,prove,FAIL,2
+2,4,20,async_fifo_multiclock.sby,cover,PASS,3
+2,4,20,async_fifo_integrity.sby,bmc,PASS,128
+2,4,20,async_fifo_integrity.sby,prove,UNKNOWN,122
+2,4,20,async_fifo_integrity.sby,cover,FAIL,2
+3,8,28,async_fifo_multiclock.sby,bmc,FAIL,2
+3,8,28,async_fifo_multiclock.sby,prove,FAIL,2
+3,8,28,async_fifo_multiclock.sby,cover,PASS,2
+3,8,28,async_fifo_integrity.sby,bmc,PASS,1467
+3,8,28,async_fifo_integrity.sby,prove,UNKNOWN,1593
+3,8,28,async_fifo_integrity.sby,cover,PASS,6
+4,16,44,async_fifo_multiclock.sby,bmc,FAIL,3
+4,16,44,async_fifo_multiclock.sby,prove,FAIL,2
+4,16,44,async_fifo_multiclock.sby,cover,PASS,3
+4,16,44,async_fifo_integrity.sby,bmc,TIMEOUT,1800
+4,16,44,async_fifo_integrity.sby,prove,TIMEOUT,1800
+4,16,44,async_fifo_integrity.sby,cover,PASS,47
+5,32,76,async_fifo_multiclock.sby,bmc,FAIL,2
+5,32,76,async_fifo_multiclock.sby,prove,FAIL,3
+5,32,76,async_fifo_multiclock.sby,cover,PASS,2
+5,32,76,async_fifo_integrity.sby,bmc,TIMEOUT,1800
+5,32,76,async_fifo_integrity.sby,prove,TIMEOUT,1800
+5,32,76,async_fifo_integrity.sby,cover,PASS,663

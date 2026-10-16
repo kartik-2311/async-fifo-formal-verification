@@ -1,0 +1,9 @@
+# running in pass_bmc/src/
+plugin -i slang
+read_slang pass.sv --top pass_top
+prep -top pass_top
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

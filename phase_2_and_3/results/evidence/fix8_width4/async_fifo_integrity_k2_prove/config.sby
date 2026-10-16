@@ -1,0 +1,16 @@
+[options]
+multiclock on
+mode prove
+depth 2
+
+[engines]
+smtbmc z3
+
+[script]
+plugin -i slang
+read_slang async_fifo.sv async_fifo_integrity_top.sv --top async_fifo_integrity_top
+prep -top async_fifo_integrity_top
+
+[files]
+async_fifo.sv
+async_fifo_integrity_top.sv

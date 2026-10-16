@@ -1,0 +1,5 @@
+Command: sby -f async_fifo_integrity.sby prove (ADDR_WIDTH=4).
+Auditor cap: 1800 seconds.
+Outcome: TIMEOUT; the timeout wrapper returned 124.
+The last SBY progress before termination was waiting in the basecase after checking assertions at step 28.
+The raw SBY log has no PASS, FAIL, or induction result; this is not a proof or counterexample.

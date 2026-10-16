@@ -1,0 +1,85 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+20 (git sha1 3a8289484, GNU /usr/bin/c++ 15.2.0)
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module async_fifo.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing ASYNC2SYNC pass.
+Replacing async_fifo.$driver$u_rd_ptr.rd_bin ($aldff): ALOAD=\rd_rst_n, AD=5'00000, D=\u_rd_ptr.rd_bin_next, Q=\u_rd_ptr.rd_bin
+Replacing async_fifo.$driver$u_rd_ptr.rd_empty ($aldff): ALOAD=\rd_rst_n, AD=1'1, D=\u_rd_ptr.rd_empty_next, Q=\u_rd_ptr.rd_empty
+Replacing async_fifo.$driver$u_rd_ptr.rd_gray_ptr ($aldff): ALOAD=\rd_rst_n, AD=5'00000, D=\u_rd_ptr.rd_gray_next, Q=\u_rd_ptr.rd_gray_ptr
+Replacing async_fifo.$driver$u_sync_rd2wr.meta_ff ($aldff): ALOAD=\wr_rst_n, AD=5'00000, D=\u_rd_ptr.rd_gray_ptr, Q=\u_sync_rd2wr.meta_ff
+Replacing async_fifo.$driver$u_sync_rd2wr.sync_ff ($aldff): ALOAD=\wr_rst_n, AD=5'00000, D=\u_sync_rd2wr.meta_ff, Q=\u_sync_rd2wr.sync_ff
+Replacing async_fifo.$driver$u_sync_wr2rd.meta_ff ($aldff): ALOAD=\rd_rst_n, AD=5'00000, D=\u_wr_ptr.wr_gray_ptr, Q=\u_sync_wr2rd.meta_ff
+Replacing async_fifo.$driver$u_sync_wr2rd.sync_ff ($aldff): ALOAD=\rd_rst_n, AD=5'00000, D=\u_sync_wr2rd.meta_ff, Q=\u_sync_wr2rd.sync_ff
+Replacing async_fifo.$driver$u_wr_ptr.wr_bin ($aldff): ALOAD=\wr_rst_n, AD=5'00000, D=\u_wr_ptr.wr_bin_next, Q=\u_wr_ptr.wr_bin
+Replacing async_fifo.$driver$u_wr_ptr.wr_full ($aldff): ALOAD=\wr_rst_n, AD=1'0, D=\u_wr_ptr.wr_full_next, Q=\u_wr_ptr.wr_full
+Replacing async_fifo.$driver$u_wr_ptr.wr_gray_ptr ($aldff): ALOAD=\wr_rst_n, AD=5'00000, D=\u_wr_ptr.wr_gray_next, Q=\u_wr_ptr.wr_gray_ptr
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \async_fifo..
+Removed 24 unused cells and 24 unused wires.
+<suppressed ~25 debug messages>
+
+7. Executing FORMALFF pass.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \async_fifo..
+Removed 17 unused cells and 17 unused wires.
+<suppressed ~20 debug messages>
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module async_fifo...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module async_fifo.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\async_fifo'.
+Computing hashes of 108 cells of `\async_fifo'.
+Finding duplicate cells in `\async_fifo'.
+Computing hashes of 106 cells of `\async_fifo'.
+Finding duplicate cells in `\async_fifo'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \async_fifo..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \async_fifo..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: 3001a8caf2, time: 0.19s, user: 0.15s, system: 0.02s, MEM: 61.42 MB peak
+Yosys 0.69+20 (git sha1 3a8289484, GNU /usr/bin/c++ 15.2.0)
+Time spent: 45% 4x opt_clean (0 sec), 7% 2x read_rtlil (0 sec), ...

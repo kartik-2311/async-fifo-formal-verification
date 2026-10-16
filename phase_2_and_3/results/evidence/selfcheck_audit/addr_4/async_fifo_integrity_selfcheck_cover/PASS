@@ -1,0 +1,19 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:06:36 (396)
+Elapsed process time [H:MM:SS (secs)]: 0:06:35 (395)
+engine_0 (smtbmc z3) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement async_fifo_integrity_selfcheck._witness_.check_181 at async_fifo_integrity_selfcheck.sv:150.5-150.21 step 1
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement async_fifo_integrity_selfcheck._witness_.check_114 at async_fifo_integrity_selfcheck.sv:94.7-94.20 step 3
+  reached cover statement async_fifo_integrity_selfcheck._witness_.check_147 at async_fifo_integrity_selfcheck.sv:125.7-125.20 step 3
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement async_fifo_integrity_selfcheck._witness_.check_101 at async_fifo_integrity_selfcheck.sv:83.5-83.27 step 5
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement async_fifo_integrity_selfcheck._witness_.check_138 at async_fifo_integrity_selfcheck.sv:120.5-120.27 step 5
+cover trace: engine_0/trace4.vcd
+cover trace: engine_0/trace4.yw
+  reached cover statement async_fifo_integrity_selfcheck._witness_.check_159 at async_fifo_integrity_selfcheck.sv:137.11-137.24 step 72

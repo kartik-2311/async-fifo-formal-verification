@@ -1,0 +1,156 @@
+SBY  5:38:09 [max_tag_width5_cover] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_max_tag_width5/run/max_tag_width5_cover'.
+SBY  5:38:09 [max_tag_width5_cover] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_max_tag_width5/run/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_max_tag_width5/run/max_tag_width5_cover/src/async_fifo.sv'.
+SBY  5:38:09 [max_tag_width5_cover] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_max_tag_width5/run/async_fifo_integrity_selfcheck.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_max_tag_width5/run/max_tag_width5_cover/src/async_fifo_integrity_selfcheck.sv'.
+SBY  5:38:09 [max_tag_width5_cover] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_max_tag_width5/run/max_tag_width5.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_max_tag_width5/run/max_tag_width5_cover/src/max_tag_width5.sv'.
+SBY  5:38:09 [max_tag_width5_cover] engine_0: smtbmc z3
+SBY  5:38:09 [max_tag_width5_cover] base: starting process "cd max_tag_width5_cover/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  5:38:10 [max_tag_width5_cover] base: finished (returncode=0)
+SBY  5:38:10 [max_tag_width5_cover] prep: starting process "cd max_tag_width5_cover/model; yosys -ql design_prep.log design_prep.ys"
+SBY  5:38:10 [max_tag_width5_cover] prep: finished (returncode=0)
+SBY  5:38:10 [max_tag_width5_cover] smt2: starting process "cd max_tag_width5_cover/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY  5:38:10 [max_tag_width5_cover] smt2: finished (returncode=0)
+SBY  5:38:10 [max_tag_width5_cover] engine_0: starting process "cd max_tag_width5_cover; yosys-smtbmc -s z3 --presat -c --noprogress -t 160  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY  5:38:10 [max_tag_width5_cover] engine_0: ##   0:00:00  Solver: z3
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Reached cover statement in step 1 at async_fifo_integrity_max_tag_width5: async_fifo_integrity_selfcheck.sv:150.5-150.21 (_witness_.check_181)
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Reached cover statement in step 3 at async_fifo_integrity_max_tag_width5: async_fifo_integrity_selfcheck.sv:94.7-94.20 (_witness_.check_114)
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Reached cover statement in step 3 at async_fifo_integrity_max_tag_width5: async_fifo_integrity_selfcheck.sv:125.7-125.20 (_witness_.check_147)
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at async_fifo_integrity_max_tag_width5: async_fifo_integrity_selfcheck.sv:120.5-120.27 (_witness_.check_138)
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at async_fifo_integrity_max_tag_width5: async_fifo_integrity_selfcheck.sv:83.5-83.27 (_witness_.check_101)
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 12..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 13..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 14..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 15..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 16..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 17..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 18..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 19..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 20..
+SBY  5:38:11 [max_tag_width5_cover] engine_0: ##   0:00:00  Checking cover reachability in step 21..
+SBY  5:38:12 [max_tag_width5_cover] engine_0: ##   0:00:01  Checking cover reachability in step 22..
+SBY  5:38:12 [max_tag_width5_cover] engine_0: ##   0:00:01  Checking cover reachability in step 23..
+SBY  5:38:12 [max_tag_width5_cover] engine_0: ##   0:00:01  Checking cover reachability in step 24..
+SBY  5:38:13 [max_tag_width5_cover] engine_0: ##   0:00:02  Checking cover reachability in step 25..
+SBY  5:38:13 [max_tag_width5_cover] engine_0: ##   0:00:02  Checking cover reachability in step 26..
+SBY  5:38:13 [max_tag_width5_cover] engine_0: ##   0:00:02  Checking cover reachability in step 27..
+SBY  5:38:14 [max_tag_width5_cover] engine_0: ##   0:00:03  Checking cover reachability in step 28..
+SBY  5:38:14 [max_tag_width5_cover] engine_0: ##   0:00:03  Checking cover reachability in step 29..
+SBY  5:38:15 [max_tag_width5_cover] engine_0: ##   0:00:04  Checking cover reachability in step 30..
+SBY  5:38:16 [max_tag_width5_cover] engine_0: ##   0:00:05  Checking cover reachability in step 31..
+SBY  5:38:16 [max_tag_width5_cover] engine_0: ##   0:00:05  Checking cover reachability in step 32..
+SBY  5:38:17 [max_tag_width5_cover] engine_0: ##   0:00:06  Checking cover reachability in step 33..
+SBY  5:38:18 [max_tag_width5_cover] engine_0: ##   0:00:07  Checking cover reachability in step 34..
+SBY  5:38:18 [max_tag_width5_cover] engine_0: ##   0:00:07  Checking cover reachability in step 35..
+SBY  5:38:19 [max_tag_width5_cover] engine_0: ##   0:00:08  Checking cover reachability in step 36..
+SBY  5:38:20 [max_tag_width5_cover] engine_0: ##   0:00:09  Checking cover reachability in step 37..
+SBY  5:38:23 [max_tag_width5_cover] engine_0: ##   0:00:12  Checking cover reachability in step 38..
+SBY  5:38:24 [max_tag_width5_cover] engine_0: ##   0:00:13  Checking cover reachability in step 39..
+SBY  5:38:26 [max_tag_width5_cover] engine_0: ##   0:00:15  Checking cover reachability in step 40..
+SBY  5:38:28 [max_tag_width5_cover] engine_0: ##   0:00:17  Checking cover reachability in step 41..
+SBY  5:38:29 [max_tag_width5_cover] engine_0: ##   0:00:18  Checking cover reachability in step 42..
+SBY  5:38:32 [max_tag_width5_cover] engine_0: ##   0:00:21  Checking cover reachability in step 43..
+SBY  5:38:34 [max_tag_width5_cover] engine_0: ##   0:00:23  Checking cover reachability in step 44..
+SBY  5:38:36 [max_tag_width5_cover] engine_0: ##   0:00:25  Checking cover reachability in step 45..
+SBY  5:38:39 [max_tag_width5_cover] engine_0: ##   0:00:28  Checking cover reachability in step 46..
+SBY  5:38:42 [max_tag_width5_cover] engine_0: ##   0:00:31  Checking cover reachability in step 47..
+SBY  5:38:46 [max_tag_width5_cover] engine_0: ##   0:00:35  Checking cover reachability in step 48..
+SBY  5:38:49 [max_tag_width5_cover] engine_0: ##   0:00:38  Checking cover reachability in step 49..
+SBY  5:38:53 [max_tag_width5_cover] engine_0: ##   0:00:42  Checking cover reachability in step 50..
+SBY  5:38:56 [max_tag_width5_cover] engine_0: ##   0:00:45  Checking cover reachability in step 51..
+SBY  5:39:00 [max_tag_width5_cover] engine_0: ##   0:00:49  Checking cover reachability in step 52..
+SBY  5:39:05 [max_tag_width5_cover] engine_0: ##   0:00:54  Checking cover reachability in step 53..
+SBY  5:39:09 [max_tag_width5_cover] engine_0: ##   0:00:58  Checking cover reachability in step 54..
+SBY  5:39:16 [max_tag_width5_cover] engine_0: ##   0:01:05  Checking cover reachability in step 55..
+SBY  5:39:22 [max_tag_width5_cover] engine_0: ##   0:01:11  Checking cover reachability in step 56..
+SBY  5:39:28 [max_tag_width5_cover] engine_0: ##   0:01:17  Checking cover reachability in step 57..
+SBY  5:39:33 [max_tag_width5_cover] engine_0: ##   0:01:22  Checking cover reachability in step 58..
+SBY  5:39:37 [max_tag_width5_cover] engine_0: ##   0:01:26  Checking cover reachability in step 59..
+SBY  5:39:46 [max_tag_width5_cover] engine_0: ##   0:01:35  Checking cover reachability in step 60..
+SBY  5:39:55 [max_tag_width5_cover] engine_0: ##   0:01:44  Checking cover reachability in step 61..
+SBY  5:40:01 [max_tag_width5_cover] engine_0: ##   0:01:50  Checking cover reachability in step 62..
+SBY  5:40:10 [max_tag_width5_cover] engine_0: ##   0:01:59  Checking cover reachability in step 63..
+SBY  5:40:18 [max_tag_width5_cover] engine_0: ##   0:02:07  Checking cover reachability in step 64..
+SBY  5:40:27 [max_tag_width5_cover] engine_0: ##   0:02:16  Checking cover reachability in step 65..
+SBY  5:40:35 [max_tag_width5_cover] engine_0: ##   0:02:24  Checking cover reachability in step 66..
+SBY  5:40:42 [max_tag_width5_cover] engine_0: ##   0:02:31  Checking cover reachability in step 67..
+SBY  5:40:51 [max_tag_width5_cover] engine_0: ##   0:02:40  Checking cover reachability in step 68..
+SBY  5:40:59 [max_tag_width5_cover] engine_0: ##   0:02:48  Checking cover reachability in step 69..
+SBY  5:41:07 [max_tag_width5_cover] engine_0: ##   0:02:56  Checking cover reachability in step 70..
+SBY  5:41:16 [max_tag_width5_cover] engine_0: ##   0:03:05  Checking cover reachability in step 71..
+SBY  5:41:30 [max_tag_width5_cover] engine_0: ##   0:03:19  Checking cover reachability in step 72..
+SBY  5:41:40 [max_tag_width5_cover] engine_0: ##   0:03:29  Checking cover reachability in step 73..
+SBY  5:41:59 [max_tag_width5_cover] engine_0: ##   0:03:48  Checking cover reachability in step 74..
+SBY  5:42:12 [max_tag_width5_cover] engine_0: ##   0:04:01  Checking cover reachability in step 75..
+SBY  5:42:30 [max_tag_width5_cover] engine_0: ##   0:04:19  Checking cover reachability in step 76..
+SBY  5:42:47 [max_tag_width5_cover] engine_0: ##   0:04:36  Checking cover reachability in step 77..
+SBY  5:43:03 [max_tag_width5_cover] engine_0: ##   0:04:52  Checking cover reachability in step 78..
+SBY  5:43:21 [max_tag_width5_cover] engine_0: ##   0:05:10  Checking cover reachability in step 79..
+SBY  5:43:40 [max_tag_width5_cover] engine_0: ##   0:05:29  Checking cover reachability in step 80..
+SBY  5:44:02 [max_tag_width5_cover] engine_0: ##   0:05:51  Checking cover reachability in step 81..
+SBY  5:44:26 [max_tag_width5_cover] engine_0: ##   0:06:15  Checking cover reachability in step 82..
+SBY  5:44:47 [max_tag_width5_cover] engine_0: ##   0:06:36  Checking cover reachability in step 83..
+SBY  5:45:06 [max_tag_width5_cover] engine_0: ##   0:06:55  Checking cover reachability in step 84..
+SBY  5:45:28 [max_tag_width5_cover] engine_0: ##   0:07:17  Checking cover reachability in step 85..
+SBY  5:46:05 [max_tag_width5_cover] engine_0: ##   0:07:54  Checking cover reachability in step 86..
+SBY  5:46:28 [max_tag_width5_cover] engine_0: ##   0:08:17  Checking cover reachability in step 87..
+SBY  5:46:52 [max_tag_width5_cover] engine_0: ##   0:08:41  Checking cover reachability in step 88..
+SBY  5:47:18 [max_tag_width5_cover] engine_0: ##   0:09:07  Checking cover reachability in step 89..
+SBY  5:48:18 [max_tag_width5_cover] engine_0: ##   0:10:07  waiting for solver (1 minute)
+SBY  5:49:11 [max_tag_width5_cover] engine_0: ##   0:11:00  Checking cover reachability in step 90..
+SBY  5:50:11 [max_tag_width5_cover] engine_0: ##   0:12:00  waiting for solver (1 minute)
+SBY  5:51:07 [max_tag_width5_cover] engine_0: ##   0:12:56  Checking cover reachability in step 91..
+SBY  5:52:07 [max_tag_width5_cover] engine_0: ##   0:13:56  waiting for solver (1 minute)
+SBY  5:53:01 [max_tag_width5_cover] engine_0: ##   0:14:50  Checking cover reachability in step 92..
+SBY  5:54:01 [max_tag_width5_cover] engine_0: ##   0:15:50  waiting for solver (1 minute)
+SBY  5:55:39 [max_tag_width5_cover] engine_0: ##   0:17:28  Checking cover reachability in step 93..
+SBY  5:56:39 [max_tag_width5_cover] engine_0: ##   0:18:28  waiting for solver (1 minute)
+SBY  5:58:14 [max_tag_width5_cover] engine_0: ##   0:20:03  Checking cover reachability in step 94..
+SBY  5:59:14 [max_tag_width5_cover] engine_0: ##   0:21:03  waiting for solver (1 minute)
+SBY  6:00:32 [max_tag_width5_cover] engine_0: ##   0:22:21  Checking cover reachability in step 95..
+SBY  6:01:32 [max_tag_width5_cover] engine_0: ##   0:23:21  waiting for solver (1 minute)
+SBY  6:02:26 [max_tag_width5_cover] engine_0: ##   0:24:15  Checking cover reachability in step 96..
+SBY  6:02:58 [max_tag_width5_cover] engine_0: ##   0:24:47  Checking cover reachability in step 97..
+SBY  6:03:28 [max_tag_width5_cover] engine_0: ##   0:25:17  Checking cover reachability in step 98..
+SBY  6:04:12 [max_tag_width5_cover] engine_0: ##   0:26:01  Checking cover reachability in step 99..
+SBY  6:05:01 [max_tag_width5_cover] engine_0: ##   0:26:50  Checking cover reachability in step 100..
+SBY  6:06:01 [max_tag_width5_cover] engine_0: ##   0:27:50  waiting for solver (1 minute)
+SBY  6:06:27 [max_tag_width5_cover] engine_0: ##   0:28:16  Checking cover reachability in step 101..
+SBY  6:07:27 [max_tag_width5_cover] engine_0: ##   0:29:16  waiting for solver (1 minute)
+SBY  6:07:43 [max_tag_width5_cover] engine_0: ##   0:29:32  Checking cover reachability in step 102..
+SBY  6:08:09 [max_tag_width5_cover] engine_0: terminating process

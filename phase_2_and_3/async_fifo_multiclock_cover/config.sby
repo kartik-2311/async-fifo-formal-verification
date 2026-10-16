@@ -1,0 +1,18 @@
+[options]
+# Same Phase 1 properties as async_fifo.sby, but with free independent clocks.
+multiclock on
+
+mode cover
+depth 30
+
+[engines]
+smtbmc z3
+
+[script]
+plugin -i slang
+read_slang async_fifo.sv async_fifo_formal.sv --top async_fifo
+prep -top async_fifo
+
+[files]
+async_fifo.sv
+async_fifo_formal.sv

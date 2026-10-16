@@ -1,0 +1,6 @@
+Command: PowerShell comment-stripped whole-word count over phase_2_and_3\async_fifo_integrity_top.sv
+Scope: final active F6 Phase 2 source
+assert=16
+cover=3
+assume=0
+initial=2

@@ -1,0 +1,165 @@
+SBY 14:46:37 [async_fifo_integrity_prove] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_5/async_fifo_integrity_prove'.
+SBY 14:46:38 [async_fifo_integrity_prove] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_5/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_5/async_fifo_integrity_prove/src/async_fifo.sv'.
+SBY 14:46:38 [async_fifo_integrity_prove] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_5/async_fifo_integrity_top.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_5/async_fifo_integrity_prove/src/async_fifo_integrity_top.sv'.
+SBY 14:46:38 [async_fifo_integrity_prove] engine_0: smtbmc z3
+SBY 14:46:38 [async_fifo_integrity_prove] base: starting process "cd async_fifo_integrity_prove/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 14:46:38 [async_fifo_integrity_prove] base: finished (returncode=0)
+SBY 14:46:38 [async_fifo_integrity_prove] prep: starting process "cd async_fifo_integrity_prove/model; yosys -ql design_prep.log design_prep.ys"
+SBY 14:46:39 [async_fifo_integrity_prove] prep: finished (returncode=0)
+SBY 14:46:39 [async_fifo_integrity_prove] smt2: starting process "cd async_fifo_integrity_prove/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 14:46:39 [async_fifo_integrity_prove] smt2: finished (returncode=0)
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: starting process "cd async_fifo_integrity_prove; yosys-smtbmc -s z3 --presat --noprogress -t 140  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.induction: starting process "cd async_fifo_integrity_prove; yosys-smtbmc -s z3 --presat -i --noprogress -t 140  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2"
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Solver: z3
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Solver: z3
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY 14:46:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 140..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 139..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 138..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 137..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 136..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 135..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 134..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 133..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 132..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 131..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 130..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 129..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:01  Trying induction in step 128..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:01  Trying induction in step 127..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 9..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:01  Trying induction in step 126..
+SBY 14:46:40 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 9..
+SBY 14:46:41 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:01  Trying induction in step 125..
+SBY 14:46:41 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 10..
+SBY 14:46:41 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 10..
+SBY 14:46:41 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:02  Trying induction in step 124..
+SBY 14:46:42 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:03  Trying induction in step 123..
+SBY 14:46:43 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:03  Checking assumptions in step 11..
+SBY 14:46:43 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:03  Checking assertions in step 11..
+SBY 14:46:44 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:04  Trying induction in step 122..
+SBY 14:46:44 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:05  Trying induction in step 121..
+SBY 14:46:45 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:06  Checking assumptions in step 12..
+SBY 14:46:45 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:06  Trying induction in step 120..
+SBY 14:46:45 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:06  Checking assertions in step 12..
+SBY 14:46:46 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:07  Trying induction in step 119..
+SBY 14:46:49 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:09  Checking assumptions in step 13..
+SBY 14:46:49 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:09  Checking assertions in step 13..
+SBY 14:46:49 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:09  Trying induction in step 118..
+SBY 14:46:52 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:12  Trying induction in step 117..
+SBY 14:46:55 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:15  Trying induction in step 116..
+SBY 14:46:57 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:17  Checking assumptions in step 14..
+SBY 14:46:57 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:17  Checking assertions in step 14..
+SBY 14:46:57 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:18  Trying induction in step 115..
+SBY 14:47:00 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:20  Trying induction in step 114..
+SBY 14:47:02 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:23  Trying induction in step 113..
+SBY 14:47:05 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:26  Trying induction in step 112..
+SBY 14:47:06 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:27  Trying induction in step 111..
+SBY 14:47:06 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:27  Checking assumptions in step 15..
+SBY 14:47:06 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:27  Checking assertions in step 15..
+SBY 14:47:07 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:28  Trying induction in step 110..
+SBY 14:47:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:29  Trying induction in step 109..
+SBY 14:47:21 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:41  Trying induction in step 108..
+SBY 14:47:25 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:45  Checking assumptions in step 16..
+SBY 14:47:25 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:46  Trying induction in step 107..
+SBY 14:47:25 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:46  Checking assertions in step 16..
+SBY 14:47:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:01:01  Trying induction in step 106..
+SBY 14:47:46 [async_fifo_integrity_prove] engine_0.induction: ##   0:01:07  Trying induction in step 105..
+SBY 14:47:47 [async_fifo_integrity_prove] engine_0.induction: ##   0:01:07  Trying induction in step 104..
+SBY 14:47:48 [async_fifo_integrity_prove] engine_0.basecase: ##   0:01:08  Checking assumptions in step 17..
+SBY 14:47:48 [async_fifo_integrity_prove] engine_0.basecase: ##   0:01:09  Checking assertions in step 17..
+SBY 14:47:50 [async_fifo_integrity_prove] engine_0.induction: ##   0:01:11  Trying induction in step 103..
+SBY 14:48:00 [async_fifo_integrity_prove] engine_0.induction: ##   0:01:20  Trying induction in step 102..
+SBY 14:48:02 [async_fifo_integrity_prove] engine_0.induction: ##   0:01:22  Trying induction in step 101..
+SBY 14:48:09 [async_fifo_integrity_prove] engine_0.induction: ##   0:01:29  Trying induction in step 100..
+SBY 14:48:18 [async_fifo_integrity_prove] engine_0.basecase: ##   0:01:38  Checking assumptions in step 18..
+SBY 14:48:18 [async_fifo_integrity_prove] engine_0.basecase: ##   0:01:39  Checking assertions in step 18..
+SBY 14:48:18 [async_fifo_integrity_prove] engine_0.induction: ##   0:01:39  Trying induction in step 99..
+SBY 14:48:57 [async_fifo_integrity_prove] engine_0.induction: ##   0:02:18  Trying induction in step 98..
+SBY 14:49:15 [async_fifo_integrity_prove] engine_0.induction: ##   0:02:36  Trying induction in step 97..
+SBY 14:49:16 [async_fifo_integrity_prove] engine_0.basecase: ##   0:02:37  Checking assumptions in step 19..
+SBY 14:49:16 [async_fifo_integrity_prove] engine_0.basecase: ##   0:02:37  Checking assertions in step 19..
+SBY 14:49:31 [async_fifo_integrity_prove] engine_0.induction: ##   0:02:51  Trying induction in step 96..
+SBY 14:49:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:03:01  Trying induction in step 95..
+SBY 14:50:16 [async_fifo_integrity_prove] engine_0.basecase: ##   0:03:37  waiting for solver (1 minute)
+SBY 14:50:19 [async_fifo_integrity_prove] engine_0.induction: ##   0:03:40  Trying induction in step 94..
+SBY 14:50:28 [async_fifo_integrity_prove] engine_0.induction: ##   0:03:49  Trying induction in step 93..
+SBY 14:50:32 [async_fifo_integrity_prove] engine_0.basecase: ##   0:03:53  Checking assumptions in step 20..
+SBY 14:50:33 [async_fifo_integrity_prove] engine_0.basecase: ##   0:03:53  Checking assertions in step 20..
+SBY 14:50:40 [async_fifo_integrity_prove] engine_0.induction: ##   0:04:01  Trying induction in step 92..
+SBY 14:51:18 [async_fifo_integrity_prove] engine_0.induction: ##   0:04:38  Trying induction in step 91..
+SBY 14:51:33 [async_fifo_integrity_prove] engine_0.basecase: ##   0:04:53  waiting for solver (1 minute)
+SBY 14:51:38 [async_fifo_integrity_prove] engine_0.induction: ##   0:04:59  Trying induction in step 90..
+SBY 14:51:57 [async_fifo_integrity_prove] engine_0.basecase: ##   0:05:17  Checking assumptions in step 21..
+SBY 14:51:58 [async_fifo_integrity_prove] engine_0.basecase: ##   0:05:19  Checking assertions in step 21..
+SBY 14:52:38 [async_fifo_integrity_prove] engine_0.induction: ##   0:05:59  waiting for solver (1 minute)
+SBY 14:52:39 [async_fifo_integrity_prove] engine_0.induction: ##   0:06:00  Trying induction in step 89..
+SBY 14:52:53 [async_fifo_integrity_prove] engine_0.induction: ##   0:06:14  Trying induction in step 88..
+SBY 14:52:58 [async_fifo_integrity_prove] engine_0.basecase: ##   0:06:19  waiting for solver (1 minute)
+SBY 14:53:11 [async_fifo_integrity_prove] engine_0.induction: ##   0:06:31  Trying induction in step 87..
+SBY 14:53:28 [async_fifo_integrity_prove] engine_0.induction: ##   0:06:49  Trying induction in step 86..
+SBY 14:53:42 [async_fifo_integrity_prove] engine_0.basecase: ##   0:07:03  Checking assumptions in step 22..
+SBY 14:53:44 [async_fifo_integrity_prove] engine_0.basecase: ##   0:07:05  Checking assertions in step 22..
+SBY 14:53:45 [async_fifo_integrity_prove] engine_0.induction: ##   0:07:06  Trying induction in step 85..
+SBY 14:54:05 [async_fifo_integrity_prove] engine_0.induction: ##   0:07:26  Trying induction in step 84..
+SBY 14:54:38 [async_fifo_integrity_prove] engine_0.induction: ##   0:07:59  Trying induction in step 83..
+SBY 14:54:44 [async_fifo_integrity_prove] engine_0.basecase: ##   0:08:05  waiting for solver (1 minute)
+SBY 14:55:16 [async_fifo_integrity_prove] engine_0.induction: ##   0:08:37  Trying induction in step 82..
+SBY 14:55:42 [async_fifo_integrity_prove] engine_0.induction: ##   0:09:03  Trying induction in step 81..
+SBY 14:56:03 [async_fifo_integrity_prove] engine_0.basecase: ##   0:09:23  Checking assumptions in step 23..
+SBY 14:56:03 [async_fifo_integrity_prove] engine_0.basecase: ##   0:09:24  Checking assertions in step 23..
+SBY 14:56:42 [async_fifo_integrity_prove] engine_0.induction: ##   0:10:03  waiting for solver (1 minute)
+SBY 14:56:45 [async_fifo_integrity_prove] engine_0.induction: ##   0:10:06  Trying induction in step 80..
+SBY 14:57:03 [async_fifo_integrity_prove] engine_0.basecase: ##   0:10:24  waiting for solver (1 minute)
+SBY 14:57:45 [async_fifo_integrity_prove] engine_0.induction: ##   0:11:06  waiting for solver (1 minute)
+SBY 14:59:19 [async_fifo_integrity_prove] engine_0.induction: ##   0:12:39  Trying induction in step 79..
+SBY 15:00:19 [async_fifo_integrity_prove] engine_0.induction: ##   0:13:39  waiting for solver (1 minute)
+SBY 15:00:20 [async_fifo_integrity_prove] engine_0.basecase: ##   0:13:40  Checking assumptions in step 24..
+SBY 15:00:21 [async_fifo_integrity_prove] engine_0.basecase: ##   0:13:42  Checking assertions in step 24..
+SBY 15:01:21 [async_fifo_integrity_prove] engine_0.basecase: ##   0:14:42  waiting for solver (1 minute)
+SBY 15:02:32 [async_fifo_integrity_prove] engine_0.induction: ##   0:15:53  Trying induction in step 78..
+SBY 15:03:04 [async_fifo_integrity_prove] engine_0.induction: ##   0:16:25  Trying induction in step 77..
+SBY 15:03:51 [async_fifo_integrity_prove] engine_0.basecase: ##   0:17:12  Checking assumptions in step 25..
+SBY 15:03:56 [async_fifo_integrity_prove] engine_0.basecase: ##   0:17:17  Checking assertions in step 25..
+SBY 15:04:04 [async_fifo_integrity_prove] engine_0.induction: ##   0:17:25  waiting for solver (1 minute)
+SBY 15:04:52 [async_fifo_integrity_prove] engine_0.induction: ##   0:18:13  Trying induction in step 76..
+SBY 15:04:56 [async_fifo_integrity_prove] engine_0.basecase: ##   0:18:17  waiting for solver (1 minute)
+SBY 15:05:52 [async_fifo_integrity_prove] engine_0.induction: ##   0:19:13  waiting for solver (1 minute)
+SBY 15:06:18 [async_fifo_integrity_prove] engine_0.induction: ##   0:19:39  Trying induction in step 75..
+SBY 15:07:18 [async_fifo_integrity_prove] engine_0.induction: ##   0:20:39  waiting for solver (1 minute)
+SBY 15:07:43 [async_fifo_integrity_prove] engine_0.basecase: ##   0:21:03  Checking assumptions in step 26..
+SBY 15:07:46 [async_fifo_integrity_prove] engine_0.basecase: ##   0:21:07  Checking assertions in step 26..
+SBY 15:08:37 [async_fifo_integrity_prove] engine_0.induction: ##   0:21:58  Trying induction in step 74..
+SBY 15:08:46 [async_fifo_integrity_prove] engine_0.basecase: ##   0:22:07  waiting for solver (1 minute)
+SBY 15:09:37 [async_fifo_integrity_prove] engine_0.induction: ##   0:22:58  waiting for solver (1 minute)
+SBY 15:09:42 [async_fifo_integrity_prove] engine_0.induction: ##   0:23:02  Trying induction in step 73..
+SBY 15:10:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:23:29  Trying induction in step 72..
+SBY 15:11:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:24:29  waiting for solver (1 minute)
+SBY 15:11:15 [async_fifo_integrity_prove] engine_0.induction: ##   0:24:36  Trying induction in step 71..
+SBY 15:12:15 [async_fifo_integrity_prove] engine_0.induction: ##   0:25:36  waiting for solver (1 minute)
+SBY 15:12:36 [async_fifo_integrity_prove] engine_0.induction: ##   0:25:57  Trying induction in step 70..
+SBY 15:12:46 [async_fifo_integrity_prove] engine_0.basecase: ##   0:26:07  waiting for solver (5 minutes)
+SBY 15:13:36 [async_fifo_integrity_prove] engine_0.induction: ##   0:26:57  waiting for solver (1 minute)
+SBY 15:14:04 [async_fifo_integrity_prove] engine_0.basecase: ##   0:27:24  Checking assumptions in step 27..
+SBY 15:14:10 [async_fifo_integrity_prove] engine_0.basecase: ##   0:27:31  Checking assertions in step 27..
+SBY 15:15:10 [async_fifo_integrity_prove] engine_0.basecase: ##   0:28:31  waiting for solver (1 minute)
+SBY ---- Keyboard interrupt or external termination signal ----
+SBY 15:16:37 [async_fifo_integrity_prove] engine_0.basecase: terminating process
+SBY 15:16:37 [async_fifo_integrity_prove] engine_0.induction: terminating process

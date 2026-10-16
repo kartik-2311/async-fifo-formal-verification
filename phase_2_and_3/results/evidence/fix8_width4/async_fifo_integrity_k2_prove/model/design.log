@@ -1,0 +1,417 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+20 (git sha1 3a8289484, GNU /usr/bin/c++ 15.2.0)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing SLANG frontend.
+Top level design units:
+    async_fifo_integrity_top
+
+
+Build succeeded: 0 errors, 0 warnings
+
+1.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$214'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$184'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$175'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$151'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$141'.
+Removing empty process `async_fifo_integrity_top.$93'.
+Removing empty process `async_fifo_integrity_top.$85'.
+Removing empty process `async_fifo_integrity_top.$74'.
+Removing empty process `async_fifo_integrity_top.$54'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$21'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$12'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$5'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$0'.
+Cleaned up 9 empty switches.
+
+1.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $151 in module async_fifo_integrity_top.
+Marked 1 switch rules as full_case in process $141 in module async_fifo_integrity_top.
+Marked 3 switch rules as full_case in process $214 in module async_fifo_integrity_top.
+Marked 3 switch rules as full_case in process $184 in module async_fifo_integrity_top.
+Removed a total of 0 dead cases.
+
+1.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 12 redundant assignments.
+Promoted 3 assignments to connections.
+
+1.4. Executing PROC_INIT pass (extract init attributes).
+
+1.5. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~20 debug messages>
+
+1.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\async_fifo_integrity_top.$151'.
+     1/4: $rd_meta_sampled_for_wr$160
+     2/4: $rd_gray_sampled_for_wr$159
+     3/4: $157
+     4/4: $154
+Creating decoders for process `\async_fifo_integrity_top.$141'.
+     1/4: $wr_meta_sampled_for_rd$150
+     2/4: $wr_gray_sampled_for_rd$149
+     3/4: $147
+     4/4: $144
+Creating decoders for process `\async_fifo_integrity_top.$119'.
+     1/5: $137
+     2/5: $132
+     3/5: $129
+     4/5: $126
+     5/5: $123
+Creating decoders for process `\async_fifo_integrity_top.$214'.
+     1/13: $tag_read$245
+     2/13: $tag_read$248
+     3/13: $rd_cnt$247
+     4/13: $tag_read$250
+     5/13: $rd_cnt$249
+     6/13: $243
+     7/13: $241
+     8/13: $238
+     9/13: $236
+    10/13: $230
+    11/13: $227
+    12/13: $222
+    13/13: $219
+Creating decoders for process `\async_fifo_integrity_top.$184'.
+     1/12: $tag_data$206
+     2/12: $tag_written$205
+     3/12: $tag_data$210
+     4/12: $tag_written$209
+     5/12: $wr_cnt$208
+     6/12: $tag_data$213
+     7/12: $tag_written$212
+     8/12: $wr_cnt$211
+     9/12: $200
+    10/12: $197
+    11/12: $192
+    12/12: $189
+Creating decoders for process `\async_fifo_integrity_top.$175'.
+Creating decoders for process `\async_fifo_integrity_top.$161'.
+     1/2: $171
+     2/2: $168
+Creating decoders for process `\async_fifo_integrity_top.$28'.
+     1/1: $30
+Creating decoders for process `\async_fifo_integrity_top.$21'.
+     1/2: $tag_seq$24
+     2/2: $tag_set$23
+Creating decoders for process `\async_fifo_integrity_top.$12'.
+Creating decoders for process `\async_fifo_integrity_top.$5'.
+     1/2: $rd_reset_done$7
+     2/2: $9
+Creating decoders for process `\async_fifo_integrity_top.$0'.
+     1/2: $wr_reset_done$2
+     2/2: $4
+
+1.7. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$151'.
+Removing empty process `async_fifo_integrity_top.$151'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$141'.
+Removing empty process `async_fifo_integrity_top.$141'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$119'.
+Removing empty process `async_fifo_integrity_top.$119'.
+Found and cleaned up 5 empty switches in `\async_fifo_integrity_top.$214'.
+Removing empty process `async_fifo_integrity_top.$214'.
+Found and cleaned up 5 empty switches in `\async_fifo_integrity_top.$184'.
+Removing empty process `async_fifo_integrity_top.$184'.
+Removing empty process `async_fifo_integrity_top.$175'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$161'.
+Removing empty process `async_fifo_integrity_top.$161'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$28'.
+Removing empty process `async_fifo_integrity_top.$28'.
+Found and cleaned up 1 empty switch in `\async_fifo_integrity_top.$21'.
+Removing empty process `async_fifo_integrity_top.$21'.
+Removing empty process `async_fifo_integrity_top.$12'.
+Found and cleaned up 2 empty switches in `\async_fifo_integrity_top.$5'.
+Removing empty process `async_fifo_integrity_top.$5'.
+Found and cleaned up 2 empty switches in `\async_fifo_integrity_top.$0'.
+Removing empty process `async_fifo_integrity_top.$0'.
+Cleaned up 20 empty switches.
+
+1.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module async_fifo_integrity_top.
+<suppressed ~22 debug messages>
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \async_fifo_integrity_top
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \async_fifo_integrity_top
+Removed 0 unused modules.
+Module async_fifo_integrity_top directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+2.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+2.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module async_fifo_integrity_top.
+
+2.3. Executing FUTURE pass.
+
+2.4. Executing OPT_EXPR pass (perform const folding).
+Optimizing module async_fifo_integrity_top.
+
+2.5. Executing CHECK pass (checking for obvious problems).
+Checking module async_fifo_integrity_top...
+Found and reported 0 problems.
+
+2.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \async_fifo_integrity_top..
+Removed 9 unused cells and 149 unused wires.
+<suppressed ~64 debug messages>
+
+2.7. Executing OPT pass (performing simple optimizations).
+
+2.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module async_fifo_integrity_top.
+
+2.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\async_fifo_integrity_top'.
+Computing hashes of 203 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+Computing hashes of 190 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+Computing hashes of 185 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+Computing hashes of 184 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+<suppressed ~57 debug messages>
+Removed a total of 19 cells.
+
+2.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \async_fifo_integrity_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port B of cell $procmux$170: \tag_set -> 1'1
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$134.
+    dead port 1/2 on $mux $procmux$128.
+    dead port 1/2 on $mux $procmux$122.
+    dead port 1/2 on $mux $procmux$116.
+    dead port 2/2 on $mux $procmux$113.
+    dead port 1/2 on $mux $procmux$109.
+    dead port 2/2 on $mux $procmux$106.
+    dead port 1/2 on $mux $procmux$52.
+    dead port 1/2 on $mux $procmux$46.
+    dead port 1/2 on $mux $procmux$40.
+    dead port 2/2 on $mux $procmux$37.
+Removed 11 multiplexer ports.
+<suppressed ~109 debug messages>
+
+2.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \async_fifo_integrity_top.
+    Consolidated identical input bits for $mux cell $31:
+      Old ports: A=8'00000000, B=8'11111111, Y=$31y
+      New ports: A=1'0, B=1'1, Y=$31y [0]
+      New connections: $31y [7:1] = { $31y [0] $31y [0] $31y [0] $31y [0] $31y [0] $31y [0] $31y [0] }
+  Optimizing cells in module \async_fifo_integrity_top.
+Performed a total of 2 changes.
+
+2.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\async_fifo_integrity_top'.
+Computing hashes of 172 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+Computing hashes of 155 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+Computing hashes of 152 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+Computing hashes of 149 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+<suppressed ~69 debug messages>
+Removed a total of 23 cells.
+
+2.7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \async_fifo_integrity_top..
+Removed 0 unused cells and 52 unused wires.
+<suppressed ~1 debug messages>
+
+2.7.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module async_fifo_integrity_top.
+<suppressed ~1 debug messages>
+
+2.7.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \async_fifo_integrity_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~59 debug messages>
+
+2.7.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \async_fifo_integrity_top.
+Performed a total of 0 changes.
+
+2.7.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\async_fifo_integrity_top'.
+Computing hashes of 148 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+Removed a total of 0 cells.
+
+2.7.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \async_fifo_integrity_top..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+2.7.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module async_fifo_integrity_top.
+
+2.7.14. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.7.15. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \async_fifo_integrity_top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~59 debug messages>
+
+2.7.16. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \async_fifo_integrity_top.
+Performed a total of 0 changes.
+
+2.7.17. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\async_fifo_integrity_top'.
+Computing hashes of 148 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+Removed a total of 0 cells.
+
+2.7.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \async_fifo_integrity_top..
+
+2.7.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module async_fifo_integrity_top.
+
+2.7.20. Finished fast OPT passes. (There is nothing left to do.)
+
+2.8. Executing WREDUCE pass (reducing word size of cells).
+Removed top 4 bits (of 5) from port A of cell async_fifo_integrity_top.$41 ($not).
+Removed top 4 bits (of 5) from port A of cell async_fifo_integrity_top.$42 ($and).
+Removed top 1 bits (of 5) from port B of cell async_fifo_integrity_top.$46 ($xor).
+Removed top 4 bits (of 5) from port A of cell async_fifo_integrity_top.$65 ($not).
+Removed top 4 bits (of 5) from port A of cell async_fifo_integrity_top.$66 ($and).
+Removed top 1 bits (of 5) from port B of cell async_fifo_integrity_top.$70 ($xor).
+Removed top 1 bits (of 5) from port B of cell async_fifo_integrity_top.$194 ($xor).
+Removed top 27 bits (of 32) from port A of cell async_fifo_integrity_top.$198 ($le).
+Removed top 27 bits (of 32) from port B of cell async_fifo_integrity_top.$198 ($le).
+Removed top 27 bits (of 32) from port A of cell async_fifo_integrity_top.$201 ($lt).
+Removed top 27 bits (of 32) from port B of cell async_fifo_integrity_top.$201 ($lt).
+Removed top 4 bits (of 5) from port B of cell async_fifo_integrity_top.$207 ($add).
+Removed top 1 bits (of 5) from port B of cell async_fifo_integrity_top.$224 ($xor).
+Removed top 4 bits (of 5) from port B of cell async_fifo_integrity_top.$246 ($add).
+
+2.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \async_fifo_integrity_top..
+
+2.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.11. Executing OPT pass (performing simple optimizations).
+
+2.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module async_fifo_integrity_top.
+
+2.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\async_fifo_integrity_top'.
+Computing hashes of 146 cells of `\async_fifo_integrity_top'.
+Finding duplicate cells in `\async_fifo_integrity_top'.
+Removed a total of 0 cells.
+
+2.11.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \async_fifo_integrity_top..
+
+2.11.4. Finished fast OPT passes.
+
+2.12. Executing SORT pass.
+
+2.13. Printing statistics.
+
+=== async_fifo_integrity_top ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      169 wires
+      463 wire bits
+       85 public wires
+      276 public wire bits
+        6 ports
+       17 port bits
+      146 cells
+        4   $add
+       10   $aldff
+        5   $and
+       28   $check
+       14   $dff
+       14   $eq
+        1   $le
+       10   $logic_and
+        7   $logic_not
+        4   $logic_or
+        1   $lt
+        1   $mem_v2
+       35   $mux
+        3   $ne
+        4   $not
+        1   $sub
+        4   $xor
+
+2.14. Executing CHECK pass (checking for obvious problems).
+Checking module async_fifo_integrity_top...
+Found and reported 0 problems.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `async_fifo_integrity_top'. Setting top module to async_fifo_integrity_top.
+
+3.1. Analyzing design hierarchy..
+Top module:  \async_fifo_integrity_top
+
+3.2. Analyzing design hierarchy..
+Top module:  \async_fifo_integrity_top
+Removed 0 unused modules.
+Module async_fifo_integrity_top directly or indirectly contains formal properties -> setting "keep" attribute.
+
+4. Executing jny backend.
+
+5. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: e6039a322f, time: 0.51s, user: 0.30s, system: 0.15s, MEM: 76.19 MB peak
+Yosys 0.69+20 (git sha1 3a8289484, GNU /usr/bin/c++ 15.2.0)
+Time spent: 18% 6x opt_clean (0 sec), 18% 8x opt_expr (0 sec), ...

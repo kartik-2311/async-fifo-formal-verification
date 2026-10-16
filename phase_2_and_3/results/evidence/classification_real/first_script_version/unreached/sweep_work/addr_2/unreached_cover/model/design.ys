@@ -1,0 +1,9 @@
+# running in unreached_cover/src/
+plugin -i slang
+read_slang unreached.sv --top unreached_top
+prep -top unreached_top
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

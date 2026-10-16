@@ -1,0 +1,6 @@
+Current working-file hashes:
+c7daaf2a4f5d6e5036ac5faf5072bf4966eb7f0f
+c7daaf2a4f5d6e5036ac5faf5072bf4966eb7f0f
+c7daaf2a4f5d6e5036ac5faf5072bf4966eb7f0f
+git diff --ignore-space-at-eol --exit-code HEAD -- rtl/async_fifo.sv
+GIT_DIFF_EXIT=0

@@ -1,0 +1,13 @@
+Command: python comment-stripped token recount of the six original/final property source files.
+Method: remove /* ... */ and // ... comments, then count whole-word occurrences of assert, cover, assume, and initial.
+
+formal\async_fifo_formal.sv: assert=6 cover=3 assume=0 initial=2
+phase_2_and_3\async_fifo_formal.sv: assert=6 cover=3 assume=0 initial=2
+phase_2_and_3\async_fifo_integrity_top.sv: assert=14 cover=3 assume=0 initial=2
+phase_2_and_3\async_fifo_integrity_selfcheck.sv: assert=9 cover=6 assume=0 initial=1
+results/evidence/original/async_fifo_formal.sv: assert=6 cover=3 assume=0 initial=2
+results/evidence/original/async_fifo_integrity_top.sv: assert=14 cover=3 assume=0 initial=2
+
+The original and final Phase 1/Phase 2 source counts agree. The earlier draft
+CSV's self-check count (11 asserts, 7 covers) did not match the source and is
+preserved separately as assertion_counts_initial_draft.csv.

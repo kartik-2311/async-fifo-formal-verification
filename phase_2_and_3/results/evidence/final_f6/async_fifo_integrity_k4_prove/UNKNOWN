@@ -1,0 +1,11 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+engine_0 (smtbmc z3) returned pass for basecase
+engine_0 (smtbmc z3) returned FAIL for induction
+counterexample trace [induction]: engine_0/trace_induct.vcd
+counterexample trace [induction]: engine_0/trace_induct.yw
+  failed assertion async_fifo_integrity_top._witness_.check_146 at async_fifo_integrity_top.sv:175.7-175.46
+  failed assertion async_fifo_integrity_top._witness_.check_149 at async_fifo_integrity_top.sv:176.7-177.67
+  failed assertion async_fifo_integrity_top._witness_.check_154 at async_fifo_integrity_top.sv:178.7-178.29
+  failed assertion async_fifo_integrity_top._witness_.check_193 at async_fifo_integrity_top.sv:214.11-214.32
+  failed assertion async_fifo_integrity_top._witness_.check_195 at async_fifo_integrity_top.sv:215.11-215.40

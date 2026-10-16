@@ -1,0 +1,5 @@
+config,engine,status,seconds
+baseline_z3,smtbmc z3,PASS,70
+nohelper_z3,smtbmc z3,PASS,67
+baseline_btor,smtbmc boolector,ERROR,1
+baseline_abc,abc pdr,RC1,1

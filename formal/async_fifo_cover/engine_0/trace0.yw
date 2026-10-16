@@ -1,0 +1,39 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [
+    {"path": ["\\rd_clk"], "edge": "posedge", "offset": 0},
+    {"path": ["\\wr_clk"], "edge": "posedge", "offset": 0}
+  ],
+  "signals": [
+    {"path": ["\\rd_clk"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\rd_en"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\rd_rst_n"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\wr_clk"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\wr_data"], "width": 8, "offset": 0, "init_only": false},
+    {"path": ["\\wr_en"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\wr_rst_n"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyinit_driver_u_rd_ptr_rd_bin"], "width": 5, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_u_rd_ptr_rd_empty"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_u_rd_ptr_rd_gray_ptr"], "width": 5, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_u_sync_rd2wr_meta_ff"], "width": 5, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_u_sync_rd2wr_sync_ff"], "width": 5, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_u_sync_wr2rd_meta_ff"], "width": 5, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_u_sync_wr2rd_sync_ff"], "width": 5, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_u_wr_ptr_wr_bin"], "width": 5, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_u_wr_ptr_wr_full"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_driver_u_wr_ptr_wr_gray_ptr"], "width": 5, "offset": 0, "init_only": true},
+    {"path": ["\\u_formal", "\\rd_empty_prev"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\u_formal", "\\wr_full_prev"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\u_mem", "\\mem", "\\[0]"], "width": 8, "offset": 0, "init_only": true},
+    {"path": ["\\u_mem", "\\mem", "\\[15]"], "width": 8, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "00000000000001000000010100010000010000111010110000100000111100000000000110"},
+    {"bits": "10000000000110"},
+    {"bits": "10000000000010"},
+    {"bits": "10000000000010"},
+    {"bits": "10000000000010"},
+    {"bits": "10000000000010"}
+  ]
+}

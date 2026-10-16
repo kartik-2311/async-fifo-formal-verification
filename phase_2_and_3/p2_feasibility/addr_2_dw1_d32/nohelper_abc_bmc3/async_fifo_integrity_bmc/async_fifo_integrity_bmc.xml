@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-10-14T16:14:07" hostname="ACER" package="async_fifo_integrity" id="0" name="bmc" tests="1" errors="0" failures="0" time="32" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="bmc" name="bmc" time="32">
+</testcase>
+<system-out>SBY 16:13:34 [async_fifo_integrity_bmc] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/p2_feasibility/addr_2_dw1_d32/nohelper_abc_bmc3/async_fifo_integrity_bmc'.
+SBY 16:13:34 [async_fifo_integrity_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/p2_feasibility/addr_2_dw1_d32/nohelper_abc_bmc3/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/p2_feasibility/addr_2_dw1_d32/nohelper_abc_bmc3/async_fifo_integrity_bmc/src/async_fifo.sv'.
+SBY 16:13:34 [async_fifo_integrity_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/p2_feasibility/addr_2_dw1_d32/nohelper_abc_bmc3/async_fifo_integrity_top_nohelper.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/p2_feasibility/addr_2_dw1_d32/nohelper_abc_bmc3/async_fifo_integrity_bmc/src/async_fifo_integrity_top_nohelper.sv'.
+SBY 16:13:34 [async_fifo_integrity_bmc] engine_0: abc bmc3
+SBY 16:13:34 [async_fifo_integrity_bmc] base: starting process &quot;cd async_fifo_integrity_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 16:13:35 [async_fifo_integrity_bmc] base: finished (returncode=0)
+SBY 16:13:35 [async_fifo_integrity_bmc] prep: starting process &quot;cd async_fifo_integrity_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 16:13:35 [async_fifo_integrity_bmc] prep: finished (returncode=0)
+SBY 16:13:35 [async_fifo_integrity_bmc] aig: starting process &quot;cd async_fifo_integrity_bmc/model; yosys -ql design_aiger.log design_aiger.ys&quot;
+SBY 16:13:35 [async_fifo_integrity_bmc] aig: Warning: Treating undriven bit async_fifo_integrity_top.\wr_en like $anyseq.
+SBY 16:13:35 [async_fifo_integrity_bmc] aig: Warning: Treating undriven bit async_fifo_integrity_top.\wr_data like $anyseq.
+SBY 16:13:35 [async_fifo_integrity_bmc] aig: Warning: Treating undriven bit async_fifo_integrity_top.\wr_clk like $anyseq.
+SBY 16:13:35 [async_fifo_integrity_bmc] aig: Warning: Treating undriven bit async_fifo_integrity_top.\rd_en like $anyseq.
+SBY 16:13:35 [async_fifo_integrity_bmc] aig: Warning: Treating undriven bit async_fifo_integrity_top.\rd_clk like $anyseq.
+SBY 16:13:35 [async_fifo_integrity_bmc] aig: Warning: Treating a total of 5 undriven bits in async_fifo_integrity_top like $anyseq.
+SBY 16:13:35 [async_fifo_integrity_bmc] aig: finished (returncode=0)
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: starting process &quot;cd async_fifo_integrity_bmc; yosys-abc -c 'read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 32 -v; write_cex -a engine_0/trace.aiw'&quot;
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: ======== ABC command line &quot;read_aiger model/design_aiger.aig; fold; strash; bmc3 -F 32 -v; write_cex -a engine_0/trace.aiw&quot;
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: Warning: The network has no constraints.
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: Running &quot;bmc3&quot;. PI/PO/Reg = 50/8/102. And =    528. Lev =    19. ObjNums =   446.
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: Params: FramesMax = 32. Start = 0. ConfLimit = 0. TimeOut = 0. SolveAll = 0.
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 0 + : Var =       1. Cla =        0. Conf =      0. Learn =      0.    0 MB   4 MB     0.03 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 1 + : Var =       9. Cla =       10. Conf =      0. Learn =      0.    0 MB   4 MB     0.03 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 2 + : Var =      89. Cla =      157. Conf =      4. Learn =      2.    0 MB   4 MB     0.03 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 3 + : Var =     170. Cla =      392. Conf =     10. Learn =      5.    0 MB   4 MB     0.03 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 4 + : Var =     256. Cla =      641. Conf =     20. Learn =     12.    0 MB   4 MB     0.03 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 5 + : Var =     364. Cla =      964. Conf =     37. Learn =     25.    0 MB   4 MB     0.03 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 6 + : Var =     487. Cla =     1336. Conf =     61. Learn =     45.    0 MB   4 MB     0.03 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 7 + : Var =     631. Cla =     1773. Conf =    101. Learn =     82.    0 MB   4 MB     0.03 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 8 + : Var =     793. Cla =     2252. Conf =    139. Learn =    115.    0 MB   4 MB     0.03 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 9 + : Var =     964. Cla =     2744. Conf =    184. Learn =    155.    0 MB   4 MB     0.03 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 10 + : Var =    1142. Cla =     3257. Conf =    368. Learn =    330.    0 MB   4 MB     0.04 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 11 + : Var =    1327. Cla =     3799. Conf =    687. Learn =    640.    0 MB   4 MB     0.05 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 12 + : Var =    1518. Cla =     4348. Conf =   1082. Learn =   1027.    0 MB   4 MB     0.06 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 13 + : Var =    1709. Cla =     4924. Conf =   1571. Learn =   1507.    0 MB   4 MB     0.08 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 14 + : Var =    1900. Cla =     5507. Conf =   2674. Learn =   2602.    0 MB   4 MB     0.12 sec
+SBY 16:13:35 [async_fifo_integrity_bmc] engine_0: 15 + : Var =    2091. Cla =     6094. Conf =   4026. Learn =   3948.    0 MB   4 MB     0.19 sec
+SBY 16:13:36 [async_fifo_integrity_bmc] engine_0: 16 + : Var =    2282. Cla =     6682. Conf =   6473. Learn =   6383.    0 MB   4 MB     0.32 sec
+SBY 16:13:36 [async_fifo_integrity_bmc] engine_0: 17 + : Var =    2473. Cla =     7270. Conf =   9319. Learn =   9222.    0 MB   6 MB     0.49 sec
+SBY 16:13:36 [async_fifo_integrity_bmc] engine_0: 18 + : Var =    2664. Cla =     7858. Conf =  14754. Learn =  10271.    0 MB   6 MB     0.91 sec
+SBY 16:13:37 [async_fifo_integrity_bmc] engine_0: 19 + : Var =    2855. Cla =     8446. Conf =  22962. Learn =  15710.    0 MB   7 MB     1.63 sec
+SBY 16:13:38 [async_fifo_integrity_bmc] engine_0: 20 + : Var =    3046. Cla =     9034. Conf =  32022. Learn =  17975.    0 MB   7 MB     2.50 sec
+SBY 16:13:39 [async_fifo_integrity_bmc] engine_0: 21 + : Var =    3237. Cla =     9622. Conf =  42054. Learn =  19632.    0 MB   7 MB     3.58 sec
+SBY 16:13:40 [async_fifo_integrity_bmc] engine_0: 22 + : Var =    3428. Cla =    10210. Conf =  52214. Learn =  25015.    0 MB   8 MB     5.01 sec
+SBY 16:13:42 [async_fifo_integrity_bmc] engine_0: 23 + : Var =    3619. Cla =    10798. Conf =  63644. Learn =  25619.    0 MB   8 MB     6.49 sec
+SBY 16:13:43 [async_fifo_integrity_bmc] engine_0: 24 + : Var =    3810. Cla =    11386. Conf =  75403. Learn =  31404.    0 MB  10 MB     8.00 sec
+SBY 16:13:45 [async_fifo_integrity_bmc] engine_0: 25 + : Var =    4001. Cla =    11974. Conf =  87566. Learn =  30472.    0 MB  10 MB     9.87 sec
+SBY 16:13:47 [async_fifo_integrity_bmc] engine_0: 26 + : Var =    4192. Cla =    12562. Conf = 101335. Learn =  37121.    0 MB  11 MB    12.01 sec
+SBY 16:13:50 [async_fifo_integrity_bmc] engine_0: 27 + : Var =    4383. Cla =    13150. Conf = 117107. Learn =  38211.    0 MB  11 MB    14.58 sec
+SBY 16:13:53 [async_fifo_integrity_bmc] engine_0: 28 + : Var =    4574. Cla =    13738. Conf = 134162. Learn =  40355.    0 MB  11 MB    17.78 sec
+SBY 16:13:56 [async_fifo_integrity_bmc] engine_0: 29 + : Var =    4765. Cla =    14326. Conf = 152048. Learn =  41816.    0 MB  11 MB    21.17 sec
+SBY 16:14:01 [async_fifo_integrity_bmc] engine_0: 30 + : Var =    4956. Cla =    14914. Conf = 177288. Learn =  49827.    0 MB  13 MB    26.23 sec
+SBY 16:14:07 [async_fifo_integrity_bmc] engine_0: 31 + : Var =    5147. Cla =    15502. Conf = 203890. Learn =  56565.    0 MB  15 MB    31.82 sec
+SBY 16:14:07 [async_fifo_integrity_bmc] engine_0: Runtime:  CNF = 0.0 sec (0.0 %)  UNSAT = 31.8 sec (99.8 %)  SAT = 0.0 sec (0.0 %)  UNDEC = 0.0 sec (0.0 %)
+SBY 16:14:07 [async_fifo_integrity_bmc] engine_0: LStart(P) = 10000  LDelta(Q) = 2000  LRatio(R) = 80  ReduceDB = 24  Vars = 5147  Used = 4870 (94.62 %)
+SBY 16:14:07 [async_fifo_integrity_bmc] engine_0: Buffs = 1067. Dups = 0.   Hash hits = 95.  Hash misses = 3760.  UniProps = 0.
+SBY 16:14:07 [async_fifo_integrity_bmc] engine_0: No output asserted in 32 frames. Resource limit reached (conf limit 0). Time =    31.82 sec
+SBY 16:14:07 [async_fifo_integrity_bmc] engine_0: Counter-example is not available.
+SBY 16:14:07 [async_fifo_integrity_bmc] engine_0: finished (returncode=0)
+SBY 16:14:07 [async_fifo_integrity_bmc] engine_0: Status returned by engine: PASS
+SBY 16:14:07 [async_fifo_integrity_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:33 (33)
+SBY 16:14:07 [async_fifo_integrity_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:32 (32)
+SBY 16:14:07 [async_fifo_integrity_bmc] summary: engine_0 (abc bmc3) returned PASS
+SBY 16:14:07 [async_fifo_integrity_bmc] summary: engine_0 did not produce any traces
+SBY 16:14:07 [async_fifo_integrity_bmc] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

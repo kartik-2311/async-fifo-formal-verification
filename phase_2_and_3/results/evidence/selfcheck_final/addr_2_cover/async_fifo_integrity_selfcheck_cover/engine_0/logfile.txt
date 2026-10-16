@@ -1,0 +1,70 @@
+##   0:00:00  Solver: z3
+##   0:00:00  Checking cover reachability in step 0..
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Reached cover statement in step 1 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:153.5-153.21 (_witness_.check_171)
+##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Checking cover reachability in step 2..
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Reached cover statement in step 3 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:131.7-131.20 (_witness_.check_147)
+##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Reached cover statement in step 3 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:99.7-99.20 (_witness_.check_114)
+##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Checking cover reachability in step 4..
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Reached cover statement in step 5 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:88.5-88.27 (_witness_.check_101)
+##   0:00:00  Reached cover statement in step 5 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:83.5-83.26 (_witness_.check_97)
+##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Reached cover statement in step 5 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:121.5-121.26 (_witness_.check_134)
+##   0:00:00  Reached cover statement in step 5 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:126.5-126.27 (_witness_.check_138)
+##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Checking cover reachability in step 6..
+##   0:00:00  Checking cover reachability in step 7..
+##   0:00:00  Checking cover reachability in step 8..
+##   0:00:00  Checking cover reachability in step 9..
+##   0:00:00  Checking cover reachability in step 10..
+##   0:00:00  Checking cover reachability in step 11..
+##   0:00:01  Checking cover reachability in step 12..
+##   0:00:01  Checking cover reachability in step 13..
+##   0:00:01  Checking cover reachability in step 14..
+##   0:00:01  Checking cover reachability in step 15..
+##   0:00:01  Checking cover reachability in step 16..
+##   0:00:01  Checking cover reachability in step 17..
+##   0:00:02  Checking cover reachability in step 18..
+##   0:00:02  Checking cover reachability in step 19..
+##   0:00:02  Checking cover reachability in step 20..
+##   0:00:02  Checking cover reachability in step 21..
+##   0:00:02  Checking cover reachability in step 22..
+##   0:00:03  Checking cover reachability in step 23..
+##   0:00:03  Checking cover reachability in step 24..
+##   0:00:03  Checking cover reachability in step 25..
+##   0:00:04  Checking cover reachability in step 26..
+##   0:00:05  Checking cover reachability in step 27..
+##   0:00:08  Checking cover reachability in step 28..
+##   0:00:11  Checking cover reachability in step 29..
+##   0:00:18  Checking cover reachability in step 30..
+##   0:00:20  Reached cover statement in step 30 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:143.11-143.24 (_witness_.check_159)
+##   0:00:20  Writing trace to VCD file: engine_0/trace5.vcd
+##   0:00:20  Writing trace to Verilog testbench: engine_0/trace5_tb.v
+##   0:00:20  Writing trace to constraints file: engine_0/trace5.smtc
+##   0:00:20  Writing trace to Yosys witness file: engine_0/trace5.yw
+##   0:00:20  Status: passed

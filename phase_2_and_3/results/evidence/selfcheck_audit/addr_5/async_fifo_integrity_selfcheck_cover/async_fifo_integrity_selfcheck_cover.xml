@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-10-11T05:05:00" hostname="ACER" package="async_fifo_integrity_selfcheck" id="0" name="cover" tests="15" errors="0" failures="2" time="1179" skipped="9">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="cover" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="cover" name="Property COVER in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:83.5-83.27" time="0" type="COVER" location="async_fifo_integrity_selfcheck.sv:83.5-83.27" id="_witness_.check_101" tracefile="engine_0/trace4.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:94.7-94.20" time="0" type="COVER" location="async_fifo_integrity_selfcheck.sv:94.7-94.20" id="_witness_.check_114" tracefile="engine_0/trace1.vcd">
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:115.7-115.24" time="0" type="ASSERT" location="async_fifo_integrity_selfcheck.sv:115.7-115.24" id="_witness_.check_132">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:116.7-116.24" time="0" type="ASSERT" location="async_fifo_integrity_selfcheck.sv:116.7-116.24" id="_witness_.check_134">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:117.7-117.22" time="0" type="ASSERT" location="async_fifo_integrity_selfcheck.sv:117.7-117.22" id="_witness_.check_136">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property COVER in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:120.5-120.27" time="0" type="COVER" location="async_fifo_integrity_selfcheck.sv:120.5-120.27" id="_witness_.check_138" tracefile="engine_0/trace3.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:125.7-125.20" time="0" type="COVER" location="async_fifo_integrity_selfcheck.sv:125.7-125.20" id="_witness_.check_147" tracefile="engine_0/trace2.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:137.11-137.24" time="0" type="COVER" location="async_fifo_integrity_selfcheck.sv:137.11-137.24" id="_witness_.check_159">
+<failure type="COVER" message="Property COVER in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:137.11-137.24 failed." />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:145.5-145.53" time="0" type="ASSERT" location="async_fifo_integrity_selfcheck.sv:145.5-145.53" id="_witness_.check_168">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:146.5-146.53" time="0" type="ASSERT" location="async_fifo_integrity_selfcheck.sv:146.5-146.53" id="_witness_.check_173">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:149.7-149.45" time="0" type="ASSERT" location="async_fifo_integrity_selfcheck.sv:149.7-149.45" id="_witness_.check_178">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property COVER in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:150.5-150.21" time="0" type="COVER" location="async_fifo_integrity_selfcheck.sv:150.5-150.21" id="_witness_.check_181" tracefile="engine_0/trace0.vcd">
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:78.7-78.24" time="0" type="ASSERT" location="async_fifo_integrity_selfcheck.sv:78.7-78.24" id="_witness_.check_95">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:79.7-79.24" time="0" type="ASSERT" location="async_fifo_integrity_selfcheck.sv:79.7-79.24" id="_witness_.check_97">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo_integrity_selfcheck at async_fifo_integrity_selfcheck.sv:80.7-80.22" time="0" type="ASSERT" location="async_fifo_integrity_selfcheck.sv:80.7-80.22" id="_witness_.check_99">
+<skipped />
+</testcase>
+<system-out>SBY  4:45:19 [async_fifo_integrity_selfcheck_cover] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_audit/addr_5/async_fifo_integrity_selfcheck_cover'.
+SBY  4:45:20 [async_fifo_integrity_selfcheck_cover] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_audit/addr_5/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_audit/addr_5/async_fifo_integrity_selfcheck_cover/src/async_fifo.sv'.
+SBY  4:45:20 [async_fifo_integrity_selfcheck_cover] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_audit/addr_5/async_fifo_integrity_selfcheck.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/selfcheck_audit/addr_5/async_fifo_integrity_selfcheck_cover/src/async_fifo_integrity_selfcheck.sv'.
+SBY  4:45:20 [async_fifo_integrity_selfcheck_cover] engine_0: smtbmc z3
+SBY  4:45:20 [async_fifo_integrity_selfcheck_cover] base: starting process &quot;cd async_fifo_integrity_selfcheck_cover/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  4:45:20 [async_fifo_integrity_selfcheck_cover] base: finished (returncode=0)
+SBY  4:45:20 [async_fifo_integrity_selfcheck_cover] prep: starting process &quot;cd async_fifo_integrity_selfcheck_cover/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY  4:45:20 [async_fifo_integrity_selfcheck_cover] prep: finished (returncode=0)
+SBY  4:45:20 [async_fifo_integrity_selfcheck_cover] smt2: starting process &quot;cd async_fifo_integrity_selfcheck_cover/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] smt2: finished (returncode=0)
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: starting process &quot;cd async_fifo_integrity_selfcheck_cover; yosys-smtbmc -s z3 --presat -c --noprogress -t 96  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Solver: z3
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Reached cover statement in step 1 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:150.5-150.21 (_witness_.check_181)
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Reached cover statement in step 3 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:94.7-94.20 (_witness_.check_114)
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Reached cover statement in step 3 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:125.7-125.20 (_witness_.check_147)
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:120.5-120.27 (_witness_.check_138)
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Reached cover statement in step 5 at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:83.5-83.27 (_witness_.check_101)
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 12..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 13..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 14..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 15..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 16..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 17..
+SBY  4:45:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 18..
+SBY  4:45:22 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:00  Checking cover reachability in step 19..
+SBY  4:45:22 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:01  Checking cover reachability in step 20..
+SBY  4:45:22 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:01  Checking cover reachability in step 21..
+SBY  4:45:22 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:01  Checking cover reachability in step 22..
+SBY  4:45:22 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:01  Checking cover reachability in step 23..
+SBY  4:45:23 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:01  Checking cover reachability in step 24..
+SBY  4:45:23 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:02  Checking cover reachability in step 25..
+SBY  4:45:23 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:02  Checking cover reachability in step 26..
+SBY  4:45:24 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:03  Checking cover reachability in step 27..
+SBY  4:45:25 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:03  Checking cover reachability in step 28..
+SBY  4:45:25 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:04  Checking cover reachability in step 29..
+SBY  4:45:27 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:05  Checking cover reachability in step 30..
+SBY  4:45:29 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:08  Checking cover reachability in step 31..
+SBY  4:45:30 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:09  Checking cover reachability in step 32..
+SBY  4:45:31 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:10  Checking cover reachability in step 33..
+SBY  4:45:33 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:11  Checking cover reachability in step 34..
+SBY  4:45:34 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:13  Checking cover reachability in step 35..
+SBY  4:45:36 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:14  Checking cover reachability in step 36..
+SBY  4:45:37 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:15  Checking cover reachability in step 37..
+SBY  4:45:38 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:17  Checking cover reachability in step 38..
+SBY  4:45:40 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:19  Checking cover reachability in step 39..
+SBY  4:45:42 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:21  Checking cover reachability in step 40..
+SBY  4:45:45 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:24  Checking cover reachability in step 41..
+SBY  4:45:47 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:26  Checking cover reachability in step 42..
+SBY  4:45:51 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:30  Checking cover reachability in step 43..
+SBY  4:45:55 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:34  Checking cover reachability in step 44..
+SBY  4:46:00 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:39  Checking cover reachability in step 45..
+SBY  4:46:03 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:42  Checking cover reachability in step 46..
+SBY  4:46:07 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:46  Checking cover reachability in step 47..
+SBY  4:46:12 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:51  Checking cover reachability in step 48..
+SBY  4:46:17 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:00:55  Checking cover reachability in step 49..
+SBY  4:46:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:01:00  Checking cover reachability in step 50..
+SBY  4:46:27 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:01:06  Checking cover reachability in step 51..
+SBY  4:46:34 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:01:13  Checking cover reachability in step 52..
+SBY  4:46:39 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:01:18  Checking cover reachability in step 53..
+SBY  4:46:48 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:01:27  Checking cover reachability in step 54..
+SBY  4:46:57 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:01:36  Checking cover reachability in step 55..
+SBY  4:47:06 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:01:45  Checking cover reachability in step 56..
+SBY  4:47:17 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:01:56  Checking cover reachability in step 57..
+SBY  4:47:27 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:02:06  Checking cover reachability in step 58..
+SBY  4:47:35 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:02:13  Checking cover reachability in step 59..
+SBY  4:47:47 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:02:25  Checking cover reachability in step 60..
+SBY  4:47:54 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:02:33  Checking cover reachability in step 61..
+SBY  4:48:09 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:02:48  Checking cover reachability in step 62..
+SBY  4:48:23 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:03:02  Checking cover reachability in step 63..
+SBY  4:48:35 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:03:13  Checking cover reachability in step 64..
+SBY  4:48:50 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:03:28  Checking cover reachability in step 65..
+SBY  4:49:01 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:03:40  Checking cover reachability in step 66..
+SBY  4:49:20 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:03:59  Checking cover reachability in step 67..
+SBY  4:49:34 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:04:12  Checking cover reachability in step 68..
+SBY  4:49:46 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:04:25  Checking cover reachability in step 69..
+SBY  4:50:00 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:04:39  Checking cover reachability in step 70..
+SBY  4:50:22 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:05:01  Checking cover reachability in step 71..
+SBY  4:50:36 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:05:15  Checking cover reachability in step 72..
+SBY  4:51:00 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:05:39  Checking cover reachability in step 73..
+SBY  4:51:30 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:06:08  Checking cover reachability in step 74..
+SBY  4:51:58 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:06:36  Checking cover reachability in step 75..
+SBY  4:52:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:07:00  Checking cover reachability in step 76..
+SBY  4:52:58 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:07:37  Checking cover reachability in step 77..
+SBY  4:53:21 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:07:59  Checking cover reachability in step 78..
+SBY  4:53:58 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:08:37  Checking cover reachability in step 79..
+SBY  4:54:19 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:08:58  Checking cover reachability in step 80..
+SBY  4:54:46 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:09:25  Checking cover reachability in step 81..
+SBY  4:55:15 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:09:54  Checking cover reachability in step 82..
+SBY  4:55:41 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:10:20  Checking cover reachability in step 83..
+SBY  4:56:07 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:10:46  Checking cover reachability in step 84..
+SBY  4:56:35 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:11:14  Checking cover reachability in step 85..
+SBY  4:57:19 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:11:58  Checking cover reachability in step 86..
+SBY  4:58:05 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:12:44  Checking cover reachability in step 87..
+SBY  4:58:42 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:13:21  Checking cover reachability in step 88..
+SBY  4:59:26 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:14:04  Checking cover reachability in step 89..
+SBY  5:00:20 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:14:59  Checking cover reachability in step 90..
+SBY  5:01:03 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:15:41  Checking cover reachability in step 91..
+SBY  5:01:41 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:16:20  Checking cover reachability in step 92..
+SBY  5:02:25 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:17:04  Checking cover reachability in step 93..
+SBY  5:03:17 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:17:55  Checking cover reachability in step 94..
+SBY  5:04:08 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:18:47  Checking cover reachability in step 95..
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:19:38  Unreached cover statement at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:137.11-137.24 (_witness_.check_159)
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] engine_0: ##   0:19:38  Status: failed
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] engine_0: finished (returncode=1)
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] engine_0: Status returned by engine: FAIL
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:19:40 (1180)
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:19:39 (1179)
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary: engine_0 (smtbmc z3) returned FAIL
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary: cover trace: async_fifo_integrity_selfcheck_cover/engine_0/trace0.vcd
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary:   reached cover statement async_fifo_integrity_selfcheck._witness_.check_181 at async_fifo_integrity_selfcheck.sv:150.5-150.21 step 1
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary: cover trace: async_fifo_integrity_selfcheck_cover/engine_0/trace1.vcd
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary:   reached cover statement async_fifo_integrity_selfcheck._witness_.check_114 at async_fifo_integrity_selfcheck.sv:94.7-94.20 step 3
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary: cover trace: async_fifo_integrity_selfcheck_cover/engine_0/trace2.vcd
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary:   reached cover statement async_fifo_integrity_selfcheck._witness_.check_147 at async_fifo_integrity_selfcheck.sv:125.7-125.20 step 3
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary: cover trace: async_fifo_integrity_selfcheck_cover/engine_0/trace3.vcd
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary:   reached cover statement async_fifo_integrity_selfcheck._witness_.check_138 at async_fifo_integrity_selfcheck.sv:120.5-120.27 step 5
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary: cover trace: async_fifo_integrity_selfcheck_cover/engine_0/trace4.vcd
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary:   reached cover statement async_fifo_integrity_selfcheck._witness_.check_101 at async_fifo_integrity_selfcheck.sv:83.5-83.27 step 5
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary: unreached cover statements:
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] summary:   async_fifo_integrity_selfcheck._witness_.check_159 at async_fifo_integrity_selfcheck.sv:137.11-137.24
+SBY  5:05:00 [async_fifo_integrity_selfcheck_cover] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,7 @@
+Command: comment-stripped whole-word count of assert, cover, assume, initial in preserved originals and final sources.
+
+phase1_original: assert=6 cover=3 assume=0 initial=2
+phase1_final: assert=6 cover=3 assume=0 initial=2
+phase2_original: assert=14 cover=3 assume=0 initial=2
+phase2_final (committed F6 source): assert=16 cover=3 assume=0 initial=2
+selfcheck_added: assert=9 cover=6 assume=0 initial=1

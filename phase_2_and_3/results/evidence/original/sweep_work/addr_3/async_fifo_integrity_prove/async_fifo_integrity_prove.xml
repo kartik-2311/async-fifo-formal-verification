@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-10-10T16:14:39" hostname="ACER" package="async_fifo_integrity" id="0" name="prove" tests="17" errors="0" failures="2" time="1609" skipped="16">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="UNKNOWN"/>
+</properties>
+<testcase classname="prove" name="build execution" time="0">
+<failure type="UNKNOWN" message="Task returned status UNKNOWN." />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:148.7-148.33" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:148.7-148.33" id="_witness_.check_116">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:149.7-149.67" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:149.7-149.67" id="_witness_.check_119">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:154.5-160.51" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:154.5-160.51" id="_witness_.check_125">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:170.7-170.46" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:170.7-170.46" id="_witness_.check_137">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:171.7-172.67" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:171.7-172.67" id="_witness_.check_140">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:173.7-173.29" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:173.7-173.29" id="_witness_.check_145">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:177.9-177.30" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:177.9-177.30" id="_witness_.check_148">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:196.7-196.46" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:196.7-196.46" id="_witness_.check_167">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:197.7-198.67" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:197.7-198.67" id="_witness_.check_170">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:201.7-201.56" time="0" type="COVER" location="async_fifo_integrity_top.sv:201.7-201.56" id="_witness_.check_175">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:205.9-205.35" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:205.9-205.35" id="_witness_.check_178">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:209.11-209.32" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:209.11-209.32" id="_witness_.check_184">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:210.11-210.40" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:210.11-210.40" id="_witness_.check_186">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:213.11-213.31" time="0" type="COVER" location="async_fifo_integrity_top.sv:213.11-213.31" id="_witness_.check_189">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:214.11-214.54" time="0" type="COVER" location="async_fifo_integrity_top.sv:214.11-214.54" id="_witness_.check_191">
+<skipped />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:76.7-76.30" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:76.7-76.30" id="_witness_.check_3" tracefile="engine_0/trace_induct.vcd">
+<failure type="ASSERT" message="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:76.7-76.30 failed. Trace file: engine_0/trace_induct.vcd" />
+</testcase>
+<testcase classname="prove" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:83.7-83.30" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:83.7-83.30" id="_witness_.check_8">
+<skipped />
+</testcase>
+<system-out>SBY 15:48:06 [async_fifo_integrity_prove] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_3/async_fifo_integrity_prove'.
+SBY 15:48:06 [async_fifo_integrity_prove] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_3/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_3/async_fifo_integrity_prove/src/async_fifo.sv'.
+SBY 15:48:06 [async_fifo_integrity_prove] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_3/async_fifo_integrity_top.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_3/async_fifo_integrity_prove/src/async_fifo_integrity_top.sv'.
+SBY 15:48:07 [async_fifo_integrity_prove] engine_0: smtbmc z3
+SBY 15:48:07 [async_fifo_integrity_prove] base: starting process &quot;cd async_fifo_integrity_prove/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 15:48:07 [async_fifo_integrity_prove] base: finished (returncode=0)
+SBY 15:48:07 [async_fifo_integrity_prove] prep: starting process &quot;cd async_fifo_integrity_prove/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 15:48:07 [async_fifo_integrity_prove] prep: finished (returncode=0)
+SBY 15:48:07 [async_fifo_integrity_prove] smt2: starting process &quot;cd async_fifo_integrity_prove/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 15:48:07 [async_fifo_integrity_prove] smt2: finished (returncode=0)
+SBY 15:48:07 [async_fifo_integrity_prove] engine_0.basecase: starting process &quot;cd async_fifo_integrity_prove; yosys-smtbmc -s z3 --presat --noprogress -t 28  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 15:48:07 [async_fifo_integrity_prove] engine_0.induction: starting process &quot;cd async_fifo_integrity_prove; yosys-smtbmc -s z3 --presat -i --noprogress -t 28  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2&quot;
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Solver: z3
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Solver: z3
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 28..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 27..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 26..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 25..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 24..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 23..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 22..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 21..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 20..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 19..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 18..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 17..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:00  Trying induction in step 16..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY 15:48:08 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY 15:48:09 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:01  Trying induction in step 15..
+SBY 15:48:09 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:01  Checking assumptions in step 9..
+SBY 15:48:09 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:01  Checking assertions in step 9..
+SBY 15:48:09 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:01  Trying induction in step 14..
+SBY 15:48:09 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:01  Trying induction in step 13..
+SBY 15:48:10 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:02  Trying induction in step 12..
+SBY 15:48:10 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:02  Checking assumptions in step 10..
+SBY 15:48:10 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:02  Checking assertions in step 10..
+SBY 15:48:10 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:02  Trying induction in step 11..
+SBY 15:48:11 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:03  Trying induction in step 10..
+SBY 15:48:11 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:03  Checking assumptions in step 11..
+SBY 15:48:11 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:03  Checking assertions in step 11..
+SBY 15:48:12 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:03  Trying induction in step 9..
+SBY 15:48:12 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:04  Trying induction in step 8..
+SBY 15:48:12 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:04  Trying induction in step 7..
+SBY 15:48:12 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:04  Trying induction in step 6..
+SBY 15:48:12 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:04  Trying induction in step 5..
+SBY 15:48:14 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:06  Checking assumptions in step 12..
+SBY 15:48:14 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:06  Checking assertions in step 12..
+SBY 15:48:14 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:06  Trying induction in step 4..
+SBY 15:48:15 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:07  Trying induction in step 3..
+SBY 15:48:17 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:09  Checking assumptions in step 13..
+SBY 15:48:17 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:09  Checking assertions in step 13..
+SBY 15:48:19 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:11  Trying induction in step 2..
+SBY 15:48:19 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:11  Trying induction in step 1..
+SBY 15:48:23 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:14  Checking assumptions in step 14..
+SBY 15:48:23 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:15  Checking assertions in step 14..
+SBY 15:48:24 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:16  Trying induction in step 0..
+SBY 15:48:25 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:17  Temporal induction failed!
+SBY 15:48:25 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:17  Assert failed in async_fifo_integrity_top: async_fifo_integrity_top.sv:76.7-76.30 (_witness_.check_3)
+SBY 15:48:25 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:17  Writing trace to VCD file: engine_0/trace_induct.vcd
+SBY 15:48:25 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:17  Writing trace to Verilog testbench: engine_0/trace_induct_tb.v
+SBY 15:48:25 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:17  Writing trace to constraints file: engine_0/trace_induct.smtc
+SBY 15:48:25 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:17  Writing trace to Yosys witness file: engine_0/trace_induct.yw
+SBY 15:48:25 [async_fifo_integrity_prove] engine_0.induction: ##   0:00:17  Status: failed
+SBY 15:48:25 [async_fifo_integrity_prove] engine_0.induction: finished (returncode=1)
+SBY 15:48:25 [async_fifo_integrity_prove] engine_0.induction: Status returned by engine for induction: FAIL
+SBY 15:48:29 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:21  Checking assumptions in step 15..
+SBY 15:48:29 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:21  Checking assertions in step 15..
+SBY 15:48:37 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:29  Checking assumptions in step 16..
+SBY 15:48:38 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:30  Checking assertions in step 16..
+SBY 15:48:54 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:46  Checking assumptions in step 17..
+SBY 15:48:54 [async_fifo_integrity_prove] engine_0.basecase: ##   0:00:46  Checking assertions in step 17..
+SBY 15:49:10 [async_fifo_integrity_prove] engine_0.basecase: ##   0:01:02  Checking assumptions in step 18..
+SBY 15:49:10 [async_fifo_integrity_prove] engine_0.basecase: ##   0:01:02  Checking assertions in step 18..
+SBY 15:49:35 [async_fifo_integrity_prove] engine_0.basecase: ##   0:01:27  Checking assumptions in step 19..
+SBY 15:49:35 [async_fifo_integrity_prove] engine_0.basecase: ##   0:01:27  Checking assertions in step 19..
+SBY 15:50:02 [async_fifo_integrity_prove] engine_0.basecase: ##   0:01:54  Checking assumptions in step 20..
+SBY 15:50:03 [async_fifo_integrity_prove] engine_0.basecase: ##   0:01:55  Checking assertions in step 20..
+SBY 15:50:50 [async_fifo_integrity_prove] engine_0.basecase: ##   0:02:42  Checking assumptions in step 21..
+SBY 15:50:53 [async_fifo_integrity_prove] engine_0.basecase: ##   0:02:44  Checking assertions in step 21..
+SBY 15:51:53 [async_fifo_integrity_prove] engine_0.basecase: ##   0:03:44  waiting for solver (1 minute)
+SBY 15:51:54 [async_fifo_integrity_prove] engine_0.basecase: ##   0:03:46  Checking assumptions in step 22..
+SBY 15:52:00 [async_fifo_integrity_prove] engine_0.basecase: ##   0:03:52  Checking assertions in step 22..
+SBY 15:53:00 [async_fifo_integrity_prove] engine_0.basecase: ##   0:04:52  waiting for solver (1 minute)
+SBY 15:53:34 [async_fifo_integrity_prove] engine_0.basecase: ##   0:05:26  Checking assumptions in step 23..
+SBY 15:53:35 [async_fifo_integrity_prove] engine_0.basecase: ##   0:05:27  Checking assertions in step 23..
+SBY 15:54:35 [async_fifo_integrity_prove] engine_0.basecase: ##   0:06:27  waiting for solver (1 minute)
+SBY 15:56:07 [async_fifo_integrity_prove] engine_0.basecase: ##   0:07:59  Checking assumptions in step 24..
+SBY 15:56:12 [async_fifo_integrity_prove] engine_0.basecase: ##   0:08:04  Checking assertions in step 24..
+SBY 15:57:12 [async_fifo_integrity_prove] engine_0.basecase: ##   0:09:04  waiting for solver (1 minute)
+SBY 15:59:30 [async_fifo_integrity_prove] engine_0.basecase: ##   0:11:22  Checking assumptions in step 25..
+SBY 15:59:32 [async_fifo_integrity_prove] engine_0.basecase: ##   0:11:24  Checking assertions in step 25..
+SBY 16:00:32 [async_fifo_integrity_prove] engine_0.basecase: ##   0:12:24  waiting for solver (1 minute)
+SBY 16:02:54 [async_fifo_integrity_prove] engine_0.basecase: ##   0:14:46  Checking assumptions in step 26..
+SBY 16:03:01 [async_fifo_integrity_prove] engine_0.basecase: ##   0:14:53  Checking assertions in step 26..
+SBY 16:04:01 [async_fifo_integrity_prove] engine_0.basecase: ##   0:15:53  waiting for solver (1 minute)
+SBY 16:07:52 [async_fifo_integrity_prove] engine_0.basecase: ##   0:19:44  Checking assumptions in step 27..
+SBY 16:07:58 [async_fifo_integrity_prove] engine_0.basecase: ##   0:19:50  Checking assertions in step 27..
+SBY 16:08:58 [async_fifo_integrity_prove] engine_0.basecase: ##   0:20:50  waiting for solver (1 minute)
+SBY 16:12:58 [async_fifo_integrity_prove] engine_0.basecase: ##   0:24:50  waiting for solver (5 minutes)
+SBY 16:14:39 [async_fifo_integrity_prove] engine_0.basecase: ##   0:26:31  Status: passed
+SBY 16:14:39 [async_fifo_integrity_prove] engine_0.basecase: finished (returncode=0)
+SBY 16:14:39 [async_fifo_integrity_prove] engine_0.basecase: Status returned by engine for basecase: pass
+SBY 16:14:39 [async_fifo_integrity_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:26:32 (1592)
+SBY 16:14:39 [async_fifo_integrity_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:26:49 (1609)
+SBY 16:14:39 [async_fifo_integrity_prove] summary: engine_0 (smtbmc z3) returned pass for basecase
+SBY 16:14:39 [async_fifo_integrity_prove] summary: engine_0 (smtbmc z3) returned FAIL for induction
+SBY 16:14:39 [async_fifo_integrity_prove] summary: counterexample trace [induction]: async_fifo_integrity_prove/engine_0/trace_induct.vcd
+SBY 16:14:39 [async_fifo_integrity_prove] summary:   failed assertion async_fifo_integrity_top._witness_.check_3 at async_fifo_integrity_top.sv:76.7-76.30
+SBY 16:14:39 [async_fifo_integrity_prove] DONE (UNKNOWN, rc=4)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

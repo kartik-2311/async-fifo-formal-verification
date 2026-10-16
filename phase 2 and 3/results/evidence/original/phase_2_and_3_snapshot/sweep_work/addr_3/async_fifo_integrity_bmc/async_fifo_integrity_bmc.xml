@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-10-10T15:48:06" hostname="ACER" package="async_fifo_integrity" id="0" name="bmc" tests="17" errors="0" failures="0" time="1466" skipped="3">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="bmc" name="build execution" time="0">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:148.7-148.33" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:148.7-148.33" id="_witness_.check_116">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:149.7-149.67" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:149.7-149.67" id="_witness_.check_119">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:154.5-160.51" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:154.5-160.51" id="_witness_.check_125">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:170.7-170.46" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:170.7-170.46" id="_witness_.check_137">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:171.7-172.67" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:171.7-172.67" id="_witness_.check_140">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:173.7-173.29" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:173.7-173.29" id="_witness_.check_145">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:177.9-177.30" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:177.9-177.30" id="_witness_.check_148">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:196.7-196.46" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:196.7-196.46" id="_witness_.check_167">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:197.7-198.67" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:197.7-198.67" id="_witness_.check_170">
+</testcase>
+<testcase classname="bmc" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:201.7-201.56" time="0" type="COVER" location="async_fifo_integrity_top.sv:201.7-201.56" id="_witness_.check_175">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:205.9-205.35" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:205.9-205.35" id="_witness_.check_178">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:209.11-209.32" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:209.11-209.32" id="_witness_.check_184">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:210.11-210.40" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:210.11-210.40" id="_witness_.check_186">
+</testcase>
+<testcase classname="bmc" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:213.11-213.31" time="0" type="COVER" location="async_fifo_integrity_top.sv:213.11-213.31" id="_witness_.check_189">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:214.11-214.54" time="0" type="COVER" location="async_fifo_integrity_top.sv:214.11-214.54" id="_witness_.check_191">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:76.7-76.30" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:76.7-76.30" id="_witness_.check_3">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:83.7-83.30" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:83.7-83.30" id="_witness_.check_8">
+</testcase>
+<system-out>SBY 15:23:39 [async_fifo_integrity_bmc] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_3/async_fifo_integrity_bmc'.
+SBY 15:23:39 [async_fifo_integrity_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_3/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_3/async_fifo_integrity_bmc/src/async_fifo.sv'.
+SBY 15:23:39 [async_fifo_integrity_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_3/async_fifo_integrity_top.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_3/async_fifo_integrity_bmc/src/async_fifo_integrity_top.sv'.
+SBY 15:23:39 [async_fifo_integrity_bmc] engine_0: smtbmc z3
+SBY 15:23:39 [async_fifo_integrity_bmc] base: starting process &quot;cd async_fifo_integrity_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 15:23:40 [async_fifo_integrity_bmc] base: finished (returncode=0)
+SBY 15:23:40 [async_fifo_integrity_bmc] prep: starting process &quot;cd async_fifo_integrity_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 15:23:40 [async_fifo_integrity_bmc] prep: finished (returncode=0)
+SBY 15:23:40 [async_fifo_integrity_bmc] smt2: starting process &quot;cd async_fifo_integrity_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 15:23:40 [async_fifo_integrity_bmc] smt2: finished (returncode=0)
+SBY 15:23:40 [async_fifo_integrity_bmc] engine_0: starting process &quot;cd async_fifo_integrity_bmc; yosys-smtbmc -s z3 --presat --noprogress -t 28  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 15:23:40 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Solver: z3
+SBY 15:23:40 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 15:23:40 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 15:23:40 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 15:23:40 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 15:23:40 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 15:23:40 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 15:23:40 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 15:23:40 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Checking assumptions in step 9..
+SBY 15:23:41 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Checking assertions in step 9..
+SBY 15:23:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Checking assumptions in step 10..
+SBY 15:23:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:02  Checking assertions in step 10..
+SBY 15:23:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:03  Checking assumptions in step 11..
+SBY 15:23:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:03  Checking assertions in step 11..
+SBY 15:23:46 [async_fifo_integrity_bmc] engine_0: ##   0:00:05  Checking assumptions in step 12..
+SBY 15:23:46 [async_fifo_integrity_bmc] engine_0: ##   0:00:05  Checking assertions in step 12..
+SBY 15:23:48 [async_fifo_integrity_bmc] engine_0: ##   0:00:08  Checking assumptions in step 13..
+SBY 15:23:49 [async_fifo_integrity_bmc] engine_0: ##   0:00:08  Checking assertions in step 13..
+SBY 15:23:53 [async_fifo_integrity_bmc] engine_0: ##   0:00:12  Checking assumptions in step 14..
+SBY 15:23:53 [async_fifo_integrity_bmc] engine_0: ##   0:00:13  Checking assertions in step 14..
+SBY 15:23:59 [async_fifo_integrity_bmc] engine_0: ##   0:00:18  Checking assumptions in step 15..
+SBY 15:23:59 [async_fifo_integrity_bmc] engine_0: ##   0:00:18  Checking assertions in step 15..
+SBY 15:24:08 [async_fifo_integrity_bmc] engine_0: ##   0:00:27  Checking assumptions in step 16..
+SBY 15:24:08 [async_fifo_integrity_bmc] engine_0: ##   0:00:28  Checking assertions in step 16..
+SBY 15:24:24 [async_fifo_integrity_bmc] engine_0: ##   0:00:43  Checking assumptions in step 17..
+SBY 15:24:24 [async_fifo_integrity_bmc] engine_0: ##   0:00:43  Checking assertions in step 17..
+SBY 15:24:40 [async_fifo_integrity_bmc] engine_0: ##   0:00:59  Checking assumptions in step 18..
+SBY 15:24:40 [async_fifo_integrity_bmc] engine_0: ##   0:01:00  Checking assertions in step 18..
+SBY 15:25:07 [async_fifo_integrity_bmc] engine_0: ##   0:01:26  Checking assumptions in step 19..
+SBY 15:25:07 [async_fifo_integrity_bmc] engine_0: ##   0:01:27  Checking assertions in step 19..
+SBY 15:25:34 [async_fifo_integrity_bmc] engine_0: ##   0:01:53  Checking assumptions in step 20..
+SBY 15:25:35 [async_fifo_integrity_bmc] engine_0: ##   0:01:54  Checking assertions in step 20..
+SBY 15:26:21 [async_fifo_integrity_bmc] engine_0: ##   0:02:40  Checking assumptions in step 21..
+SBY 15:26:24 [async_fifo_integrity_bmc] engine_0: ##   0:02:43  Checking assertions in step 21..
+SBY 15:27:24 [async_fifo_integrity_bmc] engine_0: ##   0:03:43  waiting for solver (1 minute)
+SBY 15:27:25 [async_fifo_integrity_bmc] engine_0: ##   0:03:44  Checking assumptions in step 22..
+SBY 15:27:30 [async_fifo_integrity_bmc] engine_0: ##   0:03:49  Checking assertions in step 22..
+SBY 15:28:30 [async_fifo_integrity_bmc] engine_0: ##   0:04:49  waiting for solver (1 minute)
+SBY 15:28:57 [async_fifo_integrity_bmc] engine_0: ##   0:05:16  Checking assumptions in step 23..
+SBY 15:28:58 [async_fifo_integrity_bmc] engine_0: ##   0:05:17  Checking assertions in step 23..
+SBY 15:29:58 [async_fifo_integrity_bmc] engine_0: ##   0:06:17  waiting for solver (1 minute)
+SBY 15:30:31 [async_fifo_integrity_bmc] engine_0: ##   0:06:50  Checking assumptions in step 24..
+SBY 15:30:34 [async_fifo_integrity_bmc] engine_0: ##   0:06:54  Checking assertions in step 24..
+SBY 15:31:34 [async_fifo_integrity_bmc] engine_0: ##   0:07:54  waiting for solver (1 minute)
+SBY 15:33:48 [async_fifo_integrity_bmc] engine_0: ##   0:10:08  Checking assumptions in step 25..
+SBY 15:33:50 [async_fifo_integrity_bmc] engine_0: ##   0:10:10  Checking assertions in step 25..
+SBY 15:34:50 [async_fifo_integrity_bmc] engine_0: ##   0:11:10  waiting for solver (1 minute)
+SBY 15:37:02 [async_fifo_integrity_bmc] engine_0: ##   0:13:21  Checking assumptions in step 26..
+SBY 15:37:09 [async_fifo_integrity_bmc] engine_0: ##   0:13:28  Checking assertions in step 26..
+SBY 15:38:09 [async_fifo_integrity_bmc] engine_0: ##   0:14:28  waiting for solver (1 minute)
+SBY 15:41:56 [async_fifo_integrity_bmc] engine_0: ##   0:18:15  Checking assumptions in step 27..
+SBY 15:42:02 [async_fifo_integrity_bmc] engine_0: ##   0:18:21  Checking assertions in step 27..
+SBY 15:43:02 [async_fifo_integrity_bmc] engine_0: ##   0:19:21  waiting for solver (1 minute)
+SBY 15:47:02 [async_fifo_integrity_bmc] engine_0: ##   0:23:21  waiting for solver (5 minutes)
+SBY 15:48:06 [async_fifo_integrity_bmc] engine_0: ##   0:24:25  Status: passed
+SBY 15:48:06 [async_fifo_integrity_bmc] engine_0: finished (returncode=0)
+SBY 15:48:06 [async_fifo_integrity_bmc] engine_0: Status returned by engine: pass
+SBY 15:48:06 [async_fifo_integrity_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:24:26 (1466)
+SBY 15:48:06 [async_fifo_integrity_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:24:26 (1466)
+SBY 15:48:06 [async_fifo_integrity_bmc] summary: engine_0 (smtbmc z3) returned pass
+SBY 15:48:06 [async_fifo_integrity_bmc] summary: engine_0 did not produce any traces
+SBY 15:48:06 [async_fifo_integrity_bmc] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

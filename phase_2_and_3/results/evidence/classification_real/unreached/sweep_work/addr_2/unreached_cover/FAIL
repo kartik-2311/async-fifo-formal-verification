@@ -1,0 +1,6 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc z3) returned FAIL
+engine_0 did not produce any traces
+unreached cover statements:
+  unreached_top._witness_.check_1 at unreached.sv:2.15-2.28

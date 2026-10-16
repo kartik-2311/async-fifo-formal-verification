@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-10-11T09:10:34" hostname="ACER" package="async_fifo_multiclock" id="0" name="cover" tests="9" errors="0" failures="0" time="1" skipped="6">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="cover" name="build execution" time="0">
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo at async_fifo_formal.sv:127.11-127.65" time="0" type="ASSERT" location="async_fifo_formal.sv:127.11-127.65" id="_witness_.check_107">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo at async_fifo_formal.sv:131.11-131.67" time="0" type="ASSERT" location="async_fifo_formal.sv:131.11-131.67" id="_witness_.check_112">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo at async_fifo_formal.sv:134.11-134.29" time="0" type="ASSERT" location="async_fifo_formal.sv:134.11-134.29" id="_witness_.check_116">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property COVER in async_fifo at async_fifo_formal.sv:139.9-139.44" time="0" type="COVER" location="async_fifo_formal.sv:139.9-139.44" id="_witness_.check_119" tracefile="engine_0/trace1.vcd">
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo at async_fifo_formal.sv:77.11-77.65" time="0" type="ASSERT" location="async_fifo_formal.sv:77.11-77.65" id="_witness_.check_78">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo at async_fifo_formal.sv:82.11-86.14" time="0" type="ASSERT" location="async_fifo_formal.sv:82.11-86.14" id="_witness_.check_83">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property ASSERT in async_fifo at async_fifo_formal.sv:89.11-89.29" time="0" type="ASSERT" location="async_fifo_formal.sv:89.11-89.29" id="_witness_.check_91">
+<skipped />
+</testcase>
+<testcase classname="cover" name="Property COVER in async_fifo at async_fifo_formal.sv:93.9-93.25" time="0" type="COVER" location="async_fifo_formal.sv:93.9-93.25" id="_witness_.check_95" tracefile="engine_0/trace0.vcd">
+</testcase>
+<testcase classname="cover" name="Property COVER in async_fifo at async_fifo_formal.sv:94.9-94.42" time="0" type="COVER" location="async_fifo_formal.sv:94.9-94.42" id="_witness_.check_97" tracefile="engine_0/trace2.vcd">
+</testcase>
+<system-out>SBY  9:10:31 [async_fifo_multiclock_cover] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_5/async_fifo_multiclock_cover'.
+SBY  9:10:32 [async_fifo_multiclock_cover] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_5/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_5/async_fifo_multiclock_cover/src/async_fifo.sv'.
+SBY  9:10:32 [async_fifo_multiclock_cover] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_5/async_fifo_formal.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_5/async_fifo_multiclock_cover/src/async_fifo_formal.sv'.
+SBY  9:10:32 [async_fifo_multiclock_cover] engine_0: smtbmc z3
+SBY  9:10:32 [async_fifo_multiclock_cover] base: starting process &quot;cd async_fifo_multiclock_cover/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY  9:10:32 [async_fifo_multiclock_cover] base: finished (returncode=0)
+SBY  9:10:32 [async_fifo_multiclock_cover] prep: starting process &quot;cd async_fifo_multiclock_cover/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY  9:10:32 [async_fifo_multiclock_cover] prep: finished (returncode=0)
+SBY  9:10:32 [async_fifo_multiclock_cover] smt2: starting process &quot;cd async_fifo_multiclock_cover/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY  9:10:32 [async_fifo_multiclock_cover] smt2: finished (returncode=0)
+SBY  9:10:32 [async_fifo_multiclock_cover] engine_0: starting process &quot;cd async_fifo_multiclock_cover; yosys-smtbmc -s z3 --presat -c --noprogress -t 140  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Solver: z3
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Reached cover statement in step 9 at async_fifo: async_fifo_formal.sv:93.9-93.25 (_witness_.check_95)
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Reached cover statement in step 11 at async_fifo: async_fifo_formal.sv:139.9-139.44 (_witness_.check_119)
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY  9:10:33 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY  9:10:34 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Reached cover statement in step 11 at async_fifo: async_fifo_formal.sv:94.9-94.42 (_witness_.check_97)
+SBY  9:10:34 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY  9:10:34 [async_fifo_multiclock_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY  9:10:34 [async_fifo_multiclock_cover] engine_0: ##   0:00:01  Writing trace to constraints file: engine_0/trace2.smtc
+SBY  9:10:34 [async_fifo_multiclock_cover] engine_0: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY  9:10:34 [async_fifo_multiclock_cover] engine_0: ##   0:00:01  Status: passed
+SBY  9:10:34 [async_fifo_multiclock_cover] engine_0: finished (returncode=0)
+SBY  9:10:34 [async_fifo_multiclock_cover] engine_0: Status returned by engine: pass
+SBY  9:10:34 [async_fifo_multiclock_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY  9:10:34 [async_fifo_multiclock_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY  9:10:34 [async_fifo_multiclock_cover] summary: engine_0 (smtbmc z3) returned pass
+SBY  9:10:34 [async_fifo_multiclock_cover] summary: cover trace: async_fifo_multiclock_cover/engine_0/trace0.vcd
+SBY  9:10:34 [async_fifo_multiclock_cover] summary:   reached cover statement async_fifo._witness_.check_95 at async_fifo_formal.sv:93.9-93.25 step 9
+SBY  9:10:34 [async_fifo_multiclock_cover] summary: cover trace: async_fifo_multiclock_cover/engine_0/trace1.vcd
+SBY  9:10:34 [async_fifo_multiclock_cover] summary:   reached cover statement async_fifo._witness_.check_119 at async_fifo_formal.sv:139.9-139.44 step 11
+SBY  9:10:34 [async_fifo_multiclock_cover] summary: cover trace: async_fifo_multiclock_cover/engine_0/trace2.vcd
+SBY  9:10:34 [async_fifo_multiclock_cover] summary:   reached cover statement async_fifo._witness_.check_97 at async_fifo_formal.sv:94.9-94.42 step 11
+SBY  9:10:34 [async_fifo_multiclock_cover] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

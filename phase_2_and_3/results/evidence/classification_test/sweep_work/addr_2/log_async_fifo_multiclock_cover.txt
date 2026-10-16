@@ -1,0 +1,2 @@
+Unreached cover statements:
+mock cover goal

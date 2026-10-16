@@ -1,0 +1,4 @@
+rm: cannot remove 'c03_work/addr_2/async_fifo_mulexit=1
+=== ADDR_WIDTH=4 ===
+empty
+=== ADDR_WIDTH=2 ===

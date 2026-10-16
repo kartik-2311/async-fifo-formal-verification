@@ -1,0 +1,12 @@
+﻿ADDR_WIDTH=2
+wire width 3 \dut.u_wr_ptr.wr_bin
+parameter \SIZE 4
+ADDR_WIDTH=3
+wire width 4 \dut.u_wr_ptr.wr_bin
+parameter \SIZE 8
+ADDR_WIDTH=4
+wire width 5 \dut.u_wr_ptr.wr_bin
+parameter \SIZE 16
+ADDR_WIDTH=5
+wire width 6 \dut.u_wr_ptr.wr_bin
+parameter \SIZE 32

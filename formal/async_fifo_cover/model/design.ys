@@ -1,0 +1,9 @@
+# running in async_fifo_cover/src/
+plugin -i /home/karti/projects/yosys-slang/build/slang.so
+read_slang async_fifo.sv async_fifo_formal.sv --top async_fifo
+prep -top async_fifo
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

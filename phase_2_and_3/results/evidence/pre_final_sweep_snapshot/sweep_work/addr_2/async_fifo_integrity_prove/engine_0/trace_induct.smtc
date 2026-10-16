@@ -1,0 +1,330 @@
+initial
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$118y#sampled$568] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$138#sampled$492] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$139y#sampled$470] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$144y#sampled$484] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$147y#sampled$498] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$149#sampled$506] true)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$150y#sampled$512] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$168#sampled$534] true)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$169y#sampled$526] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$174y#sampled$540] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$179#sampled$562] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$185#sampled$590] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$188y#sampled$596] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$4#sampled$632] true)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$9#sampled$646] true)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$procmux$104_Y#sampled$390] #x00)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$procmux$108_Y#sampled$430] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$procmux$112_Y#sampled$440] #b000)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$procmux$134_Y#sampled$410] #b001)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$procmux$138_Y#sampled$370] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$procmux$142_Y#sampled$450] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$procmux$22_Y#sampled$400] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$$procmux$26_Y#sampled$360] #b000)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_rd_ptr.rd_bin#sampled$158] #b100)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_rd_ptr.rd_bin_next#sampled$160] #b001)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_rd_ptr.rd_empty#sampled$178] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_rd_ptr.rd_empty_next#sampled$180] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_rd_ptr.rd_gray_next#sampled$200] #b001)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_rd_ptr.rd_gray_ptr#sampled$198] #b000)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_rd_ptr.rd_gray_ptr#sampled$220] #b010)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_sync_rd2wr.meta_ff#sampled$218] #b000)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_sync_rd2wr.meta_ff#sampled$240] #b000)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_sync_rd2wr.sync_ff#sampled$238] #b111)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_sync_wr2rd.meta_ff#sampled$258] #b001)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_sync_wr2rd.meta_ff#sampled$280] #b000)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_sync_wr2rd.sync_ff#sampled$278] #b010)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_wr_ptr.wr_bin#sampled$298] #b101)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_wr_ptr.wr_bin_next#sampled$300] #b000)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_wr_ptr.wr_full#sampled$318] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_wr_ptr.wr_full_next#sampled$320] true)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_wr_ptr.wr_gray_next#sampled$340] #b000)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_wr_ptr.wr_gray_ptr#sampled$260] #b000)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/dut.u_wr_ptr.wr_gray_ptr#sampled$338] #b111)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/rd_cnt#sampled$358] #b100)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/rd_reset_done#sampled$368] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/rd_reset_done#sampled$652] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/rd_seen#sampled$378] true)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/tag_data#sampled$388] #x08)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/tag_read#sampled$398] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/tag_seq#sampled$408] #b000)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/tag_set#sampled$418] true)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/tag_written#sampled$428] true)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/tag_written#sampled$582] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/wr_cnt#sampled$438] #b101)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/wr_reset_done#sampled$448] true)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$/wr_reset_done#sampled$638] false)
+assume (= [$auto$clk2fflogic.cc:101:sample_data$1'1#sampled$420] true)
+assume (= [$auto$clk2fflogic.cc:206:execute$dut.u_mem.mem#0#en_q$150] #x10)
+assume (= [$auto$clk2fflogic.cc:209:execute$dut.u_mem.mem#0#addr_q$152] #b11)
+assume (= [$auto$clk2fflogic.cc:212:execute$dut.u_mem.mem#0#data_q$154] #x00)
+assume (= [$auto$clk2fflogic.cc:75:sample_control$$auto$rtlil.cc:3234:Not$349#sampled$350] false)
+assume (= [$auto$clk2fflogic.cc:87:sample_control_edge$/rd_clk#sampled$556] true)
+assume (= [$auto$clk2fflogic.cc:87:sample_control_edge$/wr_clk#sampled$500] true)
+assume (= (select [dut.u_mem.mem] #b00) #x08)
+assume (= (select [dut.u_mem.mem] #b01) #x80)
+
+state 0
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b001)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x00)
+assume (= [wr_en] true)
+
+state 1
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b000)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x80)
+assume (= [wr_en] true)
+
+state 2
+assume (= [rd_clk] false)
+assume (= [rd_en] false)
+assume (= [tag_seq_in] #b100)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x08)
+assume (= [wr_en] true)
+
+state 3
+assume (= [rd_clk] false)
+assume (= [rd_en] false)
+assume (= [tag_seq_in] #b100)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x80)
+assume (= [wr_en] true)
+
+state 4
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b011)
+assume (= [wr_clk] true)
+assume (= [wr_data] #xdf)
+assume (= [wr_en] false)
+
+state 5
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b011)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x08)
+assume (= [wr_en] true)
+
+state 6
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b011)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x00)
+assume (= [wr_en] true)
+
+state 7
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b011)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x80)
+assume (= [wr_en] true)
+
+state 8
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b011)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x30)
+assume (= [wr_en] false)
+
+state 9
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b011)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x08)
+assume (= [wr_en] false)
+
+state 10
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b111)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x40)
+assume (= [wr_en] false)
+
+state 11
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b001)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x80)
+assume (= [wr_en] true)
+
+state 12
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b101)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x40)
+assume (= [wr_en] false)
+
+state 13
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b100)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x80)
+assume (= [wr_en] true)
+
+state 14
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b001)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x00)
+assume (= [wr_en] true)
+
+state 15
+assume (= [rd_clk] false)
+assume (= [rd_en] false)
+assume (= [tag_seq_in] #b001)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x08)
+assume (= [wr_en] false)
+
+state 16
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b001)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x08)
+assume (= [wr_en] false)
+
+state 17
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b001)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x00)
+assume (= [wr_en] false)
+
+state 18
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b000)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x04)
+assume (= [wr_en] false)
+
+state 19
+assume (= [rd_clk] false)
+assume (= [rd_en] false)
+assume (= [tag_seq_in] #b001)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x0c)
+assume (= [wr_en] false)
+
+state 20
+assume (= [rd_clk] false)
+assume (= [rd_en] false)
+assume (= [tag_seq_in] #b101)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x90)
+assume (= [wr_en] false)
+
+state 21
+assume (= [rd_clk] false)
+assume (= [rd_en] false)
+assume (= [tag_seq_in] #b000)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x00)
+assume (= [wr_en] false)
+
+state 22
+assume (= [rd_clk] false)
+assume (= [rd_en] false)
+assume (= [tag_seq_in] #b100)
+assume (= [wr_clk] false)
+assume (= [wr_data] #xdf)
+assume (= [wr_en] false)
+
+state 23
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b100)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x01)
+assume (= [wr_en] true)
+
+state 24
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b101)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x08)
+assume (= [wr_en] false)
+
+state 25
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b100)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x04)
+assume (= [wr_en] true)
+
+state 26
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b010)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x21)
+assume (= [wr_en] true)
+
+state 27
+assume (= [rd_clk] false)
+assume (= [rd_en] false)
+assume (= [tag_seq_in] #b001)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x05)
+assume (= [wr_en] true)
+
+state 28
+assume (= [rd_clk] false)
+assume (= [rd_en] false)
+assume (= [tag_seq_in] #b010)
+assume (= [wr_clk] true)
+assume (= [wr_data] #xfe)
+assume (= [wr_en] false)
+
+state 29
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b001)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x20)
+assume (= [wr_en] true)
+
+state 30
+assume (= [rd_clk] false)
+assume (= [rd_en] false)
+assume (= [tag_seq_in] #b010)
+assume (= [wr_clk] false)
+assume (= [wr_data] #x08)
+assume (= [wr_en] false)
+
+state 31
+assume (= [rd_clk] false)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b010)
+assume (= [wr_clk] false)
+assume (= [wr_data] #xf7)
+assume (= [wr_en] false)
+
+state 32
+assume (= [rd_clk] true)
+assume (= [rd_en] true)
+assume (= [tag_seq_in] #b001)
+assume (= [wr_clk] true)
+assume (= [wr_data] #x08)
+assume (= [wr_en] false)

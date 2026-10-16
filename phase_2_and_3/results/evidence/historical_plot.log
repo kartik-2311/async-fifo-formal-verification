@@ -1,0 +1,29 @@
+| entries | sby file | task | status | seconds |
+|---|---|---|---|---|
+| 4 | async_fifo_integrity.sby | bmc | PASS | 128 |
+| 8 | async_fifo_integrity.sby | bmc | PASS | 1467 |
+| 16 | async_fifo_integrity.sby | bmc | TIMEOUT | 1800 |
+| 32 | async_fifo_integrity.sby | bmc | TIMEOUT | 1800 |
+| 4 | async_fifo_integrity.sby | cover | FAIL | 2 |
+| 8 | async_fifo_integrity.sby | cover | PASS | 6 |
+| 16 | async_fifo_integrity.sby | cover | PASS | 47 |
+| 32 | async_fifo_integrity.sby | cover | PASS | 663 |
+| 4 | async_fifo_integrity.sby | prove | UNKNOWN | 122 |
+| 8 | async_fifo_integrity.sby | prove | UNKNOWN | 1593 |
+| 16 | async_fifo_integrity.sby | prove | TIMEOUT | 1800 |
+| 32 | async_fifo_integrity.sby | prove | TIMEOUT | 1800 |
+| 4 | async_fifo_multiclock.sby | bmc | FAIL | 2 |
+| 8 | async_fifo_multiclock.sby | bmc | FAIL | 2 |
+| 16 | async_fifo_multiclock.sby | bmc | FAIL | 3 |
+| 32 | async_fifo_multiclock.sby | bmc | FAIL | 2 |
+| 4 | async_fifo_multiclock.sby | cover | PASS | 3 |
+| 8 | async_fifo_multiclock.sby | cover | PASS | 2 |
+| 16 | async_fifo_multiclock.sby | cover | PASS | 3 |
+| 32 | async_fifo_multiclock.sby | cover | PASS | 2 |
+| 4 | async_fifo_multiclock.sby | prove | FAIL | 2 |
+| 8 | async_fifo_multiclock.sby | prove | FAIL | 2 |
+| 16 | async_fifo_multiclock.sby | prove | FAIL | 2 |
+| 32 | async_fifo_multiclock.sby | prove | FAIL | 3 |
+
+Saved results/evidence/original_runtime_vs_depth.png
+PYTHON_EXIT=0

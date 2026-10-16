@@ -1,0 +1,14 @@
+Final sweep.sh revision classifier regression; depth formula is 2**(ADDR_WIDTH+2)+12 with a minimum of 32.
+Each isolated case invoked the final repository sweep.sh; first-revision outputs are preserved under first_script_version/.
+pass: CSV status=PASS; task=bmc; depth=32; seconds=2; SBY log matches expected terminal outcome
+fail: CSV status=FAIL; task=bmc; depth=32; seconds=1; SBY log matches expected terminal outcome
+unreached: CSV status=UNREACHED_COVER; task=cover; depth=32; seconds=2; SBY log matches expected terminal outcome
+timeout: CSV status=TIMEOUT; task=prove; depth=76; seconds=1; SBY log matches expected terminal outcome
+All four final-script CSV-to-log checks passed.
+
+Final-script arithmetic regression, PASS fixture over ADDR_WIDTH=2 3 4 5:
+ADDR_WIDTH=2 depth=32 PASS
+ADDR_WIDTH=3 depth=44 PASS
+ADDR_WIDTH=4 depth=76 PASS
+ADDR_WIDTH=5 depth=140 PASS
+The CSV rows match the formula max(2**(ADDR_WIDTH+2)+12, 32).

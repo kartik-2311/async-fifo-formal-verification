@@ -1,0 +1,6 @@
+>>> ADDR_WIDTH=2 (4 entries)  depth=32  fail.sby  bmc
+    -> FAIL in 1s
+
+Results written to sweep_results.csv
+addr_width  entries  bmc_depth  sby_file  task  status  seconds
+2           4        32         fail.sby  bmc   FAIL    1

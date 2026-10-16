@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-10-15T14:05:43" hostname="ACER" package="async_fifo_integrity" id="0" name="bmc" tests="19" errors="0" failures="4" time="1" skipped="16">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="bmc" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:153.7-153.33" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:153.7-153.33" id="_witness_.check_125">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:154.7-154.67" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:154.7-154.67" id="_witness_.check_128">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:89.5-89.40" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:89.5-89.40" id="_witness_.check_13">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:159.5-165.51" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:159.5-165.51" id="_witness_.check_134">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:175.7-175.46" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:175.7-175.46" id="_witness_.check_146">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:176.7-177.67" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:176.7-177.67" id="_witness_.check_149">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:178.7-178.29" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:178.7-178.29" id="_witness_.check_154">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:182.9-182.30" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:182.9-182.30" id="_witness_.check_157">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:90.5-90.40" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:90.5-90.40" id="_witness_.check_17">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:201.7-201.46" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:201.7-201.46" id="_witness_.check_176">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:202.7-203.67" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:202.7-203.67" id="_witness_.check_179">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:206.7-206.56" time="0" type="COVER" location="async_fifo_integrity_top.sv:206.7-206.56" id="_witness_.check_184">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:210.9-210.35" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:210.9-210.35" id="_witness_.check_187" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:210.9-210.35 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:214.11-214.32" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:214.11-214.32" id="_witness_.check_193" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:214.11-214.32 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:215.11-215.40" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:215.11-215.40" id="_witness_.check_195" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:215.11-215.40 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="bmc" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:218.11-218.31" time="0" type="COVER" location="async_fifo_integrity_top.sv:218.11-218.31" id="_witness_.check_198">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:219.11-219.54" time="0" type="COVER" location="async_fifo_integrity_top.sv:219.11-219.54" id="_witness_.check_200">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:76.7-76.30" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:76.7-76.30" id="_witness_.check_3">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:83.7-83.30" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:83.7-83.30" id="_witness_.check_8">
+<skipped />
+</testcase>
+<system-out>SBY 14:05:41 [async_fifo_integrity_bmc] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/mutants/final_f6/M5/async_fifo_integrity_bmc'.
+SBY 14:05:41 [async_fifo_integrity_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/mutants/final_f6/M5/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/mutants/final_f6/M5/async_fifo_integrity_bmc/src/async_fifo.sv'.
+SBY 14:05:41 [async_fifo_integrity_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/mutants/final_f6/M5/async_fifo_integrity_top.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/mutants/final_f6/M5/async_fifo_integrity_bmc/src/async_fifo_integrity_top.sv'.
+SBY 14:05:41 [async_fifo_integrity_bmc] engine_0: smtbmc z3
+SBY 14:05:41 [async_fifo_integrity_bmc] base: starting process &quot;cd async_fifo_integrity_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 14:05:41 [async_fifo_integrity_bmc] base: Warning: Wire async_fifo_integrity_top.\dut.wr_bin is used but has no driver.
+SBY 14:05:41 [async_fifo_integrity_bmc] base: Warning: Wire async_fifo_integrity_top.\dut.rd_bin is used but has no driver.
+SBY 14:05:41 [async_fifo_integrity_bmc] base: Warning: Wire async_fifo_integrity_top.\dut.u_sync_wr2rd.d_in [0] is used but has no driver.
+SBY 14:05:41 [async_fifo_integrity_bmc] base: Warning: Wire async_fifo_integrity_top.\dut.u_sync_rd2wr.d_in [0] is used but has no driver.
+SBY 14:05:41 [async_fifo_integrity_bmc] base: finished (returncode=0)
+SBY 14:05:41 [async_fifo_integrity_bmc] prep: starting process &quot;cd async_fifo_integrity_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 14:05:42 [async_fifo_integrity_bmc] prep: Warning: Wire async_fifo_integrity_top.\dut.u_sync_rd2wr.d_in [0] is used but has no driver.
+SBY 14:05:42 [async_fifo_integrity_bmc] prep: Warning: Wire async_fifo_integrity_top.\dut.u_sync_wr2rd.d_in [0] is used but has no driver.
+SBY 14:05:42 [async_fifo_integrity_bmc] prep: finished (returncode=0)
+SBY 14:05:42 [async_fifo_integrity_bmc] smt2: starting process &quot;cd async_fifo_integrity_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 14:05:42 [async_fifo_integrity_bmc] smt2: finished (returncode=0)
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: starting process &quot;cd async_fifo_integrity_bmc; yosys-smtbmc -s z3 --presat --noprogress -t 32  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Solver: z3
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 14:05:42 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  BMC failed!
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Assert failed in async_fifo_integrity_top: async_fifo_integrity_top.sv:210.9-210.35 (_witness_.check_187)
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Assert failed in async_fifo_integrity_top: async_fifo_integrity_top.sv:214.11-214.32 (_witness_.check_193)
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Assert failed in async_fifo_integrity_top: async_fifo_integrity_top.sv:215.11-215.40 (_witness_.check_195)
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Writing trace to VCD file: engine_0/trace.vcd
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Writing trace to constraints file: engine_0/trace.smtc
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: ##   0:00:01  Status: failed
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: finished (returncode=1)
+SBY 14:05:43 [async_fifo_integrity_bmc] engine_0: Status returned by engine: FAIL
+SBY 14:05:43 [async_fifo_integrity_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 14:05:43 [async_fifo_integrity_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 14:05:43 [async_fifo_integrity_bmc] summary: engine_0 (smtbmc z3) returned FAIL
+SBY 14:05:43 [async_fifo_integrity_bmc] summary: counterexample trace: async_fifo_integrity_bmc/engine_0/trace.vcd
+SBY 14:05:43 [async_fifo_integrity_bmc] summary:   failed assertion async_fifo_integrity_top._witness_.check_187 at async_fifo_integrity_top.sv:210.9-210.35 step 9
+SBY 14:05:43 [async_fifo_integrity_bmc] summary:   failed assertion async_fifo_integrity_top._witness_.check_193 at async_fifo_integrity_top.sv:214.11-214.32 step 9
+SBY 14:05:43 [async_fifo_integrity_bmc] summary:   failed assertion async_fifo_integrity_top._witness_.check_195 at async_fifo_integrity_top.sv:215.11-215.40 step 9
+SBY 14:05:43 [async_fifo_integrity_bmc] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

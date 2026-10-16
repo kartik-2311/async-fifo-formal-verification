@@ -1,0 +1,15 @@
+SBY 13:45:29 [async_fifo_multiclock_bmc] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/temp_width2/async_fifo_multiclock_bmc'.
+SBY 13:45:29 [async_fifo_multiclock_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/temp_width2/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/temp_width2/async_fifo_multiclock_bmc/src/async_fifo.sv'.
+SBY 13:45:29 [async_fifo_multiclock_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/temp_width2/async_fifo_formal.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/temp_width2/async_fifo_multiclock_bmc/src/async_fifo_formal.sv'.
+SBY 13:45:29 [async_fifo_multiclock_bmc] engine_0: smtbmc z3
+SBY 13:45:30 [async_fifo_multiclock_bmc] base: starting process "cd async_fifo_multiclock_bmc/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 13:45:30 [async_fifo_multiclock_bmc] base: ERROR: Command syntax error: Unknown option or option in arguments.
+SBY 13:45:30 [async_fifo_multiclock_bmc] base: > prep -top async_fifo -set ADDR_WIDTH=2
+SBY 13:45:30 [async_fifo_multiclock_bmc] base: >                      ^
+SBY 13:45:30 [async_fifo_multiclock_bmc] base: finished (returncode=1)
+SBY 13:45:30 [async_fifo_multiclock_bmc] base: task failed. ERROR.
+SBY 13:45:30 [async_fifo_multiclock_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 13:45:30 [async_fifo_multiclock_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 13:45:30 [async_fifo_multiclock_bmc] summary: engine_0 (smtbmc z3) did not return a status
+SBY 13:45:30 [async_fifo_multiclock_bmc] summary: engine_0 did not produce any traces
+SBY 13:45:30 [async_fifo_multiclock_bmc] DONE (ERROR, rc=16)

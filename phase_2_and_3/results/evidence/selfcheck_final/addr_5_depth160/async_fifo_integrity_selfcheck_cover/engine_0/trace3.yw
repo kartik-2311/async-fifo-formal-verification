@@ -1,0 +1,40 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [
+    {"path": ["\\rd_clk"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\rd_en"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\tag_seq_in"], "width": 6, "offset": 0, "init_only": false},
+    {"path": ["\\wr_clk"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\wr_data"], "width": 8, "offset": 0, "init_only": false},
+    {"path": ["\\wr_en"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\u_mem", "\\mem", "\\[0]"], "width": 8, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_mem", "\\mem", "\\[1]"], "width": 8, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_rd_ptr", "\\rd_bin"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_rd_ptr", "\\rd_empty"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_rd_ptr", "\\rd_gray_ptr"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_sync_rd2wr", "\\meta_ff"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_sync_rd2wr", "\\sync_ff"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_sync_wr2rd", "\\meta_ff"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_sync_wr2rd", "\\sync_ff"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_wr_ptr", "\\wr_bin"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_wr_ptr", "\\wr_full"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\u_wr_ptr", "\\wr_gray_ptr"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\rd_cnt"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\tag_capture_value"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\tag_data"], "width": 8, "offset": 0, "init_only": true},
+    {"path": ["\\tag_read"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\tag_seq"], "width": 6, "offset": 0, "init_only": true},
+    {"path": ["\\tag_written"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\wr_cnt"], "width": 6, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "000000000000000000000001000000000100000000000000000000000000000000000000000001000000????????00000000100000000000000000"},
+    {"bits": "100000010100000001"},
+    {"bits": "100000000000000000"},
+    {"bits": "100000001000000101"},
+    {"bits": "100000000100000100"},
+    {"bits": "100000000000000001"}
+  ]
+}

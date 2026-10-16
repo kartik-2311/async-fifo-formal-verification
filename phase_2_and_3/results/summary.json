@@ -1,0 +1,493 @@
+{
+  "audit_date": "2026-10-11",
+  "tools": {
+    "yosys": "0.69+20 (git sha1 3a8289484)",
+    "symbiyosys": "0.69",
+    "z3": "4.13.3 64-bit",
+    "python": "3.14.4",
+    "matplotlib": "3.11.2",
+    "pandoc": "not found",
+    "machine": "WSL2 Linux 6.18.33.2-microsoft-standard-WSL2"
+  },
+  "protected_inputs": {
+    "rtl_modified": false,
+    "phase0_phase1_modified": false,
+    "evidence": [
+      "results/evidence/input_hashes.csv",
+      "results/evidence/final_input_hashes.csv",
+      "results/evidence/rtl_integrity_check.log"
+    ]
+  },
+  "claims": [
+    {
+      "id": "C01",
+      "status": "VERIFIED",
+      "command": "git hash-object and git diff --ignore-space-at-eol --exit-code HEAD -- rtl/async_fifo.sv",
+      "evidence": "results/evidence/final_input_hashes.csv; results/evidence/rtl_integrity_check.log"
+    },
+    {
+      "id": "C02",
+      "status": "VERIFIED",
+      "command": "sby -f async_fifo.sby; inspect generated design_prep.ys",
+      "evidence": "results/evidence/final_phase1_default.log; results/evidence/final_clock_model_inspection.txt"
+    },
+    {
+      "id": "C03",
+      "status": "VERIFIED",
+      "command": "sby -f async_fifo_multiclock.sby bmc at ADDR_WIDTH=2,3,4,5, depth 30",
+      "evidence": "results/evidence/c03_triage.md; c03_work/addr_{2,3,4,5}/bmc.log"
+    },
+    {
+      "id": "C04",
+      "status": "VERIFIED",
+      "command": "sby -f async_fifo_integrity_selfcheck.sby prove at ADDR_WIDTH=2,3,4,5",
+      "evidence": "results/evidence/selfcheck_final/addr_2_prove/run3.log; results/evidence/selfcheck_audit/addr_3/run_prove.log; results/evidence/selfcheck_audit/addr_4/run_prove.log; results/evidence/selfcheck_audit/addr_5/run_prove.log"
+    },
+    {
+      "id": "C05",
+      "status": "VERIFIED",
+      "command": "sby -f async_fifo_integrity.sby cover in final F6 full sweep",
+      "evidence": "sweep_work/addr_4/log_async_fifo_integrity_cover.txt"
+    },
+    {
+      "id": "C06",
+      "status": "NOT VERIFIED",
+      "command": "Final F6 sweep Phase 2 BMC at ADDR_WIDTH=4; status and bound from current sweep CSV",
+      "evidence": "sweep_results.csv; sweep_work/addr_4/log_async_fifo_integrity_bmc.txt"
+    },
+    {
+      "id": "C07",
+      "status": "NOT VERIFIED",
+      "command": "Final F6 sweep prove plus F6-only k=2 and k=4 induction experiments",
+      "evidence": "results/evidence/final_f6/prove_k2.log; results/evidence/final_f6/prove_k4.log; sweep_work/addr_4/log_async_fifo_integrity_prove.txt"
+    },
+    {
+      "id": "C08",
+      "status": "PARTIAL",
+      "command": "Earlier pre-F6 revision: per-mutant Phase 2 BMC at ADDR_WIDTH=2, DATA_WIDTH=1; final F6 rerun pending",
+      "evidence": "phase_2_and_3/mutants/audit_current/M1/phase2_bmc_retry.log; phase_2_and_3/mutants/audit_current/M2/phase2_bmc_retry.log; phase_2_and_3/mutants/audit_current/M3/phase2_bmc_retry.log; phase_2_and_3/mutants/audit_current/M4/phase2_bmc_retry.log; phase_2_and_3/mutants/audit_current/M5/phase2_bmc_retry.log"
+    },
+    {
+      "id": "C09",
+      "status": "PARTIAL",
+      "command": "Per mutant: sby -f async_fifo.sby bmc",
+      "evidence": "phase_2_and_3/mutants/audit_current/M1/phase1_bmc.log; phase_2_and_3/mutants/audit_current/M2/phase1_bmc.log; phase_2_and_3/mutants/audit_current/M3/phase1_bmc.log; phase_2_and_3/mutants/audit_current/M4/phase1_bmc.log; phase_2_and_3/mutants/audit_current/M5/phase1_bmc.log"
+    },
+    {
+      "id": "C10",
+      "status": "VERIFIED",
+      "command": "./sweep.sh (ADDRS=\"2 3 4 5\", default TIMEOUT=1800) on final F6 source; compare all 24 rows to task logs",
+      "evidence": "results/evidence/final_f6_sweep.log; results/evidence/sweep_row_audit.log; results/evidence/elaborated_widths.txt; results/evidence/classification_real/verification.log"
+    },
+    {
+      "id": "C11",
+      "status": "VERIFIED",
+      "command": "./sweep.sh; python3 plot_sweep.py (final F6 source; plot after sweep completion)",
+      "evidence": "results/evidence/final_f6_sweep.log; sweep_results.csv; results/evidence/final_f6_plot.log; runtime_vs_depth.png"
+    }
+  ],
+  "mutation_matrix_source_revision": "Earlier Phase 2 mutation BMC rows predate F6; final F6 reruns are pending.",
+  "mutation_matrix": [
+    {
+      "id": "M1",
+      "phase1_bmc": "PASS",
+      "phase2_bmc": "FAIL",
+      "phase2_property": "tagged in-flight memory and write-counter/pointer consistency",
+      "evidence": "mutants/audit_current/M1/phase1_bmc.log; mutants/audit_current/M1/phase2_bmc_retry.log"
+    },
+    {
+      "id": "M2",
+      "phase1_bmc": "PASS",
+      "phase2_bmc": "FAIL",
+      "phase2_property": "no-underflow and read-counter/pointer/tag assertions",
+      "evidence": "mutants/audit_current/M2/phase1_bmc.log; mutants/audit_current/M2/phase2_bmc_retry.log"
+    },
+    {
+      "id": "M3",
+      "phase1_bmc": "PASS",
+      "phase2_bmc": "FAIL",
+      "phase2_property": "tagged in-flight memory assertion",
+      "evidence": "mutants/audit_current/M3/phase1_bmc.log; mutants/audit_current/M3/phase2_bmc_retry.log"
+    },
+    {
+      "id": "M4",
+      "phase1_bmc": "FAIL",
+      "phase2_bmc": "FAIL",
+      "phase2_property": "full-comparator helper assertion",
+      "evidence": "mutants/audit_current/M4/phase1_bmc.log; mutants/audit_current/M4/phase2_bmc_retry.log"
+    },
+    {
+      "id": "M5",
+      "phase1_bmc": "PASS",
+      "phase2_bmc": "FAIL",
+      "phase2_property": "no-underflow assertion",
+      "evidence": "mutants/audit_current/M5/phase1_bmc.log; mutants/audit_current/M5/phase2_bmc_retry.log"
+    }
+  ],
+  "sweep_rows": {
+    "current_audit": [
+      {
+        "addr_width": 2,
+        "entries": 4,
+        "depth": 32,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "bmc",
+        "status": "FAIL",
+        "seconds": 2
+      },
+      {
+        "addr_width": 2,
+        "entries": 4,
+        "depth": 32,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "prove",
+        "status": "FAIL",
+        "seconds": 2
+      },
+      {
+        "addr_width": 2,
+        "entries": 4,
+        "depth": 32,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "cover",
+        "status": "PASS",
+        "seconds": 1
+      },
+      {
+        "addr_width": 2,
+        "entries": 4,
+        "depth": 32,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "bmc",
+        "status": "TIMEOUT",
+        "seconds": 1801
+      },
+      {
+        "addr_width": 2,
+        "entries": 4,
+        "depth": 32,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "prove",
+        "status": "TIMEOUT",
+        "seconds": 1800
+      },
+      {
+        "addr_width": 2,
+        "entries": 4,
+        "depth": 32,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "cover",
+        "status": "PASS",
+        "seconds": 8
+      },
+      {
+        "addr_width": 3,
+        "entries": 8,
+        "depth": 44,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "bmc",
+        "status": "FAIL",
+        "seconds": 2
+      },
+      {
+        "addr_width": 3,
+        "entries": 8,
+        "depth": 44,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "prove",
+        "status": "FAIL",
+        "seconds": 2
+      },
+      {
+        "addr_width": 3,
+        "entries": 8,
+        "depth": 44,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "cover",
+        "status": "PASS",
+        "seconds": 2
+      },
+      {
+        "addr_width": 3,
+        "entries": 8,
+        "depth": 44,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "bmc",
+        "status": "TIMEOUT",
+        "seconds": 1800
+      },
+      {
+        "addr_width": 3,
+        "entries": 8,
+        "depth": 44,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "prove",
+        "status": "TIMEOUT",
+        "seconds": 1800
+      },
+      {
+        "addr_width": 3,
+        "entries": 8,
+        "depth": 44,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "cover",
+        "status": "PASS",
+        "seconds": 6
+      },
+      {
+        "addr_width": 4,
+        "entries": 16,
+        "depth": 76,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "bmc",
+        "status": "FAIL",
+        "seconds": 2
+      },
+      {
+        "addr_width": 4,
+        "entries": 16,
+        "depth": 76,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "prove",
+        "status": "FAIL",
+        "seconds": 3
+      },
+      {
+        "addr_width": 4,
+        "entries": 16,
+        "depth": 76,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "cover",
+        "status": "PASS",
+        "seconds": 2
+      },
+      {
+        "addr_width": 4,
+        "entries": 16,
+        "depth": 76,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "bmc",
+        "status": "TIMEOUT",
+        "seconds": 1801
+      },
+      {
+        "addr_width": 4,
+        "entries": 16,
+        "depth": 76,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "prove",
+        "status": "TIMEOUT",
+        "seconds": 1800
+      },
+      {
+        "addr_width": 4,
+        "entries": 16,
+        "depth": 76,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "cover",
+        "status": "PASS",
+        "seconds": 48
+      },
+      {
+        "addr_width": 5,
+        "entries": 32,
+        "depth": 140,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "bmc",
+        "status": "FAIL",
+        "seconds": 2
+      },
+      {
+        "addr_width": 5,
+        "entries": 32,
+        "depth": 140,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "prove",
+        "status": "FAIL",
+        "seconds": 3
+      },
+      {
+        "addr_width": 5,
+        "entries": 32,
+        "depth": 140,
+        "sby_file": "async_fifo_multiclock.sby",
+        "task": "cover",
+        "status": "PASS",
+        "seconds": 3
+      },
+      {
+        "addr_width": 5,
+        "entries": 32,
+        "depth": 140,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "bmc",
+        "status": "TIMEOUT",
+        "seconds": 1924
+      },
+      {
+        "addr_width": 5,
+        "entries": 32,
+        "depth": 140,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "prove",
+        "status": "TIMEOUT",
+        "seconds": 1800
+      },
+      {
+        "addr_width": 5,
+        "entries": 32,
+        "depth": 140,
+        "sby_file": "async_fifo_integrity.sby",
+        "task": "cover",
+        "status": "PASS",
+        "seconds": 587
+      }
+    ],
+    "historical_source": "results/evidence/original/sweep_results.csv",
+    "historical_status": "archived only; not used for current rows",
+    "current_sweep_source": "pre-F6-F8 Phase 2 harness; not a final-source sweep"
+  },
+  "assertion_counts": {
+    "original_phase1": {
+      "assert": 6,
+      "cover": 3,
+      "assume": 0,
+      "initial": 2
+    },
+    "final_phase1": {
+      "assert": 6,
+      "cover": 3,
+      "assume": 0,
+      "initial": 2
+    },
+    "pre_audit_phase2": {
+      "assert": 14,
+      "cover": 3,
+      "assume": 0,
+      "initial": 2
+    },
+    "final_phase2": {
+      "assert": 16,
+      "cover": 3,
+      "assume": 0,
+      "initial": 2
+    },
+    "added_selfcheck": {
+      "assert": 9,
+      "cover": 6,
+      "assume": 0,
+      "initial": 1
+    },
+    "evidence": "results/evidence/assertion_counts.csv"
+  },
+  "files_changed": [
+    "phase_2_and_3/sweep.sh",
+    "phase_2_and_3/async_fifo_integrity_selfcheck.sv",
+    "phase_2_and_3/async_fifo_integrity_selfcheck.sby",
+    "phase_2_and_3/async_fifo_integrity_top.sv",
+    "phase_2_and_3/results/process_report.md",
+    "phase_2_and_3/results/audit_report.md",
+    "phase_2_and_3/results/summary.json",
+    "phase_2_and_3/results/phase2_3.md (superseded-summary warning added)",
+    "phase_2_and_3/results/evidence/final_f6/ (k=2/k=4 proof experiments)",
+    "phase_2_and_3/results/evidence/discarded_f7_f8.diff",
+    "phase_2_and_3/results/evidence/report_command_errors.txt",
+    "phase_2_and_3/mutants/final_f6/ (prepared isolated copies; reruns pending)",
+    "phase_2_and_3/mutants/audit_current/M1-M5 (isolated copies only)",
+    "phase_2_and_3/results/evidence/ (audit logs and archived evidence)",
+    "phase_2_and_3/results/evidence/selfcheck_max_tag_width5/run/max_tag_width5.sv (isolated test wrapper only)",
+    "phase_2_and_3/sweep_results.csv (fresh sweep output)",
+    "phase_2_and_3/runtime_vs_depth.png (fresh sweep plot)"
+  ],
+  "open_items": [
+    "C03 is resolved as checker reset-history modeling; retain the pre-fix trace and the final width-2–5 reruns in the audit record.",
+    "Phase 2 BMC and prove timed out at all ADDR_WIDTH 2–5 sweep points in the completed pre-F6 sweep; no sweep is underway.",
+    "ADDR_WIDTH=5 standalone self-check max-tag cover remains unverified: depth-96 run was unreached; both full and fixed-tag DATA_WIDTH=1 depth-160 runs timed out at step 102.",
+    "No Phase 1 or Phase 2 mutant prove/cover runs.",
+    "On final F6 source, k=2 and k=4 prove experiments end UNKNOWN after induction failures; unbounded safety is not proven.",
+    "Phase 2 mutant BMC results predate F6 and need a final-revision rerun."
+  ],
+  "problem_log_counts": {
+    "original_work": 4,
+    "this_verification": 22,
+    "unconfirmed_items": 2
+  },
+  "fix_count": 6,
+  "fixes": [
+    {
+      "id": "F1",
+      "description": "Correct minimum sweep depth and distinguish unreached covers from assertion failures",
+      "file": "phase_2_and_3/sweep.sh",
+      "evidence": "results/evidence/fix_1.diff; commit 35044d7"
+    },
+    {
+      "id": "F2",
+      "description": "Add asserted reset-history invariants so the standalone reset/tag self-check proves inductively",
+      "file": "phase_2_and_3/async_fifo_integrity_selfcheck.sv",
+      "evidence": "results/evidence/fix_2.diff; self-check prove logs",
+      "commit": "0efe713"
+    },
+    {
+      "id": "F3",
+      "description": "Increase only the standalone self-check cover bound from 96 to 160 after width-5 maximum-tag cover was unreached; prove depth remains 96",
+      "file": "phase_2_and_3/async_fifo_integrity_selfcheck.sby",
+      "evidence": "results/evidence/fix_3.diff; results/evidence/selfcheck_final/addr_5_depth160/run_cover_depth160_status.txt",
+      "commit": "a05d73d"
+    },
+    {
+      "id": "F4",
+      "description": "Increase sweep depth to 2**(ADDR_WIDTH+2)+12 (minimum 32) after widths 3/4 max-tag witnesses exceeded the old formula",
+      "file": "phase_2_and_3/sweep.sh",
+      "evidence": "results/evidence/fix_4.diff; results/evidence/classification_real/verification.log",
+      "commit": "95e5bb9"
+    },
+    {
+      "id": "F5",
+      "description": "Rename a reserved-keyword instance label in the isolated width-5 retry wrapper; production RTL and self-check source unchanged",
+      "file": "phase_2_and_3/results/evidence/selfcheck_max_tag_width5/run/max_tag_width5.sv",
+      "evidence": "results/evidence/fix_5.diff; results/evidence/selfcheck_max_tag_width5/run/max_tag_width5_cover/model/design.log; results/evidence/selfcheck_max_tag_width5/run/max_tag_width5_retry.log",
+      "commit": "8fa859f"
+    },
+    {
+      "id": "F6",
+      "description": "Add asserted reset-history induction invariants to Phase 2 after an unreachable reset-state induction trace",
+      "file": "phase_2_and_3/async_fifo_integrity_top.sv",
+      "evidence": "results/evidence/fix_6.diff; results/evidence/induction_reset_trace_analysis.log",
+      "commit": "570a6e2"
+    }
+  ],
+  "unresolved_induction_experiments": [
+    {
+      "id": "F7",
+      "description": "Experimental pointer/counter, occupancy and Gray-code assertions failed induction and were excluded from the active checker.",
+      "evidence": "results/evidence/fix_7.diff; results/evidence/fix8_width4/prove_k2.log",
+      "status": "FAILED INDUCTION; excluded from final source"
+    },
+    {
+      "id": "F8",
+      "description": "Experimental synchronizer-stage recurrence assertions failed induction and were excluded from the active checker. Declarations were moved before initialization to resolve the experiment's slang elaboration error.",
+      "evidence": "results/evidence/fix_8.diff; results/evidence/fix8_initial_elaboration_failure.txt; results/evidence/fix8_width4/prove_k4.log",
+      "status": "FAILED INDUCTION; excluded from final source"
+    }
+  ],
+  "report_corrections": 2,
+  "commits": [
+    "35044d7",
+    "0efe713",
+    "a05d73d",
+    "95e5bb9",
+    "8fa859f",
+    "570a6e2"
+  ],
+  "real_classifier_regression": {
+    "status": "PASS",
+    "cases": {
+      "PASS": "classification_real/pass/sweep_results.csv",
+      "FAIL": "classification_real/fail/sweep_results.csv",
+      "UNREACHED_COVER": "classification_real/unreached/sweep_results.csv",
+      "TIMEOUT": "classification_real/timeout/sweep_results.csv"
+    },
+    "row_to_log_check": "results/evidence/classification_real/verification.log",
+    "fresh_sweep": "final F6 source sweep launched; result log at results/evidence/final_f6_sweep.log"
+  }
+}

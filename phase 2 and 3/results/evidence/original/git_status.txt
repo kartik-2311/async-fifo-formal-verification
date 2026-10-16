@@ -1,0 +1,12 @@
+﻿## master
+ D "phase 2 and 3/async_fifo_integrity_top.sv"
+ D "phase 2 and 3/results/phase2_3.md"
+ D "phase 2 and 3/runtime_vs_depth.png"
+ D "phase 2 and 3/sweep_results.csv"
+?? formal/async_fifo.sv
+?? formal/async_fifo/
+?? formal/async_fifo_bmc/
+?? formal/async_fifo_cover/
+?? formal/async_fifo_prove/
+?? "phase 2 and 3/results/evidence/"
+?? phase_2_and_3/

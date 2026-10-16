@@ -1,0 +1,2 @@
+ERROR: Task name 'bmc' didn't match any lines in [tasks].
+SBY_EXIT=1

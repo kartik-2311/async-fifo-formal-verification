@@ -1,0 +1,15 @@
+>>> ADDR_WIDTH=2 (4 entries)  depth=32  pass.sby  bmc
+    -> PASS in 1s
+>>> ADDR_WIDTH=3 (8 entries)  depth=44  pass.sby  bmc
+    -> PASS in 1s
+>>> ADDR_WIDTH=4 (16 entries)  depth=76  pass.sby  bmc
+    -> PASS in 1s
+>>> ADDR_WIDTH=5 (32 entries)  depth=140  pass.sby  bmc
+    -> PASS in 3s
+
+Results written to sweep_results.csv
+addr_width  entries  bmc_depth  sby_file  task  status  seconds
+2           4        32         pass.sby  bmc   PASS    1
+3           8        44         pass.sby  bmc   PASS    1
+4           16       76         pass.sby  bmc   PASS    1
+5           32       140        pass.sby  bmc   PASS    3

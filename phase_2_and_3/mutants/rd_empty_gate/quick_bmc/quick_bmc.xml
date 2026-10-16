@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-10-10T15:11:00" hostname="ACER" package="quick" id="0" name="bmc" tests="7" errors="0" failures="4" time="0" skipped="4">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="bmc" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:136.7-136.28" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:136.7-136.28" id="_witness_.check_102">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:155.7-155.56" time="0" type="COVER" location="async_fifo_integrity_top.sv:155.7-155.56" id="_witness_.check_119">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:159.9-159.35" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:159.9-159.35" id="_witness_.check_122" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:159.9-159.35 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:163.11-163.32" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:163.11-163.32" id="_witness_.check_128" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:163.11-163.32 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:164.11-164.40" time="0" type="ASSERT" location="async_fifo_integrity_top.sv:164.11-164.40" id="_witness_.check_130" tracefile="engine_0/trace.vcd">
+<failure type="ASSERT" message="Property ASSERT in async_fifo_integrity_top at async_fifo_integrity_top.sv:164.11-164.40 failed. Trace file: engine_0/trace.vcd" />
+</testcase>
+<testcase classname="bmc" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:167.11-167.31" time="0" type="COVER" location="async_fifo_integrity_top.sv:167.11-167.31" id="_witness_.check_133">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in async_fifo_integrity_top at async_fifo_integrity_top.sv:168.11-168.54" time="0" type="COVER" location="async_fifo_integrity_top.sv:168.11-168.54" id="_witness_.check_135">
+<skipped />
+</testcase>
+<system-out>SBY 15:10:59 [quick_bmc] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/mutants/rd_empty_gate/quick_bmc'.
+SBY 15:10:59 [quick_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/mutants/rd_empty_gate/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/mutants/rd_empty_gate/quick_bmc/src/async_fifo.sv'.
+SBY 15:10:59 [quick_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/mutants/rd_empty_gate/async_fifo_integrity_top.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/mutants/rd_empty_gate/quick_bmc/src/async_fifo_integrity_top.sv'.
+SBY 15:10:59 [quick_bmc] engine_0: smtbmc z3
+SBY 15:10:59 [quick_bmc] base: starting process &quot;cd quick_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 15:10:59 [quick_bmc] base: finished (returncode=0)
+SBY 15:10:59 [quick_bmc] prep: starting process &quot;cd quick_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 15:11:00 [quick_bmc] prep: finished (returncode=0)
+SBY 15:11:00 [quick_bmc] smt2: starting process &quot;cd quick_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 15:11:00 [quick_bmc] smt2: finished (returncode=0)
+SBY 15:11:00 [quick_bmc] engine_0: starting process &quot;cd quick_bmc; yosys-smtbmc -s z3 --presat --noprogress -t 16  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Solver: z3
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  BMC failed!
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Assert failed in async_fifo_integrity_top: async_fifo_integrity_top.sv:159.9-159.35 (_witness_.check_122)
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Assert failed in async_fifo_integrity_top: async_fifo_integrity_top.sv:163.11-163.32 (_witness_.check_128)
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Assert failed in async_fifo_integrity_top: async_fifo_integrity_top.sv:164.11-164.40 (_witness_.check_130)
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 15:11:00 [quick_bmc] engine_0: ##   0:00:00  Status: failed
+SBY 15:11:00 [quick_bmc] engine_0: finished (returncode=1)
+SBY 15:11:00 [quick_bmc] engine_0: Status returned by engine: FAIL
+SBY 15:11:00 [quick_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 15:11:00 [quick_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 15:11:00 [quick_bmc] summary: engine_0 (smtbmc z3) returned FAIL
+SBY 15:11:00 [quick_bmc] summary: counterexample trace: quick_bmc/engine_0/trace.vcd
+SBY 15:11:00 [quick_bmc] summary:   failed assertion async_fifo_integrity_top._witness_.check_122 at async_fifo_integrity_top.sv:159.9-159.35 step 5
+SBY 15:11:00 [quick_bmc] summary:   failed assertion async_fifo_integrity_top._witness_.check_128 at async_fifo_integrity_top.sv:163.11-163.32 step 5
+SBY 15:11:00 [quick_bmc] summary:   failed assertion async_fifo_integrity_top._witness_.check_130 at async_fifo_integrity_top.sv:164.11-164.40 step 5
+SBY 15:11:00 [quick_bmc] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

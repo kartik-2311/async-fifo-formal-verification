@@ -1,0 +1,17 @@
+[tasks]
+bmc
+
+[options]
+mode bmc
+depth 32
+
+[engines]
+smtbmc z3
+
+[script]
+plugin -i slang
+read_slang fail.sv --top fail_top
+prep -top fail_top
+
+[files]
+fail.sv

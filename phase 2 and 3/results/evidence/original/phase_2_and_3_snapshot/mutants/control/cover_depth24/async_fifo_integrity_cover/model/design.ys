@@ -1,0 +1,9 @@
+# running in async_fifo_integrity_cover/src/
+plugin -i slang
+read_slang async_fifo.sv async_fifo_integrity_top.sv --top async_fifo_integrity_top
+prep -top async_fifo_integrity_top
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

@@ -1,0 +1,47 @@
+SBY 13:15:35 [async_fifo_multiclock_bmc] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_4/async_fifo_multiclock_bmc'.
+SBY 13:15:35 [async_fifo_multiclock_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_4/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_4/async_fifo_multiclock_bmc/src/async_fifo.sv'.
+SBY 13:15:35 [async_fifo_multiclock_bmc] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_4/async_fifo_formal.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/sweep_work/addr_4/async_fifo_multiclock_bmc/src/async_fifo_formal.sv'.
+SBY 13:15:35 [async_fifo_multiclock_bmc] engine_0: smtbmc z3
+SBY 13:15:35 [async_fifo_multiclock_bmc] base: starting process "cd async_fifo_multiclock_bmc/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 13:15:36 [async_fifo_multiclock_bmc] base: finished (returncode=0)
+SBY 13:15:36 [async_fifo_multiclock_bmc] prep: starting process "cd async_fifo_multiclock_bmc/model; yosys -ql design_prep.log design_prep.ys"
+SBY 13:15:36 [async_fifo_multiclock_bmc] prep: finished (returncode=0)
+SBY 13:15:36 [async_fifo_multiclock_bmc] smt2: starting process "cd async_fifo_multiclock_bmc/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 13:15:36 [async_fifo_multiclock_bmc] smt2: finished (returncode=0)
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: starting process "cd async_fifo_multiclock_bmc; yosys-smtbmc -s z3 --presat --noprogress -t 76  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Solver: z3
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 13:15:36 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  BMC failed!
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Assert failed in async_fifo: async_fifo_formal.sv:131.11-131.67 (_witness_.check_112)
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace.vcd
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace.smtc
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: ##   0:00:00  Status: failed
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: finished (returncode=1)
+SBY 13:15:37 [async_fifo_multiclock_bmc] engine_0: Status returned by engine: FAIL
+SBY 13:15:37 [async_fifo_multiclock_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 13:15:37 [async_fifo_multiclock_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 13:15:37 [async_fifo_multiclock_bmc] summary: engine_0 (smtbmc z3) returned FAIL
+SBY 13:15:37 [async_fifo_multiclock_bmc] summary: counterexample trace: async_fifo_multiclock_bmc/engine_0/trace.vcd
+SBY 13:15:37 [async_fifo_multiclock_bmc] summary:   failed assertion async_fifo._witness_.check_112 at async_fifo_formal.sv:131.11-131.67 step 9
+SBY 13:15:37 [async_fifo_multiclock_bmc] DONE (FAIL, rc=2)

@@ -1,0 +1,55 @@
+SBY  5:30:01 [unreached_cover] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/classification_real/unreached/sweep_work/addr_2/unreached_cover'.
+SBY  5:30:01 [unreached_cover] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/classification_real/unreached/sweep_work/addr_2/unreached.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase_2_and_3/results/evidence/classification_real/unreached/sweep_work/addr_2/unreached_cover/src/unreached.sv'.
+SBY  5:30:01 [unreached_cover] engine_0: smtbmc z3
+SBY  5:30:01 [unreached_cover] base: starting process "cd unreached_cover/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY  5:30:02 [unreached_cover] base: finished (returncode=0)
+SBY  5:30:02 [unreached_cover] prep: starting process "cd unreached_cover/model; yosys -ql design_prep.log design_prep.ys"
+SBY  5:30:02 [unreached_cover] prep: finished (returncode=0)
+SBY  5:30:02 [unreached_cover] smt2: starting process "cd unreached_cover/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY  5:30:02 [unreached_cover] smt2: finished (returncode=0)
+SBY  5:30:02 [unreached_cover] engine_0: starting process "cd unreached_cover; yosys-smtbmc -s z3 --presat -c --noprogress -t 32  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Solver: z3
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 12..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 13..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 14..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 15..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 16..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 17..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 18..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 19..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 20..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 21..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 22..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 23..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 24..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 25..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 26..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 27..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 28..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 29..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 30..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Checking cover reachability in step 31..
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Unreached cover statement at unreached_top: unreached.sv:2.15-2.28 (_witness_.check_1)
+SBY  5:30:02 [unreached_cover] engine_0: ##   0:00:00  Status: failed
+SBY  5:30:02 [unreached_cover] engine_0: finished (returncode=1)
+SBY  5:30:02 [unreached_cover] engine_0: Status returned by engine: FAIL
+SBY  5:30:02 [unreached_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY  5:30:02 [unreached_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY  5:30:02 [unreached_cover] summary: engine_0 (smtbmc z3) returned FAIL
+SBY  5:30:02 [unreached_cover] summary: engine_0 did not produce any traces
+SBY  5:30:02 [unreached_cover] summary: unreached cover statements:
+SBY  5:30:02 [unreached_cover] summary:   unreached_top._witness_.check_1 at unreached.sv:2.15-2.28
+SBY  5:30:02 [unreached_cover] DONE (FAIL, rc=2)
+SBY  5:30:03 The following tasks failed: ['cover']

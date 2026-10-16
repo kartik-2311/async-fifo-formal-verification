@@ -1,0 +1,66 @@
+SBY 16:14:48 [async_fifo_multiclock_prove] Removing directory '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_4/async_fifo_multiclock_prove'.
+SBY 16:14:48 [async_fifo_multiclock_prove] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_4/async_fifo.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_4/async_fifo_multiclock_prove/src/async_fifo.sv'.
+SBY 16:14:48 [async_fifo_multiclock_prove] Copy '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_4/async_fifo_formal.sv' to '/mnt/c/Users/karti/Projects/async-fifo-formal-verification/phase 2 and 3/sweep_work/addr_4/async_fifo_multiclock_prove/src/async_fifo_formal.sv'.
+SBY 16:14:48 [async_fifo_multiclock_prove] engine_0: smtbmc z3
+SBY 16:14:48 [async_fifo_multiclock_prove] base: starting process "cd async_fifo_multiclock_prove/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 16:14:48 [async_fifo_multiclock_prove] base: finished (returncode=0)
+SBY 16:14:48 [async_fifo_multiclock_prove] prep: starting process "cd async_fifo_multiclock_prove/model; yosys -ql design_prep.log design_prep.ys"
+SBY 16:14:49 [async_fifo_multiclock_prove] prep: finished (returncode=0)
+SBY 16:14:49 [async_fifo_multiclock_prove] smt2: starting process "cd async_fifo_multiclock_prove/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 16:14:49 [async_fifo_multiclock_prove] smt2: finished (returncode=0)
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: starting process "cd async_fifo_multiclock_prove; yosys-smtbmc -s z3 --presat --noprogress -t 44  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: starting process "cd async_fifo_multiclock_prove; yosys-smtbmc -s z3 --presat -i --noprogress -t 44  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2"
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Solver: z3
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Solver: z3
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 44..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 43..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 42..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 41..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 40..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 39..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 38..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 37..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 36..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 35..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 34..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 33..
+SBY 16:14:49 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 32..
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 31..
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:00  Checking assertions in step 9..
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.induction: ##   0:00:00  Trying induction in step 30..
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:01  BMC failed!
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:01  Assert failed in async_fifo: async_fifo_formal.sv:131.11-131.67 (_witness_.check_112)
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:01  Writing trace to VCD file: engine_0/trace.vcd
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:01  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:01  Writing trace to constraints file: engine_0/trace.smtc
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: ##   0:00:01  Status: failed
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: finished (returncode=1)
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.basecase: Status returned by engine for basecase: FAIL
+SBY 16:14:50 [async_fifo_multiclock_prove] engine_0.induction: terminating process
+SBY 16:14:50 [async_fifo_multiclock_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
+SBY 16:14:50 [async_fifo_multiclock_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 16:14:50 [async_fifo_multiclock_prove] summary: engine_0 (smtbmc z3) returned FAIL for basecase
+SBY 16:14:50 [async_fifo_multiclock_prove] summary: counterexample trace [basecase]: async_fifo_multiclock_prove/engine_0/trace.vcd
+SBY 16:14:50 [async_fifo_multiclock_prove] summary:   failed assertion async_fifo._witness_.check_112 at async_fifo_formal.sv:131.11-131.67 step 9
+SBY 16:14:50 [async_fifo_multiclock_prove] DONE (FAIL, rc=2)
+SBY 16:14:50 The following tasks failed: ['prove']

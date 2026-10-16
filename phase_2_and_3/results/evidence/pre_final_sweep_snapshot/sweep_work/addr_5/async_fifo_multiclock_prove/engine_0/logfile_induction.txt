@@ -1,0 +1,19 @@
+##   0:00:00  Solver: z3
+##   0:00:00  Trying induction in step 140..
+##   0:00:00  Trying induction in step 139..
+##   0:00:00  Trying induction in step 138..
+##   0:00:00  Trying induction in step 137..
+##   0:00:00  Trying induction in step 136..
+##   0:00:00  Trying induction in step 135..
+##   0:00:00  Trying induction in step 134..
+##   0:00:00  Trying induction in step 133..
+##   0:00:00  Trying induction in step 132..
+##   0:00:00  Trying induction in step 131..
+##   0:00:00  Trying induction in step 130..
+##   0:00:00  Trying induction in step 129..
+##   0:00:00  Trying induction in step 128..
+##   0:00:00  Trying induction in step 127..
+##   0:00:00  Trying induction in step 126..
+##   0:00:00  Trying induction in step 125..
+##   0:00:01  Trying induction in step 124..
+##   0:00:01  Trying induction in step 123..

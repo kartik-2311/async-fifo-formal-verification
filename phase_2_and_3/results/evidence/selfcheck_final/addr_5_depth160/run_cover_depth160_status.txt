@@ -1,0 +1,4 @@
+Result: TIMEOUT (auditor cap 1800 seconds; wrapper exit code 124).
+The saved SBY log reached cover search step 102 and ended after an external
+interrupt. SBY did not emit a terminal PASS, FAIL, or UNREACHED_COVER status.
+This is not evidence that the cover is unreachable or that it passed.

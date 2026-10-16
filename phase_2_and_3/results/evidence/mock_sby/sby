@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+task=${@: -1}
+case "$task" in
+  pass)
+    echo "DONE (PASS, rc=0)"
+    exit 0
+    ;;
+  fail)
+    echo "Assert failed in mock design"
+    exit 2
+    ;;
+  cover)
+    echo "Unreached cover statements:"
+    echo "mock cover goal"
+    exit 2
+    ;;
+  timeout)
+    sleep 3
+    exit 0
+    ;;
+  *)
+    echo "unexpected mock task: $task" >&2
+    exit 16
+    ;;
+esac

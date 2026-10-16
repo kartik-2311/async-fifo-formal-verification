@@ -1,0 +1,9 @@
+# running in max_tag_width5_cover/src/
+plugin -i slang
+read_slang async_fifo.sv async_fifo_integrity_selfcheck.sv max_tag_width5.sv --top async_fifo_integrity_max_tag_width5
+prep -top async_fifo_integrity_max_tag_width5
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

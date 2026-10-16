@@ -1,0 +1,94 @@
+##   0:00:00  Solver: z3
+##   0:00:00  Trying induction in step 76..
+##   0:00:00  Trying induction in step 75..
+##   0:00:00  Trying induction in step 74..
+##   0:00:00  Trying induction in step 73..
+##   0:00:00  Trying induction in step 72..
+##   0:00:00  Trying induction in step 71..
+##   0:00:00  Trying induction in step 70..
+##   0:00:00  Trying induction in step 69..
+##   0:00:00  Trying induction in step 68..
+##   0:00:00  Trying induction in step 67..
+##   0:00:00  Trying induction in step 66..
+##   0:00:00  Trying induction in step 65..
+##   0:00:00  Trying induction in step 64..
+##   0:00:00  Trying induction in step 63..
+##   0:00:01  Trying induction in step 62..
+##   0:00:01  Trying induction in step 61..
+##   0:00:01  Trying induction in step 60..
+##   0:00:01  Trying induction in step 59..
+##   0:00:02  Trying induction in step 58..
+##   0:00:03  Trying induction in step 57..
+##   0:00:04  Trying induction in step 56..
+##   0:00:05  Trying induction in step 55..
+##   0:00:06  Trying induction in step 54..
+##   0:00:07  Trying induction in step 53..
+##   0:00:08  Trying induction in step 52..
+##   0:00:09  Trying induction in step 51..
+##   0:00:10  Trying induction in step 50..
+##   0:00:11  Trying induction in step 49..
+##   0:00:12  Trying induction in step 48..
+##   0:00:21  Trying induction in step 47..
+##   0:00:26  Trying induction in step 46..
+##   0:00:27  Trying induction in step 45..
+##   0:00:29  Trying induction in step 44..
+##   0:00:32  Trying induction in step 43..
+##   0:00:39  Trying induction in step 42..
+##   0:00:41  Trying induction in step 41..
+##   0:00:45  Trying induction in step 40..
+##   0:00:48  Trying induction in step 39..
+##   0:00:50  Trying induction in step 38..
+##   0:00:53  Trying induction in step 37..
+##   0:00:56  Trying induction in step 36..
+##   0:00:57  Trying induction in step 35..
+##   0:00:58  Trying induction in step 34..
+##   0:01:05  Trying induction in step 33..
+##   0:01:13  Trying induction in step 32..
+##   0:01:35  Trying induction in step 31..
+##   0:01:45  Trying induction in step 30..
+##   0:01:49  Trying induction in step 29..
+##   0:02:12  Trying induction in step 28..
+##   0:02:31  Trying induction in step 27..
+##   0:03:13  Trying induction in step 26..
+##   0:03:31  Trying induction in step 25..
+##   0:03:51  Trying induction in step 24..
+##   0:04:33  Trying induction in step 23..
+##   0:04:46  Trying induction in step 22..
+##   0:04:53  Trying induction in step 21..
+##   0:04:58  Trying induction in step 20..
+##   0:05:07  Trying induction in step 19..
+##   0:05:21  Trying induction in step 18..
+##   0:05:31  Trying induction in step 17..
+##   0:05:52  Trying induction in step 16..
+##   0:06:18  Trying induction in step 15..
+##   0:06:52  Trying induction in step 14..
+##   0:07:01  Trying induction in step 13..
+##   0:07:15  Trying induction in step 12..
+##   0:07:33  Trying induction in step 11..
+##   0:08:16  Trying induction in step 10..
+##   0:09:16  waiting for solver (1 minute)
+##   0:09:49  Trying induction in step 9..
+##   0:10:49  waiting for solver (1 minute)
+##   0:10:56  Trying induction in step 8..
+##   0:11:56  waiting for solver (1 minute)
+##   0:11:57  Trying induction in step 7..
+##   0:12:50  Trying induction in step 6..
+##   0:13:16  Trying induction in step 5..
+##   0:14:14  Trying induction in step 4..
+##   0:15:14  waiting for solver (1 minute)
+##   0:16:20  Trying induction in step 3..
+##   0:17:20  waiting for solver (1 minute)
+##   0:21:20  waiting for solver (5 minutes)
+##   0:22:18  Trying induction in step 2..
+##   0:23:18  waiting for solver (1 minute)
+##   0:23:24  Trying induction in step 1..
+##   0:24:24  waiting for solver (1 minute)
+##   0:24:30  Trying induction in step 0..
+##   0:25:30  waiting for solver (1 minute)
+##   0:26:15  Temporal induction failed!
+##   0:26:15  Assert failed in async_fifo_integrity_top: async_fifo_integrity_top.sv:83.7-83.30 (_witness_.check_8)
+##   0:26:15  Writing trace to VCD file: engine_0/trace_induct.vcd
+##   0:26:16  Writing trace to Verilog testbench: engine_0/trace_induct_tb.v
+##   0:26:16  Writing trace to constraints file: engine_0/trace_induct.smtc
+##   0:26:16  Writing trace to Yosys witness file: engine_0/trace_induct.yw
+##   0:26:16  Status: failed
