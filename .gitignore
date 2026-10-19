@@ -1,0 +1,37 @@
+# Logs and results
+logs/
+results/
+.done/
+.driver.lock
+nohup.out
+driver.out
+status.txt
+waiting.txt
+test.txt
+
+# Simulation waves
+*.vcd
+*.vpd
+
+# Yosys and related tools
+yosys/
+yosys-slang/
+boolector/
+cc_kit/
+
+# Mutants and testbenches
+mutants/
+formal/
+SymbiYosys/
+
+# Temporary files
+*.log
+*.txt
+*.pyc
+__pycache__/
+*~
+*.bak
+
+# OS and editor files
+.DS_Store
+Thumbs.db

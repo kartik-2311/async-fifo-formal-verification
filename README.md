@@ -27,11 +27,32 @@ Options: `MAX_TURNS=40 TRIES=3 BUDGET=5 ./driver.sh` (BUDGET maps to --max-budge
 version has it). Run one task by hand: `claude -p "$(cat tasks/T01_c03_triage.md)"` or start
 `claude`, paste the task, and `/clear` before the next one.
 
+## No repeats
+- `run_quiet.sh` skips a run whose command, TIMEOUT and input files are unchanged ("CACHED").
+  `FORCE=1` reruns. A 30-minute sby run is never repeated by accident.
+- `driver.sh` takes a lock: a second copy exits with code 4 instead of running tasks twice.
+- Before starting a task the driver runs its acceptance check; if existing outputs already
+  satisfy it, the task is marked done without a session. `FRESH=1` disables this.
+- CLAUDE.md forbids output variants (v2, _new, final_*): each output has one path, overwritten.
+
+## Cleanup (task T08, or by hand)
+    python3 cleanup.py                  # dry run: lists candidates, moves nothing
+    python3 cleanup.py --apply          # moves them to .trash/<timestamp>/ (reversible)
+    python3 cleanup.py --restore <ts>   # put them back
+    python3 cleanup.py --purge          # permanent delete of .trash/ (only you run this)
+It removes only untracked, uncited junk (Zone.Identifier, *.tmp, __pycache__ ...), untracked
+sby work directories, triage/ scratch, empty files/folders, and files byte-identical to a
+protected file. It never touches git-tracked files, sources, configs, results/, mutants/,
+sweep_work/, or anything cited in summary.json, the reports or INDEX.txt. Identical files with
+no protected twin are listed as REVIEW and left alone. Run the dry run and read it first.
+Consider adding .trash/ .done/ logs/ triage/ .driver.lock to .gitignore.
+
 ## Task order
-T01 triage the Phase 1 multiclock failure -> T02 fix if it is checker modeling ->
+T00 verify the claimed C03 fix (diff, bmc/prove/cover at widths 2-5, vacuity covers) ->
+T01 triage the Phase 1 multiclock failure (skip with `touch .done/T01_c03_triage .done/T02_c03_fix` if T00 says the fix is real) -> T02 fix if it is checker modeling ->
 T03 find a feasible Phase 2 configuration -> T04 mutation control ->
 T05 mutants M1-M5 (one session each) -> T06 reconcile summary.json + INDEX ->
-T07 refresh reports.
+T07 refresh reports -> T08 cleanup.
 
 ## If it still struggles
 - In an interactive session run `/context` to see what is consuming the window.
