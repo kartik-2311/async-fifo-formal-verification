@@ -29,7 +29,7 @@
 //      empty is reached again after data has flowed through
 
 module async_fifo_formal #(
-    parameter ADDR_WIDTH = 4
+    parameter ADDR_WIDTH = 2
 ) (
     // Write domain
     input logic                  wr_clk,
@@ -57,6 +57,10 @@ module async_fifo_formal #(
 
   initial wr_have_reset = 1'b0;
 
+  logic wr_ok;
+  always_ff @(posedge wr_clk or negedge wr_rst_n)
+    if (!wr_rst_n) wr_ok <= 1'b0; else wr_ok <= 1'b1;
+
   always_ff @(posedge wr_clk) begin
     // Only trust history once a real reset has actually been observed
     // at some point -- otherwise the solver is free to start wr_bin
@@ -64,7 +68,7 @@ module async_fifo_formal #(
     // any comparison for reasons that have nothing to do with the RTL.
     if (wr_have_reset) begin
       if (wr_rst_n) begin
-        if (wr_rst_n_prev) begin
+        if (wr_ok) begin
           // Both this cycle and the previous one are out of reset --
           // safe to compare against tracked history.
 
@@ -115,10 +119,14 @@ module async_fifo_formal #(
 
   initial rd_have_reset = 1'b0;
 
+  logic rd_ok;
+  always_ff @(posedge rd_clk or negedge rd_rst_n)
+    if (!rd_rst_n) rd_ok <= 1'b0; else rd_ok <= 1'b1;
+
   always_ff @(posedge rd_clk) begin
     if (rd_have_reset) begin
       if (rd_rst_n) begin
-        if (rd_rst_n_prev) begin
+        if (rd_ok) begin
           // Both this cycle and the previous one are out of reset --
           // safe to compare against tracked history.
 

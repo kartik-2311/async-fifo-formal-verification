@@ -1,6 +1,0 @@
->>> ADDR_WIDTH=4 (16 entries)  depth=76  async_fifo_integrity.sby  prove
-    -> TIMEOUT in 1s
-
-Results written to sweep_results.csv
-addr_width  entries  bmc_depth  sby_file                  task   status   seconds
-4           16       76         async_fifo_integrity.sby  prove  TIMEOUT  1

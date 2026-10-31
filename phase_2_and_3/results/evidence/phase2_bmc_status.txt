@@ -1,4 +1,0 @@
-﻿Command: sby -f async_fifo_integrity.sby bmc (ADDR_WIDTH=4, depth=44)
-Auditor cap: 1800 seconds.
-Outcome: TIMEOUT at the 30-minute cap; the process was stopped by the auditor. The raw SBY log has no terminal status and last reports checking assertions in step 28, then waiting for the solver.
-This is not PASS or FAIL.

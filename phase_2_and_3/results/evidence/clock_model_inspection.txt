@@ -1,9 +1,0 @@
-﻿--- formal\async_fifo_prove\model\design_prep.ys
-async2sync
-formalff -setundef -clk2ff -ff2anyinit -hierarchy
---- phase_2_and_3\async_fifo_multiclock_bmc\model\design_prep.ys
-clk2fflogic
-formalff -setundef -clk2ff -ff2anyinit -hierarchy
---- phase_2_and_3\async_fifo_integrity_bmc\model\design_prep.ys
-clk2fflogic
-formalff -setundef -clk2ff -ff2anyinit -hierarchy

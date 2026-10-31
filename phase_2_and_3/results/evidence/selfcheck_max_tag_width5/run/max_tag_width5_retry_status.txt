@@ -1,4 +1,0 @@
-Result: TIMEOUT (auditor cap 1800 seconds; wrapper exit code 124).
-The isolated fixed-tag, DATA_WIDTH=1 SBY log reached cover search step 102
-and ended after an external interrupt. SBY emitted no terminal PASS, FAIL, or
-UNREACHED_COVER result. The maximum-tag cover remains unverified.

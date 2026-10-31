@@ -1,6 +1,0 @@
-file,assert,cover,assume,initial
-phase1_original,6,3,0,2
-phase1_final,6,3,0,2
-phase2_original,14,3,0,2
-phase2_final,16,3,0,2
-selfcheck_added,9,6,0,1

@@ -1,6 +1,0 @@
-formal\async_fifo_bmc\model:design_prep.ys:async2sync
-formal\async_fifo_prove\model:design_prep.ys:async2sync
-formal\async_fifo_cover\model:design_prep.ys:async2sync
-phase_2_and_3\async_fifo_multiclock_bmc\model:design_prep.ys:clk2fflogic
-phase_2_and_3\async_fifo_multiclock_prove\model:design_prep.ys:clk2fflogic
-phase_2_and_3\async_fifo_multiclock_cover\model:design_prep.ys:clk2fflogic

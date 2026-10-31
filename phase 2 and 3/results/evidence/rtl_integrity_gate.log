@@ -1,7 +1,0 @@
-﻿e9afdba524f8718faa25ceceba53ee7938facf3d2a44f5166691d827b3f52090  /tmp/async_fifo_head.sv
-b54199597811fc3b12c500a66244013d7e02e8859d9b91218bbd17a8f9d4fa8e  phase_2_and_3/async_fifo.sv
-b54199597811fc3b12c500a66244013d7e02e8859d9b91218bbd17a8f9d4fa8e  rtl/async_fifo.sv
-COMMAND: git diff --ignore-space-at-eol --stat -- rtl/async_fifo.sv
-COMMAND: git status --short -- rtl/async_fifo.sv phase_2_and_3/async_fifo.sv
- M rtl/async_fifo.sv
-?? phase_2_and_3/async_fifo.sv

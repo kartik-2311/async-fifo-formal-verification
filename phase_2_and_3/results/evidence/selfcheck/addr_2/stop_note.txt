@@ -1,4 +1,0 @@
-﻿Prior standalone self-check prove run in results/evidence/selfcheck/addr_2:
-Command was started with the original checker before the combinational reset-history invariants.
-The saved live log reached base-case step 26 and reported waiting for the solver for 5 minutes.
-It was stopped by the auditor at 20m38s to avoid duplicating the later fixed, passing width-2 prove run at selfcheck_final/addr_2_prove/run3.log. It did not produce a PASS or FAIL result.

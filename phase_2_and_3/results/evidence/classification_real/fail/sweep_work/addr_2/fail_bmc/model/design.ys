@@ -1,9 +1,0 @@
-# running in fail_bmc/src/
-plugin -i slang
-read_slang fail.sv --top fail_top
-prep -top fail_top
-
-hierarchy -smtcheck
-rename -witness
-write_jny -no-connections ../model/design.json
-write_rtlil ../model/design.il

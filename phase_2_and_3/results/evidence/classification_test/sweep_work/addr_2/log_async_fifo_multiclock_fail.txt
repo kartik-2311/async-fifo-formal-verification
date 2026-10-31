@@ -1,1 +1,0 @@
-Assert failed in mock design

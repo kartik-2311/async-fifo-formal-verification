@@ -1,6 +1,0 @@
-Command: sby -f async_fifo_integrity_selfcheck.sby cover
-Parameters: ADDR_WIDTH=5, depth=96, multiclock on, smtbmc z3.
-Outcome: FAIL, rc=2 because the maximum-tag cover statement was unreached.
-Exact diagnostic: Unreached cover statement at async_fifo_integrity_selfcheck: async_fifo_integrity_selfcheck.sv:137.11-137.24 (_witness_.check_159)
-This is a cover-reachability failure, not an assertion counterexample.
-Retry: depth increased to 160; see ../selfcheck_final/addr_5_depth160/run_cover_depth160.log.

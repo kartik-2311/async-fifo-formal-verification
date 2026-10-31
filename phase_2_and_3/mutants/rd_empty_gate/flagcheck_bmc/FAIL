@@ -1,9 +1,0 @@
-Elapsed clock time [H:MM:SS (secs)]: 0:00:02 (2)
-Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
-engine_0 (smtbmc z3) returned FAIL
-counterexample trace: engine_0/trace.vcd
-counterexample trace: engine_0/trace.yw
-  failed assertion async_fifo_integrity_top._witness_.check_140 at async_fifo_integrity_top.sv:180.7-180.46 step 5
-  failed assertion async_fifo_integrity_top._witness_.check_151 at async_fifo_integrity_top.sv:189.9-189.35 step 5
-  failed assertion async_fifo_integrity_top._witness_.check_157 at async_fifo_integrity_top.sv:193.11-193.32 step 5
-  failed assertion async_fifo_integrity_top._witness_.check_159 at async_fifo_integrity_top.sv:194.11-194.40 step 5

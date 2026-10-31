@@ -1,5 +1,0 @@
-First SBY execution status: ERROR during slang elaboration (not a proof result).
-Root cause identified in the wrapper source: instance label "checker" conflicts
-with the SystemVerilog checker keyword. Corrected to "u_checker" before retry.
-The first shell status-capture file is incomplete; use max_tag_width5.log and
-the SBY model/design.log as authoritative evidence for this attempt.

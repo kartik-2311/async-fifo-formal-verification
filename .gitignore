@@ -1,37 +1,43 @@
-# Logs and results
-logs/
+# All generated evidence and local execution output stays outside source commits.
 results/
-.done/
-.driver.lock
-nohup.out
-driver.out
-status.txt
-waiting.txt
-test.txt
-
-# Simulation waves
+logs/
+output/
+.Xil/
+xsim.dir/
+**/.Xil/
+**/xsim.dir/
+*.log
+*.jou
+*.rpt
 *.vcd
 *.vpd
-
-# Yosys and related tools
-yosys/
-yosys-slang/
-boolector/
-cc_kit/
-
-# Mutants and testbenches
-mutants/
-formal/
-SymbiYosys/
-
-# Temporary files
-*.log
-*.txt
-*.pyc
+*.fst
+*.vvp
+*.bit
+*.bin
+*.dcp
+*.wdb
+*.sqlite
+*.sqlite3
+*.jsonl
+*.key
+*.zip
+*.tar.gz
+*.pdf
+*.docx
 __pycache__/
-*~
+*.pyc
 *.bak
-
-# OS and editor files
+*~
+*Zone.Identifier*
 .DS_Store
 Thumbs.db
+.env
+.env.*
+.done/
+.driver.lock
+graphify-out/
+temp_width2/
+triage/
+phase_2_and_3/
+phase 2 and 3/
