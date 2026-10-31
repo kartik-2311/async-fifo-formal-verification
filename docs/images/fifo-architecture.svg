@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+<title id="title">Async FIFO clock domains and pointer crossings</title><desc id="desc">Separate write and read clock domains use binary and Gray pointers, two-stage synchronizers and conservative local flags. Digital formal clocks are free; 75 and 100 MHz describe the FPGA demonstration.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#51677D"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif}.muted{fill:#51677D}.mono{font-family:Consolas,monospace}</style>
+<rect x="0" y="0" width="1200" height="820" rx="0" fill="#F8FBFE"/>
+<text x="44" y="54" font-size="34" font-weight="700" text-anchor="start" fill="#14283F">One queue. Two clock domains.</text>
+<text x="44" y="86" font-size="20" font-weight="400" text-anchor="start" fill="#51677D">Binary addresses stay local; registered Gray pointers cross through two flip-flops.</text>
+<rect x="34" y="116" width="550" height="474" rx="22" fill="#EAF3FC"/>
+<rect x="616" y="116" width="550" height="474" rx="22" fill="#E7F6F3"/>
+<text x="60" y="156" font-size="23" font-weight="700" text-anchor="start" fill="#176EAD">WRITE DOMAIN</text>
+<text x="60" y="186" font-size="18" font-weight="400" text-anchor="start" fill="#51677D">75 MHz in the Boolean demo</text>
+<text x="642" y="156" font-size="23" font-weight="700" text-anchor="start" fill="#047C78">READ DOMAIN</text>
+<text x="642" y="186" font-size="18" font-weight="400" text-anchor="start" fill="#51677D">100 MHz in the Boolean demo</text>
+<rect x="64" y="215" width="480" height="88" rx="12" fill="#FFFFFF" stroke="#176EAD" stroke-width="2"/>
+<text x="304" y="249" font-size="22" font-weight="700" text-anchor="middle" fill="#14283F">Binary write pointer</text>
+<text x="304" y="279" font-size="22" font-weight="700" text-anchor="middle" fill="#14283F">Registered Gray write pointer</text>
+<rect x="656" y="215" width="480" height="88" rx="12" fill="#FFFFFF" stroke="#047C78" stroke-width="2"/>
+<text x="896" y="249" font-size="22" font-weight="700" text-anchor="middle" fill="#14283F">Binary read pointer</text>
+<text x="896" y="279" font-size="22" font-weight="700" text-anchor="middle" fill="#14283F">Registered Gray read pointer</text>
+<rect x="64" y="382" width="480" height="74" rx="12" fill="#FFFFFF" stroke="#176EAD" stroke-width="2"/>
+<text x="304" y="413" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">Read-pointer 2FF synchronizer</text>
+<text x="304" y="440" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">clocked by CLK_WR</text>
+<rect x="656" y="382" width="480" height="74" rx="12" fill="#FFFFFF" stroke="#047C78" stroke-width="2"/>
+<text x="896" y="413" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">Write-pointer 2FF synchronizer</text>
+<text x="896" y="440" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">clocked by CLK_RD</text>
+<polyline points="544,258 574,258 574,339 896,339 896,382" fill="none" stroke="#176EAD" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="656,272 630,272 630,362 304,362 304,382" fill="none" stroke="#047C78" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="798" y="326" font-size="17" font-weight="400" text-anchor="start" fill="#176EAD">write Gray bus</text>
+<text x="380" y="351" font-size="17" font-weight="400" text-anchor="start" fill="#047C78">read Gray bus</text>
+<rect x="64" y="498" width="480" height="66" rx="12" fill="#FFFFFF" stroke="#176EAD" stroke-width="2"/>
+<text x="304" y="524" font-size="18" font-weight="400" text-anchor="middle" fill="#14283F">Registered FULL + write acceptance</text>
+<text x="304" y="550" font-size="18" font-weight="400" text-anchor="middle" fill="#14283F">wr_en &amp; !wr_full</text>
+<rect x="656" y="498" width="480" height="66" rx="12" fill="#FFFFFF" stroke="#047C78" stroke-width="2"/>
+<text x="896" y="524" font-size="18" font-weight="400" text-anchor="middle" fill="#14283F">Registered EMPTY + read acceptance</text>
+<text x="896" y="550" font-size="18" font-weight="400" text-anchor="middle" fill="#14283F">rd_en &amp; !rd_empty</text>
+<polyline points="304,456 304,498" fill="none" stroke="#51677D" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="896,456 896,498" fill="none" stroke="#51677D" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="64,258 49,258 49,531 64,531" fill="none" stroke="#176EAD" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="7 5"/>
+<polyline points="1136,258 1151,258 1151,531 1136,531" fill="none" stroke="#047C78" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="7 5"/>
+<rect x="240" y="632" width="720" height="116" rx="16" fill="#FFFFFF" stroke="#14283F" stroke-width="2"/>
+<text x="600" y="666" font-size="22" font-weight="700" text-anchor="middle" fill="#14283F">DUAL-PORT STORAGE</text>
+<text x="600" y="695" font-size="20" font-weight="400" text-anchor="middle" fill="#14283F">D = 2^A entries, B bits per entry</text>
+<text x="600" y="724" font-size="18" font-weight="400" text-anchor="middle" fill="#14283F">Synchronous write / combinational read at the current address</text>
+<polyline points="304,564 304,602 420,602 420,632" fill="none" stroke="#51677D" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="76" y="617" font-size="18" font-weight="400" text-anchor="start" fill="#14283F">wr_data + address</text>
+<polyline points="780,632 780,602 896,602 896,564" fill="none" stroke="#51677D" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="920" y="617" font-size="18" font-weight="400" text-anchor="start" fill="#14283F">rd_data</text>
+<text x="44" y="790" font-size="18" font-weight="400" text-anchor="start" fill="#51677D">Formal multiclock jobs model free digital clock interleavings; they do not impose a 75:100 MHz ratio.</text>
+</svg>

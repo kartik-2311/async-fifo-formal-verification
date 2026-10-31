@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<title id="title">Real Digital Boolean FIFO demonstration</title><desc id="desc">A confirmed Boolean board uses an MMCM to generate 75 and 100 MHz clocks for a sixteen-entry eight-bit FIFO traffic test. Status LEDs show completed transfer activity, sticky failure and heartbeat. Hardware operation is not yet observed.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#51677D"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif}.muted{fill:#51677D}.mono{font-family:Consolas,monospace}</style>
+<rect x="0" y="0" width="1200" height="660" rx="0" fill="#F8FBFE"/>
+<text x="44" y="54" font-size="32" font-weight="700" text-anchor="start" fill="#14283F">From RTL proof to a board demonstration.</text>
+<text x="44" y="86" font-size="19" font-weight="400" text-anchor="start" fill="#51677D">Real Digital Boolean | XC7S50-1CSGA324 | 16 x 8 FIFO | hardware testing NOT RUN</text>
+<rect x="44" y="130" width="245" height="115" rx="14" fill="#FFFFFF" stroke="#176EAD" stroke-width="2"/>
+<text x="166" y="166" font-size="20" font-weight="400" text-anchor="middle" fill="#14283F">100 MHz oscillator</text>
+<text x="166" y="194" font-size="20" font-weight="400" text-anchor="middle" fill="#14283F">F14 input pin</text>
+<text x="166" y="222" font-size="20" font-weight="400" text-anchor="middle" fill="#14283F">MMCM: 600 MHz VCO</text>
+<rect x="382" y="130" width="774" height="230" rx="18" fill="#EAF3FC"/>
+<text x="769" y="166" font-size="25" font-weight="700" text-anchor="middle" fill="#14283F">FIFO traffic + checking</text>
+<rect x="405" y="196" width="222" height="116" rx="12" fill="#FFFFFF"/>
+<text x="516" y="229" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">Write: 75 MHz</text>
+<text x="516" y="256" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">Sequence patterns</text>
+<text x="516" y="283" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">Full backpressure</text>
+<rect x="657" y="196" width="222" height="116" rx="12" fill="#FFFFFF"/>
+<text x="768" y="229" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">16 x 8 FIFO</text>
+<text x="768" y="256" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">Local pointers</text>
+<text x="768" y="283" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">Gray CDC</text>
+<rect x="909" y="196" width="222" height="116" rx="12" fill="#FFFFFF"/>
+<text x="1020" y="229" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">Read: 100 MHz</text>
+<text x="1020" y="256" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">Stalls + comparison</text>
+<text x="1020" y="283" font-size="19" font-weight="400" text-anchor="middle" fill="#14283F">Sticky error latch</text>
+<polyline points="289,183 382,183" fill="none" stroke="#51677D" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="627,253 657,253" fill="none" stroke="#51677D" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="879,253 909,253" fill="none" stroke="#51677D" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="769" y="341" font-size="16" font-weight="400" text-anchor="middle" fill="#14283F">Controller simulation: 1,024 reads + full/empty activity + reset/restart + injected corruption</text>
+<rect x="44" y="290" width="245" height="70" rx="12" fill="#FFFFFF"/>
+<text x="166" y="319" font-size="17" font-weight="400" text-anchor="middle" fill="#14283F">Button 0 / J2</text>
+<text x="166" y="344" font-size="17" font-weight="400" text-anchor="middle" fill="#14283F">Reset + local release stages</text>
+<polyline points="289,325 382,325" fill="none" stroke="#51677D" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="7 5"/>
+<rect x="44" y="411" width="344" height="137" rx="15" fill="#FFFFFF"/>
+<circle cx="79" cy="452" r="12" fill="#289A68"/>
+<text x="106" y="459" font-size="22" font-weight="700" text-anchor="start" fill="#14283F">LED0 / G1</text>
+<text x="64" y="501" font-size="17" font-weight="400" text-anchor="start" fill="#14283F">Transfer activity completed</text>
+<text x="64" y="527" font-size="15" font-weight="400" text-anchor="start" fill="#51677D">Status illustration, not observed LEDs</text>
+<rect x="428" y="411" width="344" height="137" rx="15" fill="#FFFFFF"/>
+<circle cx="463" cy="452" r="12" fill="#CB5757"/>
+<text x="490" y="459" font-size="22" font-weight="700" text-anchor="start" fill="#14283F">LED1 / G2</text>
+<text x="448" y="501" font-size="17" font-weight="400" text-anchor="start" fill="#14283F">Sticky error: must stay OFF</text>
+<text x="448" y="527" font-size="15" font-weight="400" text-anchor="start" fill="#51677D">Status illustration, not observed LEDs</text>
+<rect x="812" y="411" width="344" height="137" rx="15" fill="#FFFFFF"/>
+<circle cx="847" cy="452" r="12" fill="#247BB2"/>
+<text x="874" y="459" font-size="22" font-weight="700" text-anchor="start" fill="#14283F">LED2 / F1</text>
+<text x="832" y="501" font-size="17" font-weight="400" text-anchor="start" fill="#14283F">Clock heartbeat ~1.34 s</text>
+<text x="832" y="527" font-size="15" font-weight="400" text-anchor="start" fill="#51677D">Status illustration, not observed LEDs</text>
+<text x="44" y="589" font-size="20" font-weight="700" text-anchor="start" fill="#14283F">Recorded constrained timing: WNS +0.658 ns | WHS +0.044 ns | pulse-width slack +3.000 ns</text>
+<text x="44" y="624" font-size="18" font-weight="400" text-anchor="start" fill="#51677D">DRC: zero violations. One CDC-6 Gray-bus warning and one LUTAR-1 reset warning remain documented.</text>
+</svg>

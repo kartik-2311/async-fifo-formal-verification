@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="610" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc">
+<title id="title">Recorded proof status by FIFO capacity</title><desc id="desc">Control properties are proved at four tested capacities. Finite-tag integrity is proved at four and eight entries. Arbitrary-time item safety is proved at four entries. Timeouts and unrun wider observer cases remain explicit.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" fill="#51677D"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif}.muted{fill:#51677D}.mono{font-family:Consolas,monospace}</style>
+<rect x="0" y="0" width="1200" height="610" rx="0" fill="#F8FBFE"/>
+<text x="44" y="52" font-size="33" font-weight="700" text-anchor="start" fill="#14283F">Read the result at the right scope.</text>
+<text x="44" y="86" font-size="19" font-weight="400" text-anchor="start" fill="#51677D">Recorded evidence through 30 October 2026 | eight-bit payloads | separate compiled instances</text>
+<text x="448" y="135" font-size="19" font-weight="700" text-anchor="middle" fill="#14283F">4 entries</text>
+<text x="448" y="162" font-size="19" font-weight="700" text-anchor="middle" fill="#14283F">A = 2</text>
+<text x="636" y="135" font-size="19" font-weight="700" text-anchor="middle" fill="#14283F">8 entries</text>
+<text x="636" y="162" font-size="19" font-weight="700" text-anchor="middle" fill="#14283F">A = 3</text>
+<text x="824" y="135" font-size="19" font-weight="700" text-anchor="middle" fill="#14283F">16 entries</text>
+<text x="824" y="162" font-size="19" font-weight="700" text-anchor="middle" fill="#14283F">A = 4</text>
+<text x="1012" y="135" font-size="19" font-weight="700" text-anchor="middle" fill="#14283F">32 entries</text>
+<text x="1012" y="162" font-size="19" font-weight="700" text-anchor="middle" fill="#14283F">A = 5</text>
+<rect x="34" y="192" width="1132" height="92" rx="10" fill="#FFFFFF"/>
+<text x="56" y="227" font-size="21" font-weight="700" text-anchor="start" fill="#14283F">Phase 1 control safety</text>
+<text x="56" y="256" font-size="17" font-weight="400" text-anchor="start" fill="#51677D">6 guarded assertions</text>
+<rect x="371" y="214" width="154" height="46" rx="9" fill="#DCF3E7"/>
+<text x="448" y="244" font-size="19" font-weight="700" text-anchor="middle" fill="#156145">PASS</text>
+<rect x="559" y="214" width="154" height="46" rx="9" fill="#DCF3E7"/>
+<text x="636" y="244" font-size="19" font-weight="700" text-anchor="middle" fill="#156145">PASS</text>
+<rect x="747" y="214" width="154" height="46" rx="9" fill="#DCF3E7"/>
+<text x="824" y="244" font-size="19" font-weight="700" text-anchor="middle" fill="#156145">PASS</text>
+<rect x="935" y="214" width="154" height="46" rx="9" fill="#DCF3E7"/>
+<text x="1012" y="244" font-size="19" font-weight="700" text-anchor="middle" fill="#156145">PASS</text>
+<rect x="34" y="297" width="1132" height="92" rx="10" fill="#FFFFFF"/>
+<text x="56" y="332" font-size="21" font-weight="700" text-anchor="start" fill="#14283F">Original tagged integrity</text>
+<text x="56" y="361" font-size="17" font-weight="400" text-anchor="start" fill="#51677D">16 assertions; finite selection</text>
+<rect x="371" y="319" width="154" height="46" rx="9" fill="#DCF3E7"/>
+<text x="448" y="349" font-size="19" font-weight="700" text-anchor="middle" fill="#156145">PASS</text>
+<rect x="559" y="319" width="154" height="46" rx="9" fill="#DCF3E7"/>
+<text x="636" y="349" font-size="19" font-weight="700" text-anchor="middle" fill="#156145">PASS</text>
+<rect x="747" y="319" width="154" height="46" rx="9" fill="#FFF0DA"/>
+<text x="824" y="349" font-size="19" font-weight="700" text-anchor="middle" fill="#A65B00">TIMEOUT</text>
+<rect x="935" y="319" width="154" height="46" rx="9" fill="#FFF0DA"/>
+<text x="1012" y="349" font-size="19" font-weight="700" text-anchor="middle" fill="#A65B00">TIMEOUT</text>
+<rect x="34" y="402" width="1132" height="92" rx="10" fill="#FFFFFF"/>
+<text x="56" y="437" font-size="21" font-weight="700" text-anchor="start" fill="#14283F">Arbitrary-time item safety</text>
+<text x="56" y="466" font-size="17" font-weight="400" text-anchor="start" fill="#51677D">20 assertions; arbitrary selection</text>
+<rect x="371" y="424" width="154" height="46" rx="9" fill="#DCF3E7"/>
+<text x="448" y="454" font-size="19" font-weight="700" text-anchor="middle" fill="#156145">PASS</text>
+<rect x="559" y="424" width="154" height="46" rx="9" fill="#FFF0DA"/>
+<text x="636" y="454" font-size="19" font-weight="700" text-anchor="middle" fill="#A65B00">TIMEOUT</text>
+<rect x="747" y="424" width="154" height="46" rx="9" fill="#E9EEF3"/>
+<text x="824" y="454" font-size="19" font-weight="700" text-anchor="middle" fill="#51677D">NOT RUN</text>
+<rect x="935" y="424" width="154" height="46" rx="9" fill="#E9EEF3"/>
+<text x="1012" y="454" font-size="19" font-weight="700" text-anchor="middle" fill="#51677D">NOT RUN</text>
+<text x="44" y="550" font-size="19" font-weight="400" text-anchor="start" fill="#51677D">PASS: unbounded safety for the stated model. TIMEOUT: unresolved, not a design failure.</text>
+<text x="44" y="580" font-size="18" font-weight="400" text-anchor="start" fill="#51677D">No delivery-liveness, arbitrary-runtime-reset or analog-metastability sign-off is implied.</text>
+</svg>
